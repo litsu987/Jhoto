@@ -1,0 +1,81 @@
+﻿# Consulta la documentación en la wiki para aprender cómo editar este archivo.
+#-------------------------------
+[002]   # Pueblo Primavera
+Name = Pueblo Primavera
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[003]   # Ruta 29
+Name = Ruta 29
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[004]   # Ciudad Cerezo
+Name = Ciudad Cerezo
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[005]   # Ruta 30
+Name = Ruta 30
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[006]   # Ruta 31
+Name = Ruta 31
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[007]   # Ciudad Malva
+Name = Ciudad Malva
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[008]   # Ruta 32
+Name = Ruta 32
+ShowArea = true
+#-------------------------------
+[009]   # Ruta 33
+Name = Ruta 33
+ShowArea = true
+#-------------------------------
+[010]   # Pueblo Azalea
+Name = Pueblo Azalea
+ShowArea = true
+#-------------------------------
+[011]   # Ruta 34
+Name = Ruta 34
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[012]   # Ciudad Trigal
+Name = Ciudad Trigal
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[013]   # Ruta 35
+Name = Ruta 35
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[014]   # Ruta 36
+Name = Ruta 36
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[015]   # Ruta 37
+Name = Ruta 37
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[016]   # Ciudad Iris
+Name = Ciudad Iris
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[017]   # Ruta 38
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[018]   # Ruta 39
+Outdoor = true
+ShowArea = true

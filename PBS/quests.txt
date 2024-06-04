@@ -1,0 +1,198 @@
+[1]
+Name=El Zigzagoon herido
+Stage1="Ayuda a Zigzagoon"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Villa Raíz"
+StageLocation2=nil
+QuestDescription="El Zigzagoon de un niño está en apuros, encuentra una Poción y entregasela a su entrenador."
+CompletedMessage="Zigzagoon Curado"
+FailedMessage="You failed this quest"
+[2]
+Name=El Pikachu Perdido
+Stage1="Rescata a Pikachu"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 10"
+RewardDescription="Monedas Gacha"
+StageLocation1="Pueblo Escaso"
+StageLocation2=nil
+QuestDescription="El Pikachu de una niña ha desaparecido en la ruta 101"
+CompletedMessage="Pikachu Encontrado"
+FailedMessage="You failed this quest"
+[3]
+Name=Completa la Pokédex
+Stage1="Completa la Pokédex"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Amuleto Iris"
+StageLocation1="Villa Raíz"
+StageLocation2=nil
+QuestDescription="El Profesor te ha pedido que completes la Pokédex."
+CompletedMessage="Pokédex Completa"
+FailedMessage="You failed this quest"
+[4]
+Name=Es dia de Pesca
+Stage1="Es dia de Pesca"
+Stage2="Do somethign else"
+Reward="Kernel.pbReceiveItem(:OLDROD)"
+RewardDescription="Caña Vieja"
+StageLocation1="Ciudad Petalia"
+StageLocation2=nil
+QuestDescription="Entrega el equipo de pesca en Ciudad Petalia."
+CompletedMessage="Equipo de pesca entregado"
+FailedMessage="You failed this quest"
+[5]
+Name=Juego de Niños
+Stage1="Juego de Niños"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Pueblo Escaso"
+StageLocation2=nil
+QuestDescription="Un niño salió a explorar la Ruta 102 con su Pokémon encuentralo."
+CompletedMessage="Niño encontrado"
+FailedMessage="You failed this quest"
+[6]
+Name=Maestro del Frente
+Stage1="Los Siete Símbolos"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Pase del Frente"
+StageLocation1="Ciudad Petalia"
+StageLocation2=nil
+QuestDescription="Treto te ha propuesto entrar en el Frente Batalla, pero antes debes derrotar a 7 entrenadores especiales y conseguir sus símbolos."
+CompletedMessage="Símbolos conseguidos"
+FailedMessage="You failed this quest"
+[7]
+Name=Trío Eléctrico
+Stage1="Trío Eléctrico"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Ciudad Petalia"
+StageLocation2=nil
+QuestDescription="Tres traviesos Pachirisu se han escondido por la ciudad. Ve a encontrarlos."
+CompletedMessage="Pokémon encontrados."
+FailedMessage="You failed this quest"
+[8]
+Name=El Entrenador
+Stage1="El Entrenador"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 10"
+RewardDescription="Monedas Gacha"
+StageLocation1="Ciudad Petalia"
+StageLocation2=nil
+QuestDescription="Vence al entrenador Misterioso del Bosque Petalia."
+CompletedMessage="Entrenador Derrotado."
+FailedMessage="You failed this quest"
+[9]
+Name=El Pokémon Gloton
+Stage1="El Pokémon Gloton"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Floristaeria Primavera"
+StageLocation2=nil
+QuestDescription="Encuentra y derrota al Pokémon Gloton, aun debe de estar  en esta ruta."
+CompletedMessage="Pokémon Derrotado"
+FailedMessage="You failed this quest"
+[10]
+Name=La Sinfonía Perdida
+Stage1="La Sinfonía Perdida"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Ciudad Férrica"
+StageLocation2=nil
+QuestDescription="Encuentra las 12 partes de la Sinfonía de Melodio."
+CompletedMessage="Partes encontradas"
+FailedMessage="You failed this quest"
+[11]
+Name=Entrega de Bayas
+Stage1="Entrega de Bayas"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Ciudad Férrica"
+StageLocation2=nil
+QuestDescription="Trae 4 bayas Aranja al criador."
+CompletedMessage="Bayas Entregadas"
+FailedMessage="You failed this quest"
+[12]
+Name=El Portal Misterioso
+Stage1="El Portal Misterioso"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Ruta 116"
+StageLocation2=nil
+QuestDescription="Averigua que hay en el Portal."
+CompletedMessage="Portal Completado"
+FailedMessage="You failed this quest"
+[13]
+Name=Partes del Iluminador
+Stage1="Partes del Iluminador"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Iluminador"
+StageLocation1="Cueva Granito"
+StageLocation2=nil
+QuestDescription="Encuentra las 4 partes del Iluminador"
+CompletedMessage="Partes Encontradas"
+FailedMessage="You failed this quest"
+[14]
+Name=Mono travieso
+Stage1="Mono travieso"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Pueblo Azuliza"
+StageLocation2=nil
+QuestDescription="Encuentra al Aimpom travieso"
+CompletedMessage="Aimpom encontrado"
+FailedMessage="You failed this quest"
+[15]
+Name=Sabor Raro
+Stage1="Sabor Raro"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Pueblo Azuliza"
+StageLocation2=nil
+QuestDescription="Trae muestras del agua del fondo de la cueva Granito."
+CompletedMessage="Agua analizada"
+FailedMessage="You failed this quest"
+[16]
+Name=Maratón de Combates
+Stage1="Maratón de Combates"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 10"
+RewardDescription="Monedas Gacha, Caramelos"
+StageLocation1="Ruta 109"
+StageLocation2=nil
+QuestDescription="Vence a todos los entrenadores del Chiringuito Portual."
+CompletedMessage="Entrenadores vencidos"
+FailedMessage="You failed this quest"
+[17]
+Name=Combate Nautico
+Stage1="Combate Náutico"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 10"
+RewardDescription="Monedas Gacha, Caramelos"
+StageLocation1="Ciudad Portual"
+StageLocation2=nil
+QuestDescription="Vence a todos los marineros del puerto Portual."
+CompletedMessage="Entrenadores vencidos"
+FailedMessage="You failed this quest"
+[18]
+Name=Residuos Tóxicos
+Stage1="Residuos Tóxicos"
+Stage2="Do somethign else"
+Reward="$PokemonGlobal.gachaCoins += 5"
+RewardDescription="Monedas Gacha"
+StageLocation1="Ciudad Portual"
+StageLocation2=nil
+QuestDescription="Averigua que está causando la contaminación."
+CompletedMessage="Entrenadores vencidos"
+FailedMessage="You failed this quest"
