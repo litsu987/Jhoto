@@ -9,6 +9,7 @@ ShowArea = true
 Name = Ruta 29
 Outdoor = true
 ShowArea = true
+BattleBack = Field
 #-------------------------------
 [004]   # Ciudad Cerezo
 Name = Ciudad Cerezo
@@ -73,9 +74,17 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [017]   # Ruta 38
+Name = Ruta 38
 Outdoor = true
 ShowArea = true
 #-------------------------------
 [018]   # Ruta 39
+Name = Ruta 39
 Outdoor = true
 ShowArea = true
+#-------------------------------
+[019]   # Ciudad Olivo
+Name = Ciudad Olivo
+Outdoor = true
+ShowArea = true
+Bicycle = true
