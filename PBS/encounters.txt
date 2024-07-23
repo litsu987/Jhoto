@@ -6,7 +6,7 @@ Water,2
     30,MANTYKE,15,16
     10,REMORAID,14,16
 OldRod
-    100,MAGIKARP,05,07
+    100,SHELLDER,05,07
 GoodRod
     60,BARBOACH,17,18
     20,KRABBY,15,16
@@ -31,4 +31,195 @@ LandNight,21
     20,LECHONK,03,05
     20,SCATTERBUG,03,05
 PokeRadar,20
-    100,STARLY,12,15
+    30,PIDGEY,03,05
+    30,GROWLITHE,03,05
+    30,STARLY,03,05
+    10,RIOLU,03,05
+#-------------------------------
+[004] # Ciudad Cerezo
+Land,21
+    20,FLETCHLING,03,05
+    20,ZIGZAGOON,03,05
+    20,YUNGOOS,03,05
+    20,BUNNELBY,03,05
+    20,PICHU,03,05
+LandNight,21
+    20,ZORUA,03,05
+    20,ZUBAT,03,05
+    20,ESPURR,03,05
+    20,VENIPEDE,03,05
+    20,BLIPBUG,03,05
+Water,2
+    60,TENTACOOL,14,19
+    30,MANTYKE,15,16
+    10,REMORAID,14,16
+OldRod
+    100,CHINCHOU,05,07
+PokeRadar,20
+    30,LITLEO,03,05
+    30,FLETCHLING,03,05
+    30,SWABLU,03,05
+    10,TEDDIURSA,03,05
+#-------------------------------
+[005] # Ruta 30
+Land,21
+    20,CATERPIE,03,05
+    20,WEEDLE,03,05
+    20,GRUBBIN,03,05
+    20,TAILLOW,03,05
+    10,LOTAD,03,05
+    10,RALTS,03,05
+LandNight,21
+    20,ROOKIDEE,03,05
+    20,PIDOVE,03,05
+    20,NICKIT,03,05
+    20,PURRLOIN,03,05
+    10,ODDISH,03,05
+    10,ROCKRUFF,03,05
+Water,2
+    60,TENTACOOL,14,19
+    30,MANTYKE,15,16
+    10,REMORAID,14,16
+OldRod
+    100,MAGIKARP,05,07
+PokeRadar,20
+    30,CATERPIE,03,05
+    30,WEEDLE,03,05
+    30,PURRLOIN,03,05
+    10,MURKROW,03,05
+#-------------------------------
+[030] # Ruta 46
+Land,21
+    20,GEODUDE,03,05
+    20,PHANPY,03,05
+    20,IGGLYBUFF,03,05
+    20,NUMEL,03,05
+    10,PAWMI,03,05
+    10,MEOWTH,03,05
+LandNight,21
+    20,PANCHAM,03,05
+    20,SHINX,03,05
+    20,SPOINK,03,05
+    20,HOUNDOUR,03,05
+    10,GASTLY,03,05
+    10,GULPIN,03,05
+PokeRadar,20
+    30,GEODUDE,03,05
+    30,NUMEL,03,05
+    30,PINECO,03,05
+    10,TINKATINK,03,05
+#-------------------------------
+[006] # Ruta 31
+Land,21
+    20,WINGULL,03,05
+    20,SURSKIT,03,05
+    20,NYMBLE,03,05
+    20,MANKEY,03,05
+    10,CHARCADET,03,05
+    10,SHINX,03,05
+LandNight,21
+    20,WOOPER,03,05
+    20,SMOLIV,03,05
+    20,WATTREL,03,05
+    20,YAMPER,03,05
+    10,FOMANTIS,03,05
+    10,STUFFUL,03,05
+Water,2
+    60,SURSKIT,14,19
+    30,WISHIWASHI,15,16
+    10,REMORAID,14,16
+OldRod
+    100,GOLDEEN,05,07
+PokeRadar,20
+    30,WINGULL,03,05
+    30,SMOLIV,03,05
+    30,FOMANTIS,03,05
+    10,MUNCHLAX,03,05
+#-------------------------------
+[007] # Ciudad Malva
+Land,21
+    20,DEWPIDER,05,06
+    20,NATU,05,06
+    20,SHELLOS,05,06
+    20,EXEGGCUTE,05,06
+    15,ELEKID,05,06
+    5,CHARMANDER,05,06
+    5,BULBASAUR,05,06
+    5,SQUIRTLE,05,06
+LandNight,21
+    20,MINCCINO,05,06
+    20,BUDEW,05,06
+    20,VULPIX,05,06
+    20,TYROGUE,05,06
+    15,MAGBY,05,06
+    5,CHARMANDER,05,06
+    5,BULBASAUR,05,06
+    5,SQUIRTLE,05,06
+Water,2
+    60,GOLDEEN,14,19
+    40,POLIWAG,15,16
+OldRod
+    100,STARYU,05,07
+PokeRadar,20
+    30,DEWPIDER,03,05
+    30,VULPIX,03,05
+    30,SHELLOS,03,05
+    10,NOIBAT,03,05
+#-------------------------------
+[031] # torre bellsprout
+Cave,5
+    40,BELLSPROUT,06,07
+    20,HOOTHOOT,06,07
+    20,RATTATA_1,06,07
+    10,MIMIKYU,06,07
+    10,SCRAGGY,06,07
+#-------------------------------
+[033] # torre bellsprout 2
+Cave,5
+    40,BELLSPROUT,06,07
+    20,HOOTHOOT,06,07
+    20,RATTATA_1,06,07
+    10,MIMIKYU,06,07
+    10,SCRAGGY,06,07
+#-------------------------------
+[008] # Ruta 32
+Land,21
+    20,MAREEP,06,07
+    20,SEWADDLE,06,07
+    20,SOLOSIS,06,07
+    20,DUCKLETT,06,07
+    10,SWIRLIX,06,07
+    10,HAPPINY,06,07
+LandNight,21
+    20,KARRABLAST,06,07
+    20,CUTIEFLY,06,07
+    20,SUNKERN,06,07
+    20,SPINARAK,06,07
+    10,FARFETCHD_1,06,07
+    10,HELIOPTILE,06,07
+Water,2
+    60,GOLDEEN,14,19
+    40,POLIWAG,15,16
+OldRod
+    100,STARYU,06,07
+PokeRadar,20
+    30,DEWPIDER,06,07
+    30,VULPIX,06,07
+    30,SHELLOS,06,07
+    10,NOIBAT,06,07
+#-------------------------------
+[047] # Ruinas Alfa
+Cave,5
+    20,UNOWN_6,06,07
+    20,UNOWN_20,06,07
+    20,UNOWN_5,06,07
+    20,UNOWN_7,06,07
+    20,UNOWN_5,06,07
+#-------------------------------
+[048] # Ruinas Alfa
+Cave,5
+    20,UNOWN_13,06,07
+    20,UNOWN_5,06,07
+    20,UNOWN_14,06,07
+    20,UNOWN_20,06,07
+    20,UNOWN_13,06,07

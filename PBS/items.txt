@@ -6809,3 +6809,12 @@ FieldUse = Direct
 Flags = KeyItem
 Description = Incubadora que permite mantener 6 huevos hasta que eclosionen.
 #-------------------------------
+[EGGMIST]
+Name = Huevo Mist.
+NamePlural = Huevos Mist.
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Huevo Misterioso, deberia revisarlo el profesor Elm.
+#-------------------------------

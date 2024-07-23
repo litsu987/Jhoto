@@ -15,25 +15,33 @@ BattleBack = Field
 Name = Ciudad Cerezo
 Outdoor = true
 ShowArea = true
+Bicycle = true
+BattleBack = Field
 #-------------------------------
 [005]   # Ruta 30
 Name = Ruta 30
 Outdoor = true
 ShowArea = true
+Bicycle = true
+BattleBack = Field
 #-------------------------------
 [006]   # Ruta 31
 Name = Ruta 31
 Outdoor = true
 ShowArea = true
+BattleBack = Field
 #-------------------------------
 [007]   # Ciudad Malva
 Name = Ciudad Malva
 Outdoor = true
 ShowArea = true
+BattleBack = Field
 #-------------------------------
 [008]   # Ruta 32
 Name = Ruta 32
+Outdoor = true
 ShowArea = true
+BattleBack = Field
 #-------------------------------
 [009]   # Ruta 33
 Name = Ruta 33
@@ -88,3 +96,48 @@ Name = Ciudad Olivo
 Outdoor = true
 ShowArea = true
 Bicycle = true
+#-------------------------------
+[030]   # Ruta 46
+Name = Ruta 46
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = Field
+#-------------------------------
+[031]   # torre bellsprout
+Name = torre bellsprout
+BattleBack = interior
+#-------------------------------
+[033]   # torre bellsprout 2
+Name = torre bellsprout 2
+BattleBack = interior
+#-------------------------------
+[034]   # torre bellsprout 3
+Name = torre bellsprout 3
+BattleBack = interior
+#-------------------------------
+[044]   # GYM
+Name = GYM
+BattleBack = interior
+#-------------------------------
+[045]   # Ruinas Alfa
+Name = Ruinas Alfa
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
+[047]   # Ruinas Alfa
+Name = Ruinas Alfa
+BattleBack = Templo
+#-------------------------------
+[048]   # Ruinas Alfa
+Name = Ruinas Alfa
+BattleBack = Templo
+#-------------------------------
+[049]   # Ruinas Alfa
+Name = Ruinas Alfa
+BattleBack = Templo
+#-------------------------------
+[051]   # Ruinas Alfa
+Name = Ruinas Alfa
+BattleBack = Templo

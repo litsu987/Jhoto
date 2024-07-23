@@ -1,1 +1,186 @@
-﻿
+﻿#-------------------------------
+[SILVER1,???]
+LoseText = ¿Feliz de haber ganado?
+Pokemon = CYNDAQUIL,5
+#-------------------------------
+[SILVER1,???,1]
+LoseText = ¿Feliz de haber ganado?
+Pokemon = TOTODILE,5
+#-------------------------------
+[SILVER1,???,2]
+LoseText = ¿Feliz de haber ganado?
+Pokemon = CHIKORITA,5
+#-------------------------------
+[JOVEN,Chano]
+LoseText = Ya no me quedan más Pokémon...
+Pokemon = RATTATA,7
+#-------------------------------
+[CHICA,Julia]
+LoseText = ¡Me dejas alucinada!
+Pokemon = BUDEW,6
+Pokemon = SENTRET,6
+Pokemon = SEEDOT,6
+Pokemon = CHERUBI,6
+#-------------------------------
+[FRIKI,Manu]
+LoseText = ¡Uff...!
+Pokemon = ZORUA,6
+Pokemon = ROCKRUFF,6
+Pokemon = ESPURR,6
+#-------------------------------
+[DONCELLA,Julia]
+LoseText = ¡Jo... menuda plaiza!
+Pokemon = CLEFAIRY,6
+Pokemon = JIGGLYPUFF,6
+Pokemon = SKITTY,6
+#-------------------------------
+[BICHERO,Tomy]
+LoseText = ¡Maldita sea!
+Pokemon = SPINARAK,7
+Pokemon = LEDYBA,7
+Pokemon = SURSKIT,7
+Pokemon = NINCADA,7
+#-------------------------------
+[SACERDOTISA,Tamara]
+LoseText = ¡Oh, estoy débil!
+Pokemon = SUNKERN,8
+Pokemon = GASTLY,8
+Pokemon = RALTS,8
+Pokemon = BELLSPROUT,8
+#-------------------------------
+[SACERDOTISA,Sara]
+LoseText = Para ser un bonzo, no me llevaría ni el bronce.
+Pokemon = BELLSPROUT,9
+Pokemon = LOTAD,9
+Pokemon = CHARMANDER,9
+#-------------------------------
+[SACERDOTISA,Marta]
+LoseText = ¡Mi cerebro sí que es brillante!
+Pokemon = BELLSPROUT,12
+#-------------------------------
+[SENORA,Griselda]
+LoseText = Mmm... Pues está visto que sí que confías en tu equipo Pokémon.
+Pokemon = BELLSPROUT,10
+Pokemon = POLIWAG,10
+Pokemon = EXEGGCUTE,10
+#-------------------------------
+[SENORA,Lucía]
+LoseText = ¡Gr-gracias!
+Pokemon = PSYDUCK,11
+Pokemon = NATU,11
+Pokemon = BULBASAUR,11
+#-------------------------------
+[SENORA,Anna]
+LoseText = ¡Mi cerebro sí que es brillante!
+Pokemon = BELLSPROUT,11
+Pokemon = SUNKERN,11
+Pokemon = SQUIRTLE,11
+#-------------------------------
+[VIEJALES,Anselmo]
+LoseText = ¡Ah, excelente!
+Pokemon = BELLSPROUT,13
+Pokemon = HOOTHOOT,13
+Pokemon = ZIGZAGOON,13
+    Form = 1
+Pokemon = DWEBBLE,13
+#-------------------------------
+[JOVEN,Abel]
+LoseText = ¡No puede ser cierto!
+Pokemon = SPEAROW,13
+Pokemon = PIDGEY,13
+Pokemon = DODUO,13
+#-------------------------------
+[JOVEN,Rony]
+LoseText = ¡Aaah!
+Pokemon = TAILLOW,14
+Pokemon = WINGULL,14
+Pokemon = WATTREL,14
+Pokemon = ROOKIDEE,14
+#-------------------------------
+[PEGASO,Pegaso]
+LoseText = Ya veo... Ha llegado la hora de posarme en el suelo con dignidad.
+Pokemon = SWABLU,15
+    Moves = ROOST,SOLARBEAM,MIRRORMOVE,AERIALACE
+    AbilityIndex = 1
+    Item = POWERHERB
+    Gender = male
+    IV = 31,31,31,31,31,31
+Pokemon = MURKROW,15
+    Moves = ROOST,AERIALACE,HAZE,FEINTATTACK
+    AbilityIndex = 1
+    Item = ORANBERRY
+    Gender = male
+    IV = 31,31,31,31,31,31
+Pokemon = STARAVIA,15
+    Moves = QUICKATTACK,AERIALACE,DOUBLETEAM,ROOST
+    AbilityIndex = 0
+    Item = ORANBERRY
+    Gender = male
+    IV = 31,31,31,31,31,31
+Pokemon = CHATOT,15
+    Moves = ROOST,CHATTER,UPROAR,AGILITY
+    AbilityIndex = 2
+    Item = ORANBERRY
+    Gender = male
+    IV = 31,31,31,31,31,31
+Pokemon = GLIGAR,15
+    Moves = KNOCKOFF,ROOST,QUICKATTACK,AERIALACE
+    AbilityIndex = 0
+    Item = ORANBERRY
+    Gender = male
+    IV = 31,31,31,31,31,31
+Pokemon = PIDGEOTTO,16
+    Moves = ROOST,AERIALACE,QUICKATTACK,MUDSLAP
+    AbilityIndex = 2
+    Item = ORANBERRY
+    Gender = male
+    IV = 31,31,31,31,31,31
+#-------------------------------
+[CHICA2,Amanda]
+LoseText = Oh no, he perdido... ¡Eres muy fuerte!
+Pokemon = MAREEP,16
+Pokemon = STARAVIA,16
+Pokemon = FARFETCHD_1,16
+#-------------------------------
+[RANGERM,Víctor]
+LoseText = Vaya, no esperaba perder... ¡Eres increíble!
+Pokemon = GROWLITHE,16
+Pokemon = MEOWTH_2,16
+#-------------------------------
+[MOCHILERO,Alex]
+LoseText = ¡Qué derrota! Tus Pokémon están muy bien entrenados.
+Pokemon = RHYDON,17
+Pokemon = MAGNEMITE,17
+#-------------------------------
+[MOCHILERA,Mar]
+LoseText = ¡Vaya, qué derrota! Me has dado una buena lección.
+Pokemon = GEODUDE_1,17
+Pokemon = ONIX,17
+#-------------------------------
+[CAMPERA,Regina]
+LoseText = ¡Menuda derrota! No me esperaba perder así.
+Pokemon = GROVYLE,18
+Pokemon = SNEASEL_1,18
+Pokemon = FLETCHINDER,18
+#-------------------------------
+[CRIADOR,Max]
+LoseText = ¡Ah, perdí! Parece que aún me falta práctica.
+Pokemon = QUAQUAVAL,18
+Pokemon = DIGLETT_1,18
+Pokemon = CYCLIZAR,18
+#-------------------------------
+[BICHERO,Erik]
+LoseText = ¡Maldita sea!
+Pokemon = BUTTERFREE,18
+Pokemon = BEEDRILL,18
+#-------------------------------
+[PESCADOR,Robert]
+LoseText = ¡Vaya, perdí! Parece que esta vez no tuve suerte en el combate.
+Pokemon = PSYDUCK,17
+Pokemon = BRIONNE,17
+Pokemon = TENTACOOL,17
+#-------------------------------
+[JOVEN,Miguel]
+LoseText = Ya no me quedan más Pokémon...
+Pokemon = BIBAREL,19
+Pokemon = CHARMELEON,19

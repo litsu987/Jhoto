@@ -2914,7 +2914,7 @@ Generation = 1
 WildItemUncommon = SMOKEBALL
 #-------------------------------
 [RHYHORN]
-Name = Rhyhorn
+Name =  
 Types = GROUND,ROCK
 BaseStats = 80,85,95,25,30,30
 GenderRatio = Female50Percent
