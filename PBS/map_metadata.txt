@@ -45,11 +45,17 @@ BattleBack = Field
 #-------------------------------
 [009]   # Ruta 33
 Name = Ruta 33
+Outdoor = true
 ShowArea = true
+Bicycle = true
+BattleBack = Field
 #-------------------------------
 [010]   # Pueblo Azalea
 Name = Pueblo Azalea
+Outdoor = true
 ShowArea = true
+Bicycle = true
+BattleBack = field
 #-------------------------------
 [011]   # Ruta 34
 Name = Ruta 34
@@ -116,6 +122,10 @@ BattleBack = interior
 Name = torre bellsprout 3
 BattleBack = interior
 #-------------------------------
+[043]   # Escuela
+Name = Escuela
+BattleBack = interior
+#-------------------------------
 [044]   # GYM
 Name = GYM
 BattleBack = interior
@@ -125,19 +135,29 @@ Name = Ruinas Alfa
 Outdoor = true
 ShowArea = true
 Bicycle = true
+SnapEdges = true
+BattleBack = Field
 #-------------------------------
-[047]   # Ruinas Alfa
+[047]   # Ruinas 
 Name = Ruinas Alfa
 BattleBack = Templo
 #-------------------------------
-[048]   # Ruinas Alfa
+[048]   # Objetos
 Name = Ruinas Alfa
 BattleBack = Templo
 #-------------------------------
-[049]   # Ruinas Alfa
+[049]   # Pozo Slowpoke
 Name = Ruinas Alfa
 BattleBack = Templo
 #-------------------------------
-[051]   # Ruinas Alfa
+[051]   # Pozo Slowpoke 1
 Name = Ruinas Alfa
 BattleBack = Templo
+#-------------------------------
+[056]   # Cueva union
+Name = Cueva union
+BattleBack = cave2
+#-------------------------------
+[060]   # Ruinas
+Name = Ruinas
+BattleBack = templo

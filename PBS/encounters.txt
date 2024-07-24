@@ -208,18 +208,71 @@ PokeRadar,20
     30,SHELLOS,06,07
     10,NOIBAT,06,07
 #-------------------------------
-[047] # Ruinas Alfa
+[060] # Ruinas
 Cave,5
-    20,UNOWN_6,06,07
-    20,UNOWN_20,06,07
-    20,UNOWN_5,06,07
-    20,UNOWN_7,06,07
-    20,UNOWN_5,06,07
+    100,UNOWN,06,07
 #-------------------------------
-[048] # Ruinas Alfa
+[045] # Ruinas Alfa
+Land,21
+    20,YAMASK,07,08
+    20,SEVIPER,07,08
+    20,MEDITITE,07,08
+    20,CACNEA,07,08
+    10,PACHIRISU,07,08
+    10,HATENNA,07,08
+LandNight,21
+    20,YAMASK_1,07,08
+    20,ZANGOOSE,07,08
+    20,SHROODLE,07,08
+    20,SHUPPET,07,08
+    10,IMPIDIMP,07,08
+    10,TOXEL,07,08
+Water,2
+    60,GOLDEEN,14,19
+    40,POLIWAG,15,16
+OldRod
+    100,PSYDUCK,06,07
+PokeRadar,20
+    30,YAMASK,07,08
+    30,YAMASK_1,07,08
+    30,CACNEA,07,08
+    10,DRATINI,07,08
+#-------------------------------
+[056] # Cueva Union
 Cave,5
-    20,UNOWN_13,06,07
-    20,UNOWN_5,06,07
-    20,UNOWN_14,06,07
-    20,UNOWN_20,06,07
-    20,UNOWN_13,06,07
+    20,ROGGENROLA,09,10
+    20,NACLI,09,10
+    20,MAKUHITA,09,10
+    20,WOOBAT,09,10
+    10,TORKOAL,09,10
+    10,ROCKRUFF,09,10
+#-------------------------------
+[054] # Cueva Oscura
+Cave,5
+    20,GEODUDE,07,08
+    20,GEODUDE_1,07,08
+    20,MACHOP,07,08
+    20,ZUBAT,07,08
+    10,LARVITAR,07,08
+    10,TRAPINCH,07,08
+#-------------------------------
+[009] # Ruta 33
+Land,21
+    20,GRIMER_1,10,11
+    20,SPRITZEE,10,11
+    20,FURFROU,10,11
+    20,SIZZLIPEDE,10,11
+    10,SALANDIT,10,11
+    10,RHYDON,10,11
+LandNight,21
+    20,GRIMER,10,11
+    20,GULPIN,10,11
+    20,SUNKERN,10,11
+    20,DARUMAKA,10,11
+    10,RHYDON,10,11
+    10,DUNSPARCE,10,11
+PokeRadar,20
+    30,GRIMER_1,10,11
+    30,RHYDON,10,11
+    30,GRIMER,10,11
+    10,GOOMY,10,11

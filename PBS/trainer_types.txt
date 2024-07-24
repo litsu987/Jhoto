@@ -144,3 +144,35 @@ BaseMoney = 60
 IntroBGM = Chico.ogg
 VictoryBGM = TrainerVictory.ogg
 BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[NINA]
+Name = Niña
+Gender = Female
+BaseMoney = 60
+IntroBGM = Chica.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[NINO]
+Name = Niño
+Gender = Male
+BaseMoney = 60
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[LUCHADOR]
+Name = Luchador
+Gender = Male
+BaseMoney = 60
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[MONTANERO]
+Name = Montañero
+Gender = Male
+BaseMoney = 60
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg

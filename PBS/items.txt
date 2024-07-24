@@ -3629,10 +3629,11 @@ Description = Caramelo energético que aumenta mucho los Puntos de Experiencia d
 Name = Caramelo Raro
 NamePlural = Caramelos Raros
 Pocket = 2
-Price = 10000
+Price = 0
 BPPrice = 20
 FieldUse = OnPokemon
 Flags = Fling_30
+SellPrice = 0
 Description = Caramelo energético que sube a un Pokémon de nivel.
 #-------------------------------
 [MASTERBALL]

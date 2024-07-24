@@ -184,3 +184,49 @@ Pokemon = TENTACOOL,17
 LoseText = Ya no me quedan más Pokémon...
 Pokemon = BIBAREL,19
 Pokemon = CHARMELEON,19
+#-------------------------------
+[NINA,Mia]
+LoseText = Uff...
+Pokemon = PIDGEY,10
+Pokemon = RATTATA_1,10
+#-------------------------------
+[NINO,Mati]
+LoseText = ¡Eres super fuerte!
+Pokemon = PACHIRISU,11
+#-------------------------------
+[NINA,Sara]
+LoseText = Vaya...
+Pokemon = STARLY,10
+Pokemon = GEODUDE_1,10
+#-------------------------------
+[MOCHILERO,Arnau]
+LoseText = ¡No puede ser! ¡Perdí!
+Pokemon = MACHOP,20
+Pokemon = GEODUDE_1,20
+Pokemon = ROLYCOLY,20
+#-------------------------------
+[MONTANERO,Ibai]
+LoseText = Uff...
+Pokemon = ONIX,20
+Pokemon = NACLI,20
+Pokemon = NOSEPASS,20
+#-------------------------------
+[MONTANERO,Fer]
+LoseText = No he podido seguirte el ritmo...
+Pokemon = ROGGENROLA,22
+Pokemon = WOOBAT,22
+#-------------------------------
+[LUCHADOR,Lucas]
+LoseText = ¡vaya que fuerte!
+Pokemon = TIMBURR,21
+Pokemon = MAKUHITA,21
+#-------------------------------
+[CAMPERA,Sara]
+LoseText = ¡Menuda derrota! No me esperaba perder así.
+Pokemon = COMBUSKEN,21
+Pokemon = ORICORIO,21
+Pokemon = SABLEYE,21
+#-------------------------------
+[MONTANERO,Víctor]
+LoseText = ¿Que ha pasado?
+Pokemon = RHYHORN,23
