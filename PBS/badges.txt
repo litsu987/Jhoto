@@ -1,0 +1,145 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[MEDALLACEFIRO]
+Name = Medalla Céfiro
+Type = FLYING
+LeaderName = Lider Pegaso
+LeaderSprite = BADGE0
+Location = Ciudad Malva
+AcePokemon = NOCTOWL
+Order = 0
+#-------------------------------
+[MEDALLLACOLMENA]
+Name = Medalla Colmena
+Type = BUG
+LeaderName = Lider Antón
+LeaderSprite = BADGE1
+Location = Ciudad Azalea
+AcePokemon = BUTTERFREE
+Order = 1
+#-------------------------------
+[MEDALLAPLANICIE]
+Name = Medalla Planicie
+Type = NORMAL
+LeaderName = Lider Blanca
+LeaderSprite = BADGE2
+Location = Ciudad Trigal
+AcePokemon = LOPUNNY
+Order = 2
+#-------------------------------
+[MEDALLANIEBLA]
+Name = Medalla Niebla
+Type = GHOST
+LeaderName = Lider Morti
+LeaderSprite = BADGE3
+Location = Ciudad Iris
+AcePokemon = GENGAR
+Order = 3
+#-------------------------------
+[MEDALLATRUENO]
+Name = Medalla Trueno
+Type = ELECTRIC
+LeaderName = Lider Lt. Surge
+LeaderSprite = BADGE4
+Location = Ciudad Carmín
+AcePokemon = LUXRAY
+Order = 4
+#-------------------------------
+[MEDALLACASCADA]
+Name = Medalla Cascada
+Type = WATER
+LeaderName = Lider Misty
+LeaderSprite = BADGE5
+Location = Ciudad Celeste
+AcePokemon = GYARADOS
+Order = 5
+#-------------------------------
+[MEDALLAROCA]
+Name = Medalla Roca
+Type = ROCK
+LeaderName = Lider Brock
+LeaderSprite = BADGE6
+Location = Ciudad Plateada
+AcePokemon = SANDACONDA
+Order = 6
+#-------------------------------
+[MEDALLATIERRA]
+Name = Medalla Tierra
+Type = DARK
+LeaderName = Lider Blue
+LeaderSprite = BADGE7
+Location = Ciudad Verde
+AcePokemon = HOUNDOOM
+Order = 7
+#-------------------------------
+[MEDALLAVOLCAN]
+Name = Medalla Volcán
+Type = FIRE
+LeaderName = Lider Blaine
+LeaderSprite = BADGE8
+Location = Ciudad Canela
+AcePokemon = BLAZIKEN
+Order = 8
+#-------------------------------
+[MEDALLAPANTANO]
+Name = Medalla Pantano
+Type = POISON
+LeaderName = Lider Koga
+LeaderSprite = BADGE9
+Location = Ciudad Fucsia
+AcePokemon = NIDOKING
+Order = 9
+#-------------------------------
+[MEDALLAARCOIRIS]
+Name = Medalla Arcoíris
+Type = GRASS
+LeaderName = Lider Erika
+LeaderSprite = BADGE10
+Location = Ciudad Azulona
+AcePokemon = VENUSAUR
+Order = 10
+#-------------------------------
+[MEDALLAALMA]
+Name = Medalla Alma
+Type = PSYCHIC
+LeaderName = Lider Sabrina
+LeaderSprite = BADGE11
+Location = Ciudad Azafrán
+AcePokemon = ALAKAZAM
+Order = 11
+#-------------------------------
+[MEDALLAMINERAL]
+Name = Medalla Mineral
+Type = STEEL
+LeaderName = Lider Yasmina
+LeaderSprite = BADGE12
+Location = Ciudad Olivo
+AcePokemon = STEELIX
+Order = 12
+#-------------------------------
+[MEDALLATORMENTA]
+Name = Medalla Tormenta
+Type = FIGHTING
+LeaderName = Lider Aníbal
+LeaderSprite = BADGE13
+Location = Ciudad Orquídea
+AcePokemon = LUCARIO
+Order = 13
+#-------------------------------
+[MEDALLAGLACIAR]
+Name = Medalla Glaciar
+Type = ICE
+LeaderName = Lider Fredo
+LeaderSprite = BADGE14
+Location = Pueblo Caoba
+AcePokemon = LAPRAS
+Order = 14
+#-------------------------------
+[MEDALLADRAGON]
+Name = Medalla Dragon
+Type = DRAGON
+LeaderName = Lider Lance
+LeaderSprite = BADGE15
+Location = Pueblo Endrino
+AcePokemon = DRAGONITE
+Order = 15

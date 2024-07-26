@@ -22,9 +22,9 @@ class DiegoWTsStarterSelection
     end
     @sprites["base"].opacity = 0
     
-    @sprites["shadow_1"] = IconSprite.new(56, 212, @viewport)
-    @sprites["shadow_2"] = IconSprite.new(210, 212, @viewport)
-    @sprites["shadow_3"] = IconSprite.new(364, 212, @viewport)
+    @sprites["shadow_1"] = IconSprite.new(106, 212, @viewport)
+    @sprites["shadow_2"] = IconSprite.new(260, 212, @viewport)
+    @sprites["shadow_3"] = IconSprite.new(414, 212, @viewport)
     for i in 1..3
       if StarterSelSettings::STARTERBG == 1 
         @sprites["shadow_#{i}"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/shadow1")
@@ -34,9 +34,9 @@ class DiegoWTsStarterSelection
       @sprites["shadow_#{i}"].opacity = 0
     end
     
-    @sprites["ball_1"] = IconSprite.new(102, 188, @viewport)
-    @sprites["ball_2"] = IconSprite.new(256, 188, @viewport)
-    @sprites["ball_3"] = IconSprite.new(410, 188, @viewport)
+    @sprites["ball_1"] = IconSprite.new(152, 188, @viewport)
+    @sprites["ball_2"] = IconSprite.new(306, 188, @viewport)
+    @sprites["ball_3"] = IconSprite.new(460, 188, @viewport)
     for i in 1..3
       @sprites["ball_#{i}"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/ball#{i}")
       @sprites["ball_#{i}"].ox = @sprites["ball_#{i}"].bitmap.width / 2
@@ -44,21 +44,21 @@ class DiegoWTsStarterSelection
       @sprites["ball_#{i}"].opacity = 0
     end
     
-    @sprites["hlight_1"] = IconSprite.new(68, 154, @viewport)
-    @sprites["hlight_2"] = IconSprite.new(222, 154, @viewport)
-    @sprites["hlight_3"] = IconSprite.new(376, 154, @viewport)
+    @sprites["hlight_1"] = IconSprite.new(118, 154, @viewport)
+    @sprites["hlight_2"] = IconSprite.new(272, 154, @viewport)
+    @sprites["hlight_3"] = IconSprite.new(426, 154, @viewport)
     for i in 1..3
       @sprites["hlight_#{i}"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/highlight")
       @sprites["hlight_#{i}"].opacity = 0
     end
     
-    @sprites["select"] = IconSprite.new(94,188,@viewport) # Outline selection
+    @sprites["select"] = IconSprite.new(200,188,@viewport) # Outline selection
     @sprites["select"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/sel")
     @sprites["select"].ox = @sprites["select"].bitmap.width / 2
     @sprites["select"].oy = @sprites["select"].bitmap.height / 2
     @sprites["select"].visible = false
     @sprites["select"].opacity = 0
-    @sprites["selection"] = IconSprite.new(224,32,@viewport) # Hand selection
+    @sprites["selection"] = IconSprite.new(264,32,@viewport) # Hand selection
     @sprites["selection"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/select")
     @sprites["selection"].visible = false
     
@@ -70,7 +70,7 @@ class DiegoWTsStarterSelection
     @sprites["type2"].mirror = true
     @sprites["type2"].opacity = 0
     
-    @sprites["ballbase"] = IconSprite.new(0, 0, @viewport)
+    @sprites["ballbase"] = IconSprite.new(50, 0, @viewport)
     @sprites["ballbase"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/ballbase")
     if StarterSelSettings::STARTERCZ >= 1
       @sprites["ballbase"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/ballbase2x")
@@ -141,11 +141,11 @@ class DiegoWTsStarterSelection
       @sprites["pkmn_#{i}"].z = 2
     end
     
-    @sprites["pkmn_1"].x = StarterSelSettings::STARTER1X + 256
+    @sprites["pkmn_1"].x = StarterSelSettings::STARTER1X + 306
     @sprites["pkmn_1"].y = StarterSelSettings::STARTER1Y + 148
-    @sprites["pkmn_2"].x = StarterSelSettings::STARTER2X + 256
+    @sprites["pkmn_2"].x = StarterSelSettings::STARTER2X + 306
     @sprites["pkmn_2"].y = StarterSelSettings::STARTER2Y + 148
-    @sprites["pkmn_3"].x = StarterSelSettings::STARTER3X + 256
+    @sprites["pkmn_3"].x = StarterSelSettings::STARTER3X + 306
     @sprites["pkmn_3"].y = StarterSelSettings::STARTER3Y + 148
     if StarterSelSettings::STARTER1ITEM != nil
       @data["pkmn_1"].item = StarterSelSettings::STARTER1ITEM
@@ -157,7 +157,7 @@ class DiegoWTsStarterSelection
       @data["pkmn_3"].item = StarterSelSettings::STARTER3ITEM
     end
     
-    @sprites["textwnd"] = IconSprite.new(0, 272, @viewport)
+    @sprites["textwnd"] = IconSprite.new(50, 272, @viewport)
     if StarterSelSettings::INSTYLE == 2 # Checks for interface style
       @sprites["textwnd"].setBitmap("Graphics/UI/DiegoWT's Starter Selection/window_bw")
     else
@@ -174,7 +174,7 @@ class DiegoWTsStarterSelection
       @sprites["textbox"].baseColor = Color.new(82, 82, 90)
       @sprites["textbox"].shadowColor = Color.new(165, 165, 173)
     end
-    @sprites["textbox"].y += 10 if StarterSelSettings::INSTYLE == 1
+    @sprites["textbox"].y += -50 if StarterSelSettings::INSTYLE == 1
     @sprites["textbox"].letterbyletter = true
     @sprites["textbox"].text = _INTL("")
     pbSetSystemFont(@sprites["textbox"].contents)
@@ -380,9 +380,9 @@ class DiegoWTsStarterSelection
         pbPlayCursorSE
         @sprites["select"].visible = true
         @sprites["selection"].visible = true
-        @sprites["select"].x = @x[@select]
+        @sprites["select"].x = @x[@select] + 50
         @sprites["select"].y = @y[@select]
-        @sprites["selection"].x = @x[@select] - 28
+        @sprites["selection"].x = @x[@select] + 28
         @sprites["selection"].y = @y[@select] - 154
         @sprites["select"].angle = 0
         pbChoosingScene
@@ -406,22 +406,22 @@ class DiegoWTsStarterSelection
         @oldx = @sprites["ball_#{@select}"].x
         @frame = 0
         pbPlayCursorSE
-        @sprites["ball_1"].x = 102 if @oldsel == 1
-        @sprites["ball_2"].x = 256 if @oldsel == 2
-        @sprites["ball_3"].x = 410 if @oldsel == 3
+        @sprites["ball_1"].x = 152 if @oldsel == 1
+        @sprites["ball_2"].x = 306 if @oldsel == 2
+        @sprites["ball_3"].x = 460 if @oldsel == 3
         @sprites["ball_#{@oldsel}"].angle = 0
-        @sprites["hlight_1"].x = 68 if @oldsel == 1
-        @sprites["hlight_2"].x = 222 if @oldsel == 2
-        @sprites["hlight_3"].x = 376 if @oldsel == 3
-        @sprites["shadow_1"].x = 56 if @oldsel == 1
-        @sprites["shadow_2"].x = 210 if @oldsel == 2
-        @sprites["shadow_3"].x = 364 if @oldsel == 3
-        @sprites["select"].x = @x[@select]
+        @sprites["hlight_1"].x = 118 if @oldsel == 1
+        @sprites["hlight_2"].x = 272 if @oldsel == 2
+        @sprites["hlight_3"].x = 426 if @oldsel == 3
+        @sprites["shadow_1"].x = 106 if @oldsel == 1
+        @sprites["shadow_2"].x = 260 if @oldsel == 2
+        @sprites["shadow_3"].x = 414 if @oldsel == 3
+        @sprites["select"].x = @x[@select] +50
         @sprites["select"].y = @y[@select]
         @selframe      = 0
         @ballAnimation = 0
         @sprites["selection"].y = @y[@select] - 154
-        @sprites["selection"].x = @x[@select] - 28
+        @sprites["selection"].x = @x[@select] + 28
         @sprites["select"].angle = 0
       end
       if Input.trigger?(Input::LEFT) && @select > 1
@@ -430,22 +430,22 @@ class DiegoWTsStarterSelection
         @oldx = @sprites["ball_#{@select}"].x
         @frame = 0
         pbPlayCursorSE
-        @sprites["ball_1"].x = 102 if @oldsel == 1
-        @sprites["ball_2"].x = 256 if @oldsel == 2
-        @sprites["ball_3"].x = 410 if @oldsel == 3
+        @sprites["ball_1"].x = 152 if @oldsel == 1
+        @sprites["ball_2"].x = 306 if @oldsel == 2
+        @sprites["ball_3"].x = 460 if @oldsel == 3
         @sprites["ball_#{@oldsel}"].angle = 0
-        @sprites["hlight_1"].x = 68 if @oldsel == 1
-        @sprites["hlight_2"].x = 222 if @oldsel == 2
-        @sprites["hlight_3"].x = 376 if @oldsel == 3
-        @sprites["shadow_1"].x = 56 if @oldsel == 1
-        @sprites["shadow_2"].x = 210 if @oldsel == 2
-        @sprites["shadow_3"].x = 364 if @oldsel == 3
-        @sprites["select"].x = @x[@select]
+        @sprites["hlight_1"].x = 118 if @oldsel == 1
+        @sprites["hlight_2"].x = 272 if @oldsel == 2
+        @sprites["hlight_3"].x = 426 if @oldsel == 3
+        @sprites["shadow_1"].x = 106 if @oldsel == 1
+        @sprites["shadow_2"].x = 260 if @oldsel == 2
+        @sprites["shadow_3"].x = 414 if @oldsel == 3
+        @sprites["select"].x = @x[@select] +50
         @sprites["select"].y = @y[@select]
         @selframe      = 0
         @ballAnimation = 0
         @sprites["selection"].y = @y[@select] - 154
-        @sprites["selection"].x = @x[@select] - 28
+        @sprites["selection"].x = @x[@select] + 28
         @sprites["select"].angle = 0
       end
       if Input.trigger?(Input::USE)
@@ -598,7 +598,7 @@ class DiegoWTsStarterSelection
     end
     
     # Animation before the selection
-    @sprites["ballbase"].x = @x[@select]
+    @sprites["ballbase"].x = @x[@select] +50
     @sprites["ballbase"].y = @y[@select]
     @anim=0; @framereset=0; @frameA=0; zoom = StarterSelSettings::STARTERCZ - 0.5 if StarterSelSettings::STARTERCZ >= 1
     @sprites["select"].visible = false

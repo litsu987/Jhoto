@@ -110,15 +110,15 @@ ShowArea = true
 Bicycle = true
 BattleBack = Field
 #-------------------------------
-[031]   # torre bellsprout
+[031]   # Casa Poke
 Name = torre bellsprout
 BattleBack = interior
 #-------------------------------
-[033]   # torre bellsprout 2
+[033]
 Name = torre bellsprout 2
 BattleBack = interior
 #-------------------------------
-[034]   # torre bellsprout 3
+[034]
 Name = torre bellsprout 3
 BattleBack = interior
 #-------------------------------
@@ -154,6 +154,11 @@ BattleBack = Templo
 Name = Ruinas Alfa
 BattleBack = Templo
 #-------------------------------
+[054]   # Cueva oscura 1
+Name = Cueva oscura 1
+DarkMap = true
+BattleBack = cave2
+#-------------------------------
 [056]   # Cueva union
 Name = Cueva union
 BattleBack = cave2
@@ -161,3 +166,12 @@ BattleBack = cave2
 [060]   # Ruinas
 Name = Ruinas
 BattleBack = templo
+#-------------------------------
+[064]   # Torre Bellsprout
+BattleBack = torreb
+#-------------------------------
+[065]   # Torre Bellsprout Piso 1
+BattleBack = torreb
+#-------------------------------
+[066]   # Torre Bellsprout piso 2
+BattleBack = torreb

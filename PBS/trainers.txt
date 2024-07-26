@@ -1,15 +1,15 @@
 ﻿#-------------------------------
 [SILVER1,???]
 LoseText = ¿Feliz de haber ganado?
-Pokemon = CYNDAQUIL,5
+Pokemon = CYNDAQUIL,6
 #-------------------------------
 [SILVER1,???,1]
 LoseText = ¿Feliz de haber ganado?
-Pokemon = TOTODILE,5
+Pokemon = TOTODILE,6
 #-------------------------------
 [SILVER1,???,2]
 LoseText = ¿Feliz de haber ganado?
-Pokemon = CHIKORITA,5
+Pokemon = CHIKORITA,6
 #-------------------------------
 [JOVEN,Chano]
 LoseText = Ya no me quedan más Pokémon...
@@ -17,78 +17,78 @@ Pokemon = RATTATA,7
 #-------------------------------
 [CHICA,Julia]
 LoseText = ¡Me dejas alucinada!
-Pokemon = BUDEW,6
-Pokemon = SENTRET,6
-Pokemon = SEEDOT,6
-Pokemon = CHERUBI,6
+Pokemon = BUDEW,7
+Pokemon = SENTRET,7
+Pokemon = SEEDOT,7
+Pokemon = CHERUBI,7
 #-------------------------------
 [FRIKI,Manu]
 LoseText = ¡Uff...!
-Pokemon = ZORUA,6
-Pokemon = ROCKRUFF,6
-Pokemon = ESPURR,6
+Pokemon = ZORUA,8
+Pokemon = ROCKRUFF,8
+Pokemon = ESPURR,8
 #-------------------------------
 [DONCELLA,Julia]
 LoseText = ¡Jo... menuda plaiza!
-Pokemon = CLEFAIRY,6
-Pokemon = JIGGLYPUFF,6
-Pokemon = SKITTY,6
+Pokemon = CLEFAIRY,9
+Pokemon = JIGGLYPUFF,9
+Pokemon = SKITTY,9
 #-------------------------------
 [BICHERO,Tomy]
 LoseText = ¡Maldita sea!
-Pokemon = SPINARAK,7
-Pokemon = LEDYBA,7
-Pokemon = SURSKIT,7
-Pokemon = NINCADA,7
+Pokemon = SPINARAK,10
+Pokemon = LEDYBA,10
+Pokemon = SURSKIT,10
+Pokemon = NINCADA,10
 #-------------------------------
 [SACERDOTISA,Tamara]
 LoseText = ¡Oh, estoy débil!
-Pokemon = SUNKERN,8
-Pokemon = GASTLY,8
-Pokemon = RALTS,8
-Pokemon = BELLSPROUT,8
+Pokemon = SUNKERN,11
+Pokemon = GASTLY,11
+Pokemon = RALTS,11
+Pokemon = BELLSPROUT,11
 #-------------------------------
 [SACERDOTISA,Sara]
 LoseText = Para ser un bonzo, no me llevaría ni el bronce.
-Pokemon = BELLSPROUT,9
-Pokemon = LOTAD,9
-Pokemon = CHARMANDER,9
+Pokemon = BELLSPROUT,11
+Pokemon = LOTAD,11
+Pokemon = CHARMANDER,11
 #-------------------------------
 [SACERDOTISA,Marta]
 LoseText = ¡Mi cerebro sí que es brillante!
-Pokemon = BELLSPROUT,12
+Pokemon = BELLSPROUT,13
 #-------------------------------
 [SENORA,Griselda]
 LoseText = Mmm... Pues está visto que sí que confías en tu equipo Pokémon.
-Pokemon = BELLSPROUT,10
-Pokemon = POLIWAG,10
-Pokemon = EXEGGCUTE,10
+Pokemon = BELLSPROUT,12
+Pokemon = POLIWAG,12
+Pokemon = EXEGGCUTE,12
 #-------------------------------
 [SENORA,Lucía]
 LoseText = ¡Gr-gracias!
-Pokemon = PSYDUCK,11
-Pokemon = NATU,11
-Pokemon = BULBASAUR,11
+Pokemon = PSYDUCK,12
+Pokemon = NATU,12
+Pokemon = BULBASAUR,12
 #-------------------------------
 [SENORA,Anna]
 LoseText = ¡Mi cerebro sí que es brillante!
-Pokemon = BELLSPROUT,11
-Pokemon = SUNKERN,11
-Pokemon = SQUIRTLE,11
+Pokemon = BELLSPROUT,13
+Pokemon = SUNKERN,13
+Pokemon = SQUIRTLE,13
 #-------------------------------
 [VIEJALES,Anselmo]
 LoseText = ¡Ah, excelente!
-Pokemon = BELLSPROUT,13
-Pokemon = HOOTHOOT,13
-Pokemon = ZIGZAGOON,13
+Pokemon = BELLSPROUT,14
+Pokemon = HOOTHOOT,14
+Pokemon = ZIGZAGOON,14
     Form = 1
-Pokemon = DWEBBLE,13
+Pokemon = DWEBBLE,14
 #-------------------------------
 [JOVEN,Abel]
 LoseText = ¡No puede ser cierto!
-Pokemon = SPEAROW,13
-Pokemon = PIDGEY,13
-Pokemon = DODUO,13
+Pokemon = SPEAROW,14
+Pokemon = PIDGEY,14
+Pokemon = DODUO,14
 #-------------------------------
 [JOVEN,Rony]
 LoseText = ¡Aaah!

@@ -166,7 +166,7 @@ PokeRadar,20
     30,SHELLOS,03,05
     10,NOIBAT,03,05
 #-------------------------------
-[031] # torre bellsprout
+[064] # torre bellsprout
 Cave,5
     40,BELLSPROUT,06,07
     20,HOOTHOOT,06,07
@@ -174,7 +174,7 @@ Cave,5
     10,MIMIKYU,06,07
     10,SCRAGGY,06,07
 #-------------------------------
-[033] # torre bellsprout 2
+[065] # torre bellsprout 2
 Cave,5
     40,BELLSPROUT,06,07
     20,HOOTHOOT,06,07
@@ -263,16 +263,16 @@ Land,21
     20,FURFROU,10,11
     20,SIZZLIPEDE,10,11
     10,SALANDIT,10,11
-    10,RHYDON,10,11
+    10,RHYHORN,10,11
 LandNight,21
     20,GRIMER,10,11
     20,GULPIN,10,11
     20,SUNKERN,10,11
     20,DARUMAKA,10,11
-    10,RHYDON,10,11
+    10,RHYHORN,10,11
     10,DUNSPARCE,10,11
 PokeRadar,20
     30,GRIMER_1,10,11
-    30,RHYDON,10,11
+    30,RHYHORN,10,11
     30,GRIMER,10,11
     10,GOOMY,10,11
