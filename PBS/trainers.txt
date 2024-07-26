@@ -99,48 +99,46 @@ Pokemon = ROOKIDEE,14
 #-------------------------------
 [PEGASO,Pegaso]
 LoseText = Ya veo... Ha llegado la hora de posarme en el suelo con dignidad.
+Items = SUPERPOTION
 Pokemon = SWABLU,15
     Moves = ROOST,SOLARBEAM,MIRRORMOVE,AERIALACE
     AbilityIndex = 1
     Item = POWERHERB
     Gender = male
-    IV = 31,31,31,31,31,31
+    IV = 20,20,20,20,20,20
 Pokemon = MURKROW,15
     Moves = ROOST,AERIALACE,HAZE,FEINTATTACK
     AbilityIndex = 1
-    Item = ORANBERRY
     Gender = male
-    IV = 31,31,31,31,31,31
+    IV = 20,20,20,20,20,20
 Pokemon = STARAVIA,15
     Moves = QUICKATTACK,AERIALACE,DOUBLETEAM,ROOST
     AbilityIndex = 0
-    Item = ORANBERRY
     Gender = male
-    IV = 31,31,31,31,31,31
+    IV = 20,20,20,20,20,20
 Pokemon = CHATOT,15
     Moves = ROOST,CHATTER,UPROAR,AGILITY
     AbilityIndex = 2
-    Item = ORANBERRY
     Gender = male
-    IV = 31,31,31,31,31,31
+    IV = 20,20,20,20,20,20
 Pokemon = GLIGAR,15
-    Moves = KNOCKOFF,ROOST,QUICKATTACK,AERIALACE
+    Moves = KNOCKOFF,GROWL,QUICKATTACK,AERIALACE
     AbilityIndex = 0
-    Item = ORANBERRY
     Gender = male
-    IV = 31,31,31,31,31,31
+    IV = 20,20,20,20,20,20
 Pokemon = PIDGEOTTO,16
     Moves = ROOST,AERIALACE,QUICKATTACK,MUDSLAP
     AbilityIndex = 2
     Item = ORANBERRY
     Gender = male
-    IV = 31,31,31,31,31,31
+    IV = 20,20,20,20,20,20
 #-------------------------------
 [CHICA2,Amanda]
 LoseText = Oh no, he perdido... ¡Eres muy fuerte!
 Pokemon = MAREEP,16
 Pokemon = STARAVIA,16
-Pokemon = FARFETCHD_1,16
+Pokemon = FARFETCHD,16
+    Form = 1
 #-------------------------------
 [RANGERM,Víctor]
 LoseText = Vaya, no esperaba perder... ¡Eres increíble!
@@ -149,7 +147,7 @@ Pokemon = MEOWTH_2,16
 #-------------------------------
 [MOCHILERO,Alex]
 LoseText = ¡Qué derrota! Tus Pokémon están muy bien entrenados.
-Pokemon = RHYDON,17
+Pokemon = RHYHORN,17
 Pokemon = MAGNEMITE,17
 #-------------------------------
 [MOCHILERA,Mar]
@@ -165,9 +163,9 @@ Pokemon = FLETCHINDER,18
 #-------------------------------
 [CRIADOR,Max]
 LoseText = ¡Ah, perdí! Parece que aún me falta práctica.
-Pokemon = QUAQUAVAL,18
-Pokemon = DIGLETT_1,18
-Pokemon = CYCLIZAR,18
+Pokemon = QUAXWELL,18
+Pokemon = DIGLETT,18
+    Form = 1
 #-------------------------------
 [BICHERO,Erik]
 LoseText = ¡Maldita sea!
@@ -227,6 +225,90 @@ Pokemon = COMBUSKEN,21
 Pokemon = ORICORIO,21
 Pokemon = SABLEYE,21
 #-------------------------------
-[MONTANERO,Víctor]
-LoseText = ¿Que ha pasado?
-Pokemon = RHYHORN,23
+[ROKETO,Soldado]
+LoseText = ¡Aaargh! ¡Hoy no es mi día!
+Pokemon = RATTATA,23
+        Form = 1
+Pokemon = ZUBAT,23
+Pokemon = EKANS,23
+#-------------------------------
+[ROKETA,Soldado]
+LoseText = ¡Maldita sea!
+Pokemon = ZORUA,23
+Pokemon = GRIMER,23
+        Form = 1
+Pokemon = GEODUDE,23
+        Form = 1
+#-------------------------------
+[ROKETO,Soldado,1]
+LoseText = Me regañarán por esto...
+Pokemon = CACNEA,24
+Pokemon = NIDORINA,24
+#-------------------------------
+[ROKETA,Soldado,1]
+LoseText = Solo ha sido mala suerte...
+Pokemon = MAGNEMITE,24
+Pokemon = NIDORINO,24
+#-------------------------------
+[ATENEA,Athenea]
+LoseText = Uf.. Es increíble de lo que son capaces estos renacuajos. 
+Pokemon = VOLTORB,25
+        Form = 1
+Pokemon = KOFFING,25
+        Form = 1
+Pokemon = GOLBAT,26
+Pokemon = PURUGLY,26
+#-------------------------------
+[BICHERO,Tomy]
+LoseText = ¡Maldita sea!
+Pokemon = BEEDRILL,26
+Pokemon = BEAUTIFLY,26
+Pokemon = SWADLOON,26
+#-------------------------------
+[BICHERO,Mike]
+LoseText = ¡Maldita sea!
+Pokemon = VOLBEAT,26
+Pokemon = ILLUMISE,26
+#-------------------------------
+[BICHERO,Víctor]
+LoseText = ¡Maldita sea!
+Pokemon = PINSIR,27
+#-------------------------------
+[BUGSI,Antón]
+LoseText = Ya veo... Ha llegado la hora de posarme en el suelo con dignidad.
+Items = HYPERPOTION
+Pokemon = BUTTERFREE,28
+    Moves = UTURN,RAINDANCE,CONFUSION,AIRCUTTER
+    AbilityIndex = 1
+    Item = DAMPROCK
+    Gender = male
+    IV = 20,20,20,20,20,20
+Pokemon = YANMEGA,28
+    Moves = UTURN,DETECT,AIRCUTTER,ANCIENTPOWER
+    AbilityIndex = 0
+    Gender = male
+    IV = 20,20,20,20,20,20
+Pokemon = BEEDRILL,28
+    Moves = UTURN,TWINEEDLE,SLUDGEBOMB,CUT
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    Gender = male
+    IV = 20,20,20,20,20,20
+Pokemon = HERACROSS,28
+    Moves = AERIALACE,COUNTER,BUGBITE,RAINDANCE
+    AbilityIndex = 3
+    Gender = male
+    Item = DAMPROCK
+    IV = 20,20,20,20,20,20
+Pokemon = VIKAVOLT,28
+    Moves = CHARGE,CHARGEBEAM,HIDDENPOWER,AIRSLASH
+    AbilityIndex = 0
+    Item = SITRUSBERRY
+    Gender = male
+    IV = 20,20,20,20,20,20
+Pokemon = SCYTHER,29
+    Moves = UTURN,QUICKATTACK,WINGATTACK,SWORDSDANCE
+    AbilityIndex = 1
+    Item = SITRUSBERRY
+    Gender = male
+    IV = 20,20,20,20,20,20

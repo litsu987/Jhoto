@@ -114,11 +114,11 @@ BattleBack = Field
 Name = torre bellsprout
 BattleBack = interior
 #-------------------------------
-[033]
+[033]   # Casa artesano de pokeballs
 Name = torre bellsprout 2
 BattleBack = interior
 #-------------------------------
-[034]
+[034]   # Casas
 Name = torre bellsprout 3
 BattleBack = interior
 #-------------------------------
@@ -126,7 +126,7 @@ BattleBack = interior
 Name = Escuela
 BattleBack = interior
 #-------------------------------
-[044]   # GYM
+[044]
 Name = GYM
 BattleBack = interior
 #-------------------------------
@@ -148,11 +148,15 @@ BattleBack = Templo
 #-------------------------------
 [049]   # Pozo Slowpoke
 Name = Ruinas Alfa
-BattleBack = Templo
+BattleBack = cave2
 #-------------------------------
 [051]   # Pozo Slowpoke 1
 Name = Ruinas Alfa
 BattleBack = Templo
+#-------------------------------
+[053]   # Gym Volador
+Name = Gym Volador
+BattleBack = Pegaso
 #-------------------------------
 [054]   # Cueva oscura 1
 Name = Cueva oscura 1
@@ -163,15 +167,25 @@ BattleBack = cave2
 Name = Cueva union
 BattleBack = cave2
 #-------------------------------
+[057]   # Cueva union 2
+Name = Cueva union 2
+BattleBack = cave2
+#-------------------------------
 [060]   # Ruinas
 Name = Ruinas
 BattleBack = templo
 #-------------------------------
+[063]   # Gym Bicho
+BattleBack = Anton
+#-------------------------------
 [064]   # Torre Bellsprout
+Name = Torre Bellsprout
 BattleBack = torreb
 #-------------------------------
 [065]   # Torre Bellsprout Piso 1
+Name = Torre Bellsprout Piso 1
 BattleBack = torreb
 #-------------------------------
 [066]   # Torre Bellsprout piso 2
+Name = Torre Bellsprout piso 2
 BattleBack = torreb

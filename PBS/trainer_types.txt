@@ -85,7 +85,7 @@ BattleBGM = TeainerBattleOst.ogg
 Name = Líder
 Gender = Male
 BaseMoney = 100
-IntroBGM = GymBattle.ogg
+IntroBGM = GymBattle2.ogg
 VictoryBGM = VictoryLeader.ogg
 BattleBGM = TeainerBattleOst.ogg
 #-------------------------------
@@ -175,4 +175,36 @@ Gender = Male
 BaseMoney = 60
 IntroBGM = Chico.ogg
 VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[ROKETO]
+Name = Recluta Rocket
+Gender = Male
+BaseMoney = 60
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = BattleRocket.ogg
+#-------------------------------
+[ROKETA]
+Name = Recluta Rocket
+Gender = Female
+BaseMoney = 60
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = BattleRocket.ogg
+#-------------------------------
+[ATENEA]
+Name = Ejecutiva Rocket
+Gender = Female
+BaseMoney = 100
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = BattlEjecutivo.ogg
+#-------------------------------
+[BUGSI]
+Name = Líder
+Gender = Male
+BaseMoney = 100
+IntroBGM = GymBattle2.ogg
+VictoryBGM = VictoryLeader.ogg
 BattleBGM = TeainerBattleOst.ogg

@@ -127,10 +127,11 @@ module ChallengeModes
     return true if $PokemonGlobal.challenge_encs[map_id]
     ChallengeModes::SPLIT_MAPS_FOR_ENCOUNTERS.each do |map_grp|
       next if !map_grp.include?(map_id)
-      return true if $PokemonGlobal.challenge_encs[m]
+      return true if map_grp.any? { |m| $PokemonGlobal.challenge_encs[m] }
     end
     return false
   end
+  
 
   #-----------------------------------------------------------------------------
 end

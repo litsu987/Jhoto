@@ -240,12 +240,21 @@ PokeRadar,20
 #-------------------------------
 [056] # Cueva Union
 Cave,5
-    20,ROGGENROLA,09,10
-    20,NACLI,09,10
-    20,MAKUHITA,09,10
-    20,WOOBAT,09,10
-    10,TORKOAL,09,10
-    10,ROCKRUFF,09,10
+    20,ROGGENROLA,10,12
+    20,NACLI,10,12
+    20,MAKUHITA,10,12
+    20,WOOBAT,10,12
+    10,TORKOAL,10,12
+    10,ROCKRUFF,10,12
+#-------------------------------
+[057] # Cueva Union
+Cave,5
+    20,ROGGENROLA,10,12
+    20,NACLI,10,12
+    20,MAKUHITA,10,12
+    20,WOOBAT,10,12
+    10,TORKOAL,10,12
+    10,ROCKRUFF,10,12
 #-------------------------------
 [054] # Cueva Oscura
 Cave,5
@@ -258,21 +267,21 @@ Cave,5
 #-------------------------------
 [009] # Ruta 33
 Land,21
-    20,GRIMER_1,10,11
-    20,SPRITZEE,10,11
-    20,FURFROU,10,11
-    20,SIZZLIPEDE,10,11
-    10,SALANDIT,10,11
-    10,RHYHORN,10,11
+    20,GRIMER_1,12,13
+    20,GROWLITHE_1,12,13
+    20,FURFROU,12,13
+    20,SIZZLIPEDE,12,13
+    10,SALANDIT,12,13
+    10,RHYHORN,12,13
 LandNight,21
-    20,GRIMER,10,11
-    20,GULPIN,10,11
-    20,SUNKERN,10,11
-    20,DARUMAKA,10,11
-    10,RHYHORN,10,11
-    10,DUNSPARCE,10,11
+    20,GRIMER,12,13
+    20,GULPIN,12,13
+    20,SUNKERN,12,13
+    20,DARUMAKA,12,13
+    10,RHYHORN,12,13
+    10,DUNSPARCE,12,13
 PokeRadar,20
-    30,GRIMER_1,10,11
-    30,RHYHORN,10,11
-    30,GRIMER,10,11
-    10,GOOMY,10,11
+    30,GRIMER_1,12,13
+    30,RHYHORN,12,13
+    30,GRIMER,12,13
+    10,GOOMY,12,13
