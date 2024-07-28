@@ -6819,3 +6819,11 @@ FieldUse = Direct
 Flags = KeyItem
 Description = Huevo Misterioso, deberia revisarlo el profesor Elm.
 #-------------------------------
+[TIJERAS]
+Name = Tijeras
+NamePlural = Tijeras
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Tijeras ultraresistentes que permiten cortar algunos arboles del camino.

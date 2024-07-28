@@ -126,8 +126,9 @@ BattleBack = interior
 Name = Escuela
 BattleBack = interior
 #-------------------------------
-[044]
+[044]   # Encinar
 Name = GYM
+SnapEdges = true
 BattleBack = interior
 #-------------------------------
 [045]   # Ruinas Alfa
@@ -176,6 +177,7 @@ Name = Ruinas
 BattleBack = templo
 #-------------------------------
 [063]   # Gym Bicho
+Name = Gym Bicho
 BattleBack = Anton
 #-------------------------------
 [064]   # Torre Bellsprout

@@ -312,3 +312,27 @@ Pokemon = SCYTHER,29
     Item = SITRUSBERRY
     Gender = male
     IV = 20,20,20,20,20,20
+#-------------------------------
+[SILVER1,Silver]
+LoseText = ¡Maldita sea!
+Pokemon = STARAVIA,30
+Pokemon = ELECTABUZZ,29
+Pokemon = UMBREON,29
+Pokemon = KADABRA,29
+Pokemon = QUILAVA,29
+#-------------------------------
+[SILVER1,Silver,1]
+LoseText = ¡Maldita sea!
+Pokemon = STARAVIA,30
+Pokemon = ELECTABUZZ,29
+Pokemon = UMBREON,29
+Pokemon = KADABRA,29
+Pokemon = CROCONAW,29
+#-------------------------------
+[SILVER1,Silver,2]
+LoseText = ¡Maldita sea!
+Pokemon = STARAVIA,30
+Pokemon = ELECTABUZZ,29
+Pokemon = UMBREON,29
+Pokemon = KADABRA,29
+Pokemon = BAYLEEF,29

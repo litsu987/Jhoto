@@ -13,7 +13,7 @@ BaseMoney = 60
 [SILVER1]
 Name = Transeunte
 Gender = Male
-BaseMoney = 60
+BaseMoney = 100
 BattleBGM = VsSilver.ogg
 VictoryBGM = TrainerVictory.ogg
 #-------------------------------
