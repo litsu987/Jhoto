@@ -125,11 +125,6 @@ Water,2
     40,POLIWAG,15,16
 OldRod
     100,STARYU,05,07
-PokeRadar,20
-    30,DEWPIDER,03,05
-    30,VULPIX,03,05
-    30,SHELLOS,03,05
-    10,NOIBAT,03,05
 #-------------------------------
 [064] # torre bellsprout
 Cave,5
@@ -245,3 +240,73 @@ Land,21
     10,RHYHORN,12,13
     10,DUNSPARCE,12,13
     10,GOOMY,12,13
+#-------------------------------
+[044] # Encinar
+Land,21
+    10,PINECO,15,16
+    10,SPEWPA,15,16
+    10,RELLOR,15,16
+    10,TAROUNTULA,15,16
+    10,PINSIR,15,16
+    10,ILLUMISE,15,16
+    10,VOLBEAT,15,16
+    10,SHROOMISH,15,16
+    10,BURMY,15,16
+    10,KRICKETOT,15,16
+    10,SCYTHER,15,16
+    10,HERACROSS,15,16
+Water,2
+    60,QWILFISH,14,19
+    40,MARILL,15,16
+OldRod
+    100,PALPITOAD,15,16
+#-------------------------------
+[010] # Pueblo Azalea
+Land,21
+    10,DODUO,14,15
+    10,YANMA,14,15
+    10,MURKROW,14,15
+    10,DRIFLOON,14,15
+    10,RUFFLET,14,15
+    10,LICKITUNG,14,15
+    10,SKITTY,14,15
+    10,TANDEMAUS,14,15
+    10,KOMALA,14,15
+    10,GLAMEOW,14,15
+    10,PANSEAR,14,15
+    10,PONYTA,14,15
+#-------------------------------
+[011] # Ruta 34
+Land,21
+    10,BLITZLE,17,18
+    10,MORPEKO,17,18
+    10,TOGEPI,17,18
+    10,FLOETTE,17,18
+    10,MIENFOO,17,18
+    10,SNEASEL_1,17,18
+    10,FLAMIGO,17,18
+    10,MUDBRAY,17,18
+    10,ELGYEM,17,18
+    10,PONYTA_1,17,18
+    10,NIDORANfE,17,18
+    10,NIDORANmA,17,18
+Water,2
+    60,TENTACOOL,14,19
+    40,BUIZEL,15,16
+OldRod
+    100,SHELLDER,15,16
+#-------------------------------
+[012] # Ciudad Trigal
+Land,21
+    10,STUNFISK,17,18
+    10,CRABRAWLER,17,18
+    10,STUNFISK_1,17,18
+    10,CROAGUNK,17,18
+    10,WOOPER_1,17,18
+    10,STUNKY,17,18
+    10,MEOWTH_2,17,18
+    10,CUFANT,17,18
+    10,BRONZOR,17,18
+    10,SANDSHREW,17,18
+    10,TOEDSCOOL,17,18
+    10,JANGMOO,17,18

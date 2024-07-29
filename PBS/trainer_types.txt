@@ -137,6 +137,14 @@ IntroBGM = Chica.ogg
 VictoryBGM = TrainerVictory.ogg
 BattleBGM = TeainerBattleOst.ogg
 #-------------------------------
+[CAMPERO]
+Name = Campero
+Gender = Male
+BaseMoney = 60
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
 [CRIADOR]
 Name = Criador
 Gender = Male

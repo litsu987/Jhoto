@@ -129,7 +129,7 @@ BattleBack = interior
 [044]   # Encinar
 Name = GYM
 SnapEdges = true
-BattleBack = interior
+BattleBack = bosque
 #-------------------------------
 [045]   # Ruinas Alfa
 Name = Ruinas Alfa

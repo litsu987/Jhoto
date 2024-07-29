@@ -336,3 +336,46 @@ Pokemon = ELECTABUZZ,29
 Pokemon = UMBREON,29
 Pokemon = KADABRA,29
 Pokemon = BAYLEEF,29
+#-------------------------------
+[JOVEN,Samuel]
+LoseText = Ya no me quedan más Pokémon...
+Pokemon = RATICATE,29
+Pokemon = STARAVIA,29
+Pokemon = ZEBSTRIKA,29
+#-------------------------------
+[CAMPERA,Nicolasa]
+LoseText = ¡Menuda derrota! No me esperaba perder así.
+Pokemon = PONYTA,30
+    Form = 1
+Pokemon = GRANBULL,30
+#-------------------------------
+[JOVEN,Irvin]
+LoseText = ¡No! Hay mejores Entrenadores...
+Pokemon = ARCANINE,30
+    Form = 1
+Pokemon = MUDSDALE,30
+#-------------------------------
+[CAMPERO,Gorka]
+LoseText = ¿He fallado en mi entrenamiento?
+Pokemon = FLOATZEL,31
+#-------------------------------
+[FRIKI,Marc]
+LoseText = ¡He perdido! ¡Increíble!
+Pokemon = SHELLDER,31
+Pokemon = CLOYSTER,31
+#-------------------------------
+[MOCHILERO,Arnau]
+LoseText = ¡No! Cuando crees que eres bueno, siempre aparece alguien mejor...
+Pokemon = FEAROW,31
+Pokemon = ONIX,31
+Pokemon = GEODUDE_1,31
+#-------------------------------
+[MOCHILERA,Sky]
+LoseText = ¡Oh, no! ¿Por qué no puedo ganar?
+Pokemon = RHYDON,32
+Pokemon = BOLDORE,32
+#-------------------------------
+[MONTANERO,Orestes]
+LoseText = ¡Oooh! ¡Demasiado fuerte!
+Pokemon = GLISCOR,32
+Pokemon = DURALUDON,32
