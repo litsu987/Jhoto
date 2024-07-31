@@ -85,13 +85,16 @@ module FollowingPkmn
     event = FollowingPkmn.get_event
     pbTurnTowardEvent(event, $game_player)
     first_pkmn = FollowingPkmn.get_pokemon
-    first_pkmn&.play_cry
-    random_val = rand(6)
-    if $PokemonGlobal&.follower_hold_item
-      EventHandlers.trigger_2(:following_pkmn_item, first_pkmn, random_val)
-    else
-      EventHandlers.trigger_2(:following_pkmn_talk, first_pkmn, random_val)
+    if !$game_switches[937] # Verifica si el switch 800 está activado
+      first_pkmn&.play_cry
+      random_val = rand(6)
+      if $PokemonGlobal&.follower_hold_item
+        EventHandlers.trigger_2(:following_pkmn_item, first_pkmn, random_val)
+      else
+        EventHandlers.trigger_2(:following_pkmn_talk, first_pkmn, random_val)
+      end
     end
+    
     pbTurnTowardEvent(event, $game_player)
     return true
   end

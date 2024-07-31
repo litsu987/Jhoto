@@ -53,7 +53,7 @@ module FollowingPkmn
 
   # Elige si el Pokémon que te sigue puede encontrarse o no objetos al caminar
   # contigo.
-  CAN_FIND_ITEMS = true
+  CAN_FIND_ITEMS = false
 
   # Tiempo necesario para que el Pokémon que te sigue encuentre un objeto 
   # cuando está primero en el grupo (en segundos). Si la opción anterior está

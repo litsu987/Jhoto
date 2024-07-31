@@ -216,3 +216,46 @@ BaseMoney = 100
 IntroBGM = GymBattle2.ogg
 VictoryBGM = VictoryLeader.ogg
 BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[Medium2]
+Name = Medium
+Gender = Female
+BaseMoney = 60
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[Camper2]
+Name = Campero
+Gender = Male
+BaseMoney = 46
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[GYMVolador]
+Name = Entrenador
+Gender = Male
+BaseMoney = 48
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[Cazabichos2]
+Name = Entrenador
+Gender = Female
+BaseMoney = 48
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[Chica8]
+Name = Entrenadora
+Gender = Female
+BaseMoney = 48
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[LEADER_BLANCA]
+Name = Líder
+Gender = Female
+BaseMoney = 100
+IntroBGM = GymBattle2.ogg
+VictoryBGM = VictoryLeader.ogg
+BattleBGM = TeainerBattleOst.ogg

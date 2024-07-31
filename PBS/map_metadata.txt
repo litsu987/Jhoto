@@ -66,11 +66,13 @@ ShowArea = true
 Name = Ciudad Trigal
 Outdoor = true
 ShowArea = true
+BattleBack = city
 #-------------------------------
 [013]   # Ruta 35
 Name = Ruta 35
 Outdoor = true
 ShowArea = true
+BattleBack = Field
 #-------------------------------
 [014]   # Ruta 36
 Name = Ruta 36
@@ -191,3 +193,6 @@ BattleBack = torreb
 [066]   # Torre Bellsprout piso 2
 Name = Torre Bellsprout piso 2
 BattleBack = torreb
+#-------------------------------
+[068]   # Gym Blanca
+BattleBack = blanca

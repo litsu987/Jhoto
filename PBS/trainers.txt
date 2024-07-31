@@ -379,3 +379,94 @@ Pokemon = BOLDORE,32
 LoseText = ¡Oooh! ¡Demasiado fuerte!
 Pokemon = GLISCOR,32
 Pokemon = DURALUDON,32
+#-------------------------------
+[Medium2,Candy]
+LoseText = ¡Huy!
+Pokemon = MEDITITE,34
+Pokemon = KIRLIA,34
+#-------------------------------
+[CAMPERA,Tris]
+LoseText = ¡Me rindo!
+Pokemon = IVYSAUR,33
+Pokemon = DEWOTT,33
+#-------------------------------
+[GYMVolador,Rafi]
+LoseText = Vaya! ¡Me ha faltado rapidez!
+Pokemon = PELIPPER,33
+Pokemon = PIDGEOTTO,33
+#-------------------------------
+[BICHERO,Norman]
+LoseText = Puedo derrotarte, pero...
+Pokemon = LEDIAN,33
+Pokemon = BUTTERFREE,33
+#-------------------------------
+[BICHERO,Aitor]
+LoseText = ...
+Pokemon = ILLUMISE,33
+Pokemon = VOLBEAT,33
+#-------------------------------
+[LUCHADOR,Jun]
+LoseText = ¡Guaaau! ¡Vaya sacudida!
+Pokemon = SAWK,35
+Pokemon = THROH,35
+#-------------------------------
+[Cazabichos2,Belén]
+LoseText = ...
+Pokemon = BEEDRILL,34
+Pokemon = ARIADOS,34
+Pokemon = RIBOMBEE,34
+#-------------------------------
+[Chica8,Heloise]
+LoseText = Veamos... ¡Uf! ¿Ya está?
+Pokemon = GRANBULL,35
+Pokemon = FURRET,35
+#-------------------------------
+[Chica8,Marise]
+LoseText = ¡Oh, no, no, no!
+Pokemon = TOUCANNON,35
+#-------------------------------
+[Chica8,Annelise]
+LoseText = ¡No! ¡Oh, MEOWTH, lo siento mucho!
+Pokemon = PERSIAN,35
+Pokemon = DUBWOOL,35
+#-------------------------------
+[Chica8,Dennise]
+LoseText = ¡Vaya! Pensaba que eras más débil...
+Pokemon = WIGGLYTUFF,36
+Pokemon = HELIOPTILE,36
+#-------------------------------
+[LEADER_BLANCA,Blanca]
+Items = HYPERPOTION
+LoseText = ¡Ayy...! ¡Uaaaaaaa! ¡Qué mal! ¡No deberías ser así! ¡Si, tú! ¡Te lo digo a ti!
+Pokemon = ARBOLIVA,37
+    AbilityIndex = 0
+    Gender = Female
+    Moves = STRENGTHSAP,LEECHSEED,GIGADRAIN,DAZZLINGGLEAM
+    IV = 20,20,20,20,20,20
+Pokemon = WIGGLYTUFF,37
+    Gender = Female
+    Item = SITRUSBERRY
+    AbilityIndex = 0
+    Moves = HYPERVOICE,ICEBEAM,WISH,PSYCHIC
+    IV = 20,20,20,20,20,20
+Pokemon = LICKILICKY,37
+    AbilityIndex = 1
+    Gender = Female
+    Moves = POWERWHIP,BODYSLAM,DISABLE,ATTRACT
+    IV = 20,20,20,20,20,20
+Pokemon = TOUCANNON,37
+    AbilityIndex = 0
+    Gender = Female
+    Moves = BEAKBLAST,BULLETSEED,UTURN,ROCKBLAST
+    IV = 20,20,20,20,20,20
+Pokemon = WYRDEER,37
+    AbilityIndex = 0
+    Gender = Female
+    Moves = TRAILBLAZE,BODYSLAM,AGILITY,STOREDPOWER
+    IV = 20,20,20,20,20,20
+Pokemon = MILTANK,38
+    AbilityIndex = 1
+    Gender = Female
+    Item = LUMBERRY
+    Moves = MILKDRINK,BODYSLAM,ROLLOUT,ATTRACT
+    IV = 20,20,20,20,20,20
