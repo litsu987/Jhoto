@@ -1,19 +1,11 @@
-#==============================================================================#
-# SETTINGS DEL FOLLOW POKEMON                                                  #
-#                                                                              #
-# Aquí tienes toda la configuración personalizable del script de que te sigan  #
-# los Pokémon.                                                                 #
-#==============================================================================#
-
 module FollowingPkmn
-  # Evento común que contiene "FollowingPkmn.talk" en un comando de script
-  # Cambia esto si deseas un evento común separado que se reproduzca al hablar con
-  # el Pokémon que te sigue. De lo contrario, establece esto como nil.
-  FOLLOWER_COMMON_EVENT     = nil 
+  # Common event that contains "FollowingPkmn.talk" in  a script command
+  # Change this if you want a separate common event to play when talking to
+  # Following Pokemon. Otherwise, set this to nil.
+  FOLLOWER_COMMON_EVENT     = nil
 
-  # IDs de animación del pokémon que te sigue.
-  # Cambia esto si no estás utilizando las animaciones Animations.rxdata
-  # proporcionadas en el script.
+  # Animation IDs from followers
+  # Change this if you are not using the Animations.rxdata provided in the script.
   ANIMATION_COME_OUT        = 30
   ANIMATION_COME_IN         = 29
 
@@ -24,65 +16,54 @@ module FollowingPkmn
   ANIMATION_EMOTE_ANGRY     = 15
   ANIMATION_EMOTE_POISON    = 17
 
-  # La tecla que el jugador debe presionar para alternar los Pokémon que te siguen. Establece esto como nil (nulo)
-  # si deseas deshabilitar esta función. (:JUMPUP es la tecla A por defecto)
+  # The key the player needs to press to toggle followers. Set this to nil if
+  # you want to disable this feature. (:JUMPUP is the A key by default)
   TOGGLE_FOLLOWER_KEY       = :JUMPUP
 
-  # Mostrar la opción para alternar los Pokémon que te siguen en la pantalla de Opciones.
+  # Show the option to toggle Following Pokemon in the Options screen.
   SHOW_TOGGLE_IN_OPTIONS    = true
 
-  # La tecla que el jugador debe presionar para recorrer rápidamente su grupo de Pokémon. Establece esto como nil (nulo)
-  # si deseas deshabilitar esta función.
+  # The key the player needs to press to quickly cycle through their party. Set
+  # this to nil if you want to disable this feature
   CYCLE_PARTY_KEY           = nil
 
-  # Tonos de estado a utilizar, si esto es verdadero (Rojo, Verde, Azul)
+  # Status tones to be used, if this is true (Red, Green, Blue)
   APPLY_STATUS_TONES        = true
   TONE_BURN                 = [206, 73, 43]
   TONE_POISON               = [109, 55, 130]
   TONE_PARALYSIS            = [204, 152, 44]
   TONE_FROZEN               = [56, 160, 193]
   TONE_SLEEP                = [0, 0, 0]
-  # Para tus condiciones de estado personalizadas, simplemente agrégalo como 
-  # "TONE_(NOMBRE INTERNO)"
-  # Ejemplo: TONE_SANGRADO, TONE_CONFUSIÓN, TONE_ENAMORAMIENTO
+  # For your custom status conditions, just add it as "TONE_(INTERNAL NAME)"
+  # Example: TONE_BLEED, TONE_CONFUSE, TONE_INFATUATION
 
-
-  # Tiempo necesario para que la amistad del Pokémon que te sigue aumente cuando
-  # está primero en el grupo (en segundos)
+  # Time Taken for Follower to increase Friendship when first in party (in seconds)
   FRIENDSHIP_TIME_TAKEN     = 125
 
-  # Elige si el Pokémon que te sigue puede encontrarse o no objetos al caminar
-  # contigo.
-  CAN_FIND_ITEMS = false
-
-  # Tiempo necesario para que el Pokémon que te sigue encuentre un objeto 
-  # cuando está primero en el grupo (en segundos). Si la opción anterior está
-  # en false, nunca encontrará nada.
+  # Time Taken for Follower to find an item when first in party (in seconds)
   ITEM_TIME_TAKEN           = 375
 
-  # Si el Pokémon que te sigue siempre permanece en su ciclo de movimientos 
-  # (como en HGSS) o no.
+  # Whether the Follower always stays in its move cycle (like HGSS) or not.
   ALWAYS_ANIMATE            = true
 
-  # Si el Pokémon que te sigue siempre mira hacia el jugador o no, como en HGSS.
+  # Whether the Follower always faces the player, or not like in HGSS.
   ALWAYS_FACE_PLAYER        = false
 
-  # Si otros eventos pueden atravesar al Pokémon que te sigue o no.
+  # Whether other events can walk through Follower or no
   IMPASSABLE_FOLLOWER       = false
 
-  # Si el Pokémon que te sigue se desliza en la batalla en lugar de ser enviado
-  # en una Pokébola. (Esto no afecta a EBDX, lee la documentación de EBDX para
-  # cambiar esta característica en EBDX)
+  # Whether Following Pokemon slides into battle instead of being sent
+  # in a Pokeball. (This doesn't affect EBDX, read the EBDX documentation to
+  # change this feature in EBDX)
   SLIDE_INTO_BATTLE         = true
 
-  # Mostrar la animación de apertura y cierre de la Pokébola cuando la Enfermera
-  # Joy toma tus Poké Balls en el Centro Pokémon.
+  # Show the Ball Opening and Closing animation when Nurse Joy takes your
+  # Pokeballs at the Pokecenter.
   SHOW_POKECENTER_ANIMATION = true
 
-  # Lista de Pokémon clasificados como Pokémon que levitan, y que siempre 
-  # aparecerán detrás del jugador al surfear.
-  # No incluye ningún tipo volador o agua, ya que esos están gestionados de 
-  # antemano.
+  # List of Pokemon that are classifed as "Levitating" and will always appear
+  # behind the player when surfing.
+  # Doesn't include any flying or water types because those are handled already
   LEVITATING_FOLLOWERS = [
     # Gen 1
     :BEEDRILL, :VENOMOTH, :ABRA, :GEODUDE, :MAGNEMITE, :GASTLY, :HAUNTER,
@@ -112,9 +93,9 @@ module FollowingPkmn
     :DRAGAPULT, :ETERNATUS, :REGIELEKI, :REGIDRAGO, :CALYREX
   ]
 
-  # Lista de Pokémon que no aparecerán detrás del jugador al surfear,
-  # independientemente de si son de tipo volador, tienen levitación o están
-  # mencionados en el array LEVITATING_FOLLOWERS.
+  # List of Pokemon that will not appear behind the player when surfing,
+  # regardless of whether they are flying type, have levitate or are mentioned
+  # in the LEVITATING_FOLLOWERS array.
   SURFING_FOLLOWERS_EXCEPTIONS = [
     # Gen I
     :CHARIZARD, :PIDGEY, :SPEAROW, :FARFETCHD, :DODUO, :DODRIO, :SCYTHER,

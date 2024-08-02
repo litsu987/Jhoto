@@ -1,14 +1,18 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [POKEMONTRAINER_Red]
-Name = Entrenador Pokémon
+Name = Rival
 Gender = Male
 BaseMoney = 60
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = KrisOst.ogg
 #-------------------------------
 [POKEMONTRAINER_Leaf]
-Name = Entrenador Pokémon
+Name = Rival
 Gender = Female
 BaseMoney = 60
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = KrisOst.ogg
 #-------------------------------
 [SILVER1]
 Name = Transeunte

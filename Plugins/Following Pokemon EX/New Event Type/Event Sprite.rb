@@ -9,7 +9,7 @@ end
 # Add Reflections to Following Pokemon sprite
 #-------------------------------------------------------------------------------
 class Sprite_Character
-  def set_reflection(viewport)
+  def set_reflection(viewport, event)
     @reflection = Sprite_Reflection.new(self, viewport) if !@reflection
   end
 end
@@ -35,14 +35,14 @@ class FollowerSprites
   def refresh(*args)
     ret = __followingpkmn__refresh(*args)
     return ret if !FollowingPkmn.can_check?
-    # event = FollowingPkmn.get_event
+    event = FollowingPkmn.get_event
     @sprites.each do |spr|
       next if !FollowingPkmn.get_data&.following_pkmn?
-      spr.set_reflection(@viewport)
+      spr.set_reflection(@viewport, event)
     end
     data = FollowingPkmn.get_data
     $map_factory.maps.each { |map|
-      map&.events[data.event_id]&.erase if data && data.original_map_id == data.current_map_id
+      map&.events&.[](data.event_id)&.erase if data && data.original_map_id == data.current_map_id
     }
     FollowingPkmn.refresh(false)
   end

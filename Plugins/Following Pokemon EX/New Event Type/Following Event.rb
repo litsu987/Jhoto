@@ -26,22 +26,16 @@ class Game_FollowingPkmn < Game_Follower
   #-----------------------------------------------------------------------------
   def update_pattern
     return if @lock_pattern
-      #return if @jumping_on_spot   # Don't animate if jumping on the spot
-    # Character has stopped moving, return to original pattern
     if @moved_last_frame && !@moved_this_frame && !@step_anime
       @pattern = @original_pattern
       @anime_count = 0
       return
     end
-    # Character has started to move, change pattern immediately
     if !@moved_last_frame && @moved_this_frame && !@step_anime
       @pattern = (@pattern + 1) % 4 if @walk_anime
       @anime_count = 0
       return
     end
-    # Calculate how many frames each pattern should display for, i.e. the time
-    # it takes to move half a tile (or a whole tile if cycling). We assume the
-    # game uses square tiles.
     pattern_time = pattern_update_speed / 4   # 4 frames per cycle in a charset
     return if @anime_count < pattern_time
     # Advance to the next animation frame
@@ -129,12 +123,13 @@ class Game_FollowingPkmn < Game_Follower
     return if FollowingPkmn.active? && !FollowingPkmn::ALWAYS_FACE_PLAYER
     pbTurnTowardEvent(self, leader)
   end
-  #-----------------------------------------------------------------------------
+    #-----------------------------------------------------------------------------
   # Updating the method which controls event position to includes changes to
   # work with Marin and Boonzeets side stairs
   #-----------------------------------------------------------------------------
   def follow_leader(leader, instant = false, leaderIsTrueLeader = true)
 	return if @move_route_forcing
+    end_movement
     maps_connected = $map_factory.areConnected?(leader.map.map_id, self.map.map_id)
     target = nil
     # Get the target tile that self wants to move to
@@ -226,7 +221,7 @@ class FollowerData
     if !@common_event_id
       event = args[0]
       $game_map.refresh if $game_map.need_refresh
-      event.lock
+	  event.lock
       FollowingPkmn.talk
       event.unlock
     elsif FollowingPkmn.can_talk?

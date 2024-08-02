@@ -276,6 +276,59 @@ Land,21
     10,PANSEAR,14,15
     10,PONYTA,14,15
 #-------------------------------
+[049] # Pozo Slowpoke
+Cave,21
+    10,PSYDUCK,14,15
+    10,SLOWPOKE,14,15
+    10,SLOWPOKE_1,14,15
+    10,WOOPER,14,15
+    10,TYMPOLE,14,15
+    10,ZUBAT,14,15
+    10,GEODUDE_1,14,15
+    10,GEODUDE,14,15
+    10,DIGLETT,14,15
+    10,DIGLETT_1,14,15
+    10,BALTOY,14,15
+    10,WOOBAT,14,15
+#-------------------------------
+[051] # Pozo Slowpoke
+Cave,21
+    10,PSYDUCK,14,15
+    10,SLOWPOKE,14,15
+    10,SLOWPOKE_1,14,15
+    10,WOOPER,14,15
+    10,TYMPOLE,14,15
+    10,ZUBAT,14,15
+    10,GEODUDE_1,14,15
+    10,GEODUDE,14,15
+    10,DIGLETT,14,15
+    10,DIGLETT_1,14,15
+    10,BALTOY,14,15
+    10,WOOBAT,14,15
+Water,2
+    100,GOLBAT,30,32
+OldRod
+    100,FEEBAS,15,16
+#-------------------------------
+[062] # Pozo Slowpoke
+Cave,21
+    10,PSYDUCK,14,15
+    10,SLOWPOKE,14,15
+    10,SLOWPOKE_1,14,15
+    10,WOOPER,14,15
+    10,TYMPOLE,14,15
+    10,ZUBAT,14,15
+    10,GEODUDE_1,14,15
+    10,GEODUDE,14,15
+    10,DIGLETT,14,15
+    10,DIGLETT_1,14,15
+    10,BALTOY,14,15
+    10,WOOBAT,14,15
+Water,2
+    100,GOLBAT,30,32
+OldRod
+    100,FEEBAS,15,16
+#-------------------------------
 [011] # Ruta 34
 Land,21
     10,BLITZLE,17,18
@@ -310,3 +363,58 @@ Land,21
     10,SANDSHREW,17,18
     10,TOEDSCOOL,17,18
     10,JANGMOO,17,18
+#-------------------------------
+[013] # Ruta 35
+Land,21
+    10,AIPOM,19,20
+    10,WHISMUR,19,20
+    10,LILLIPUP,19,20
+    10,AUDINO,19,20
+    10,TOGEDEMARU,19,20
+    10,GLIGAR,19,20
+    10,PAWNIARD,19,20
+    10,SKORUPI,19,20
+    10,FALINKS,19,20
+    10,GOLETT,19,20
+    10,DROWZEE,19,20
+    10,DREEPY,19,20
+Water,2
+    60,DEWPIDER,19,20
+    40,CORSOLA,19,20
+OldRod
+    100,BASCULIN,19,20
+#-------------------------------
+[082] # Parque Nacional
+Land,21
+    10,COMBEE,19,20
+    10,DURANT,19,20
+    10,SEWADDLE,19,20
+    10,NINCADA,19,20
+    10,LEDYBA,19,20
+    10,PARAS,19,20
+    10,KARRABLAST,19,20
+    10,SHUCKLE,19,20
+    10,YANMA,19,20
+    10,RELLOR,19,20
+    10,HERACROSS,19,20
+    10,SCYTHER,19,20
+Water,2
+    60,DEWPIDER,19,20
+    40,SURSKIT,19,20
+OldRod
+    100,WIMPOD,19,20
+#-------------------------------
+[014] # Ruta 36
+Land,21
+    10,SLUGMA,19,20
+    10,INKAY,19,20
+    10,DEERLING,19,20
+    10,MARILL,19,20
+    10,BINACLE,19,20
+    10,GLIMMET,19,20
+    10,RHYHORN,19,20
+    10,MAGNEMITE,19,20
+    10,FERROSEED,19,20
+    10,TINKATINK,19,20
+    10,FIDOUGH,19,20
+    10,COTTONEE,19,20

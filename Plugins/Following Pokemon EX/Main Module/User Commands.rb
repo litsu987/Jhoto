@@ -14,10 +14,8 @@ module FollowingPkmn
       event.moveto(target[1], target[2])
     end
     $game_temp.followers.remove_follower_by_name("FollowerPkmn")
-    $game_temp.followers.remove_follower_by_name("FollowingPkmn") if FollowingPkmn.get_event
-    $game_temp.followers.add_follower(event, "FollowingPkmn")
-    FollowingPkmn.move_route([PBMoveRoute::OPACITY, 0])
-
+    $game_temp.followers.remove_follower_by_name("FollowingPkmn") if FollowingPkmn.get
+    $game_temp.followers.add_follower(event, "FollowingPkmn", FollowingPkmn::FOLLOWER_COMMON_EVENT)
     $PokemonGlobal.follower_toggled = true
     event = FollowingPkmn.get_event
     $game_temp.followers.each_follower do |event, follower|
@@ -28,11 +26,7 @@ module FollowingPkmn
       leader = event
     end
     FollowingPkmn.refresh(anim)
-    pbWait(0.5)
-    FollowingPkmn.move_route([PBMoveRoute::OPACITY, 255])
   end
-
-
   #-----------------------------------------------------------------------------
   # Script Command to remove the event following the player as a Following
   # Pokemon
@@ -57,10 +51,7 @@ module FollowingPkmn
     end
     anim_2 = FollowingPkmn.active?
     anim = anim_1 != anim_2 if anim.nil?
-    FollowingPkmn.move_route([PBMoveRoute::OPACITY, 0])
     FollowingPkmn.refresh(anim)
-    pbWait(0.5)
-    FollowingPkmn.move_route([PBMoveRoute::OPACITY, 255])
     $game_temp.followers.move_followers
     $game_temp.followers.turn_followers
   end
@@ -85,16 +76,13 @@ module FollowingPkmn
     event = FollowingPkmn.get_event
     pbTurnTowardEvent(event, $game_player)
     first_pkmn = FollowingPkmn.get_pokemon
-    if !$game_switches[937] # Verifica si el switch 800 está activado
-      first_pkmn&.play_cry
-      random_val = rand(6)
-      if $PokemonGlobal&.follower_hold_item
-        EventHandlers.trigger_2(:following_pkmn_item, first_pkmn, random_val)
-      else
-        EventHandlers.trigger_2(:following_pkmn_talk, first_pkmn, random_val)
-      end
+    first_pkmn&.play_cry
+    random_val = rand(6)
+    if $PokemonGlobal&.follower_hold_item
+      EventHandlers.trigger_2(:following_pkmn_item, first_pkmn, random_val)
+    else
+      EventHandlers.trigger_2(:following_pkmn_talk, first_pkmn, random_val)
     end
-    
     pbTurnTowardEvent(event, $game_player)
     return true
   end

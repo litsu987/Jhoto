@@ -197,7 +197,7 @@ LoseText = Vaya...
 Pokemon = STARLY,10
 Pokemon = GEODUDE_1,10
 #-------------------------------
-[MOCHILERO,Arnau]
+[MOCHILERO,Pedro]
 LoseText = ¡No puede ser! ¡Perdí!
 Pokemon = MACHOP,20
 Pokemon = GEODUDE_1,20
@@ -211,8 +211,8 @@ Pokemon = NOSEPASS,20
 #-------------------------------
 [MONTANERO,Fer]
 LoseText = No he podido seguirte el ritmo...
-Pokemon = ROGGENROLA,22
-Pokemon = WOOBAT,22
+Pokemon = ROGGENROLA,21
+Pokemon = WOOBAT,21
 #-------------------------------
 [LUCHADOR,Lucas]
 LoseText = ¡vaya que fuerte!
@@ -227,52 +227,52 @@ Pokemon = SABLEYE,21
 #-------------------------------
 [ROKETO,Soldado]
 LoseText = ¡Aaargh! ¡Hoy no es mi día!
-Pokemon = RATTATA,23
+Pokemon = RATTATA,22
         Form = 1
-Pokemon = ZUBAT,23
-Pokemon = EKANS,23
+Pokemon = ZUBAT,22
+Pokemon = EKANS,22
 #-------------------------------
 [ROKETA,Soldado]
 LoseText = ¡Maldita sea!
-Pokemon = ZORUA,23
-Pokemon = GRIMER,23
+Pokemon = ZORUA,22
+Pokemon = GRIMER,22
         Form = 1
-Pokemon = GEODUDE,23
+Pokemon = GEODUDE,22
         Form = 1
 #-------------------------------
 [ROKETO,Soldado,1]
 LoseText = Me regañarán por esto...
-Pokemon = CACNEA,24
-Pokemon = NIDORINA,24
+Pokemon = CACNEA,23
+Pokemon = NIDORINA,23
 #-------------------------------
 [ROKETA,Soldado,1]
 LoseText = Solo ha sido mala suerte...
-Pokemon = MAGNEMITE,24
-Pokemon = NIDORINO,24
+Pokemon = MAGNEMITE,23
+Pokemon = NIDORINO,23
 #-------------------------------
 [ATENEA,Athenea]
 LoseText = Uf.. Es increíble de lo que son capaces estos renacuajos. 
-Pokemon = VOLTORB,25
+Pokemon = VOLTORB,24
         Form = 1
-Pokemon = KOFFING,25
+Pokemon = KOFFING,24
         Form = 1
-Pokemon = GOLBAT,26
-Pokemon = PURUGLY,26
+Pokemon = GOLBAT,24
+Pokemon = PURUGLY,24
 #-------------------------------
 [BICHERO,Tomy]
 LoseText = ¡Maldita sea!
-Pokemon = BEEDRILL,26
-Pokemon = BEAUTIFLY,26
-Pokemon = SWADLOON,26
+Pokemon = BEEDRILL,24
+Pokemon = BEAUTIFLY,24
+Pokemon = SWADLOON,24
 #-------------------------------
 [BICHERO,Mike]
 LoseText = ¡Maldita sea!
-Pokemon = VOLBEAT,26
-Pokemon = ILLUMISE,26
+Pokemon = VOLBEAT,25
+Pokemon = ILLUMISE,25
 #-------------------------------
 [BICHERO,Víctor]
 LoseText = ¡Maldita sea!
-Pokemon = PINSIR,27
+Pokemon = PINSIR,26
 #-------------------------------
 [BUGSI,Antón]
 LoseText = Ya veo... Ha llegado la hora de posarme en el suelo con dignidad.
@@ -301,7 +301,7 @@ Pokemon = HERACROSS,28
     Item = DAMPROCK
     IV = 20,20,20,20,20,20
 Pokemon = VIKAVOLT,28
-    Moves = CHARGE,CHARGEBEAM,HIDDENPOWER,AIRSLASH
+    Moves = CHARGE,CHARGEBEAM,AIRSLASH,IRONDEFENSE
     AbilityIndex = 0
     Item = SITRUSBERRY
     Gender = male
@@ -470,3 +470,57 @@ Pokemon = MILTANK,38
     Item = LUMBERRY
     Moves = MILKDRINK,BODYSLAM,ROLLOUT,ATTRACT
     IV = 20,20,20,20,20,20
+#-------------------------------
+[POKEMONTRAINER_Red,Eco]
+Items = HYPERPOTION
+LoseText = Ufff... Como lo esperaba eres muy fuerte.
+Pokemon = ARCANINE,37
+Pokemon = TOGETIC,37
+Pokemon = SYLVEON,37
+Pokemon = GASTRODON,37
+Pokemon = MEGANIUM,38
+#-------------------------------
+[POKEMONTRAINER_Red,Eco,1]
+Items = HYPERPOTION
+LoseText = Ufff... Como lo esperaba eres muy fuerte.
+Pokemon = ARCANINE,37
+Pokemon = TOGETIC,37
+Pokemon = SYLVEON,37
+Pokemon = GASTRODON,37
+Pokemon = TYPHLOSION,38
+#-------------------------------
+[POKEMONTRAINER_Red,Eco,2]
+Items = HYPERPOTION
+LoseText = Ufff... Como lo esperaba eres muy fuerte.
+Pokemon = ARCANINE,37
+Pokemon = TOGETIC,37
+Pokemon = SYLVEON,37
+Pokemon = GASTRODON,37
+Pokemon = FERALIGATR,38
+#-------------------------------
+[POKEMONTRAINER_Leaf,Kris]
+Items = HYPERPOTION
+LoseText = Ufff... Como lo esperaba eres muy fuerte.
+Pokemon = ARCANINE,37
+Pokemon = TOGETIC,37
+Pokemon = SYLVEON,37
+Pokemon = GASTRODON,37
+Pokemon = MEGANIUM,38
+#-------------------------------
+[POKEMONTRAINER_Leaf,Kris,1]
+Items = HYPERPOTION
+LoseText = Ufff... Como lo esperaba eres muy fuerte.
+Pokemon = ARCANINE,37
+Pokemon = TOGETIC,37
+Pokemon = SYLVEON,37
+Pokemon = GASTRODON,37
+Pokemon = TYPHLOSION,38
+#-------------------------------
+[POKEMONTRAINER_Leaf,Kris,2]
+Items = HYPERPOTION
+LoseText = Ufff... Como lo esperaba eres muy fuerte.
+Pokemon = ARCANINE,37
+Pokemon = TOGETIC,37
+Pokemon = SYLVEON,37
+Pokemon = GASTRODON,37
+Pokemon = FERALIGATR,38

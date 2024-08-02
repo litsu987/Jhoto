@@ -10,6 +10,7 @@ module ChallengeModes
   SPLIT_MAPS_FOR_ENCOUNTERS = [
     [64,65],
     [45,60],
+    [49,51,62],
     [56,57,58]
   ]
 

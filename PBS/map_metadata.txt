@@ -61,6 +61,7 @@ BattleBack = field
 Name = Ruta 34
 Outdoor = true
 ShowArea = true
+BattleBack = field
 #-------------------------------
 [012]   # Ciudad Trigal
 Name = Ciudad Trigal
@@ -78,6 +79,7 @@ BattleBack = Field
 Name = Ruta 36
 Outdoor = true
 ShowArea = true
+BattleBack = field
 #-------------------------------
 [015]   # Ruta 37
 Name = Ruta 37
@@ -195,4 +197,5 @@ Name = Torre Bellsprout piso 2
 BattleBack = torreb
 #-------------------------------
 [068]   # Gym Blanca
+Name = Gym Blanca
 BattleBack = blanca
