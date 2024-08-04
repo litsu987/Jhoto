@@ -14,7 +14,7 @@
 
 # Variable en la que se almacena la palabra Unown
 # Se puede cambiar sin problema
-UNOWN_WORD_VARIABLE = 69
+UNOWN_WORD_VARIABLE = 59
 
 
 # Permite consultar la palabra desde eventos de forma cómoda
@@ -45,15 +45,15 @@ UNOWN_WORD_LENGTH=10
 class BlocUnownScene
 
   # Posición del primer carácter de la palabra
-  WORD_XY=[90,90]
+  WORD_XY=[110,104]
   # Separación de las letras en la palabra
   # Si se aumenta UNOWN_WORD_LENGTH, habrá que reducir la separación entre letras
-  LETTER_SEPARATION=38
+  LETTER_SEPARATION=45
 
   # Posición del primer sprite del Unown
-  UNOWN_FIRST_XY=[92,160]
+  UNOWN_FIRST_XY=[115,183]
   # Separación de los sprites [x, y]
-  UNOWN_SEPARATION=[54,56]
+  UNOWN_SEPARATION=[67,64]
   # Número de sprites por fila
   NUM_COLUMNS=7
 
