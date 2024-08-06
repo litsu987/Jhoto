@@ -528,5 +528,5 @@ Pokemon = FERALIGATR,38
 [POKEMONTRAINER_Leaf,Kris,3]
 Items = HYPERPOTION
 LoseText = Ufff... Como lo esperaba eres muy fuerte.
-Pokemon = TYPHLOSION,37
-    Form = 2
+Pokemon = FERALIGATR,37
+    Form = 1
