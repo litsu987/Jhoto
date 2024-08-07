@@ -76,8 +76,9 @@ if MOSTRAR_PANEL_REP_EXP
     end
     
     def pbGainExpOne_Panel(idxParty, defeatedBattler, numPartic, expShare, expAll, showMessages = true)
-      pkmn = pbParty(0)[idxParty]   # The Pokémon gaining Exp from defeatedBattler
+      pkmn = pbParty(0)[idxParty]
       growth_rate = pkmn.growth_rate
+      return 0 if pkmn.exp.nil? || pkmn.exp >= growth_rate.maximum_exp
       # Don't bother calculating if gainer is already at max Exp
       if pkmn.exp >= growth_rate.maximum_exp
         pkmn.calc_stats   # To ensure new EVs still have an effect
@@ -152,10 +153,18 @@ if MOSTRAR_PANEL_REP_EXP
     
     def pbActualLevelUpAndGatherMoves(idxParty, expGained)
       pkmn = pbParty(0)[idxParty]
+    
+     
+    
+      # Ensure expGained is not nil
+      expGained ||= 0
+      # Ensure pkmn.exp is not nil
+      pkmn.exp ||= 0
+    
       $stats.total_exp_gained += expGained
-      battler  = pbFindBattler(idxParty)
-      new_lvl  = pkmn.growth_rate.level_from_exp(pkmn.exp + expGained)
-      moves    = []
+      battler = pbFindBattler(idxParty)
+      new_lvl = pkmn.growth_rate.level_from_exp(pkmn.exp + expGained)
+      moves = []
       moveList = pkmn.getMoveList
       for level in (pkmn.level + 1)..new_lvl
         pkmn.changeHappiness("levelup")
@@ -167,10 +176,9 @@ if MOSTRAR_PANEL_REP_EXP
       battler&.pbUpdate(false)
       @scene.pbRefreshOne(battler.index) if battler
       return if moves.empty?
-    moves.each { |m|
-        pbLearnMove(idxParty, m)
-    }
+      moves.each { |m| pbLearnMove(idxParty, m) }
     end
+    
   end
 
 end

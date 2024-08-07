@@ -130,8 +130,10 @@ BattleBack = interior
 Name = Escuela
 BattleBack = interior
 #-------------------------------
-[044]   # Encinar
+[044]   # Bosque Encinar
 Name = GYM
+Outdoor = true
+ShowArea = true
 SnapEdges = true
 BattleBack = bosque
 #-------------------------------
@@ -199,3 +201,5 @@ BattleBack = torreb
 [068]   # Gym Blanca
 Name = Gym Blanca
 BattleBack = blanca
+#-------------------------------
+[074]   # Tunel trigal

@@ -1,5 +1,13 @@
 ﻿# Consulta la documentación en la wiki para aprender cómo editar este archivo.
 #-------------------------------
+# Pueblo Primavera (2) - Ruta 29 (3)
+2,West,0,3,East,2
+# Ruta 29 (3) - Ciudad Cerezo (4)
+3,West,0,4,East,7
+# Ciudad Cerezo (4) - Ruta 30 (5)
+4,North,48,5,South,0
+# Ruta 31 (6) - Ruta 30 (5)
+6,South,22,5,North,0
 # Ruta 32 (8) - Ciudad Malva (7)
 8,North,1,7,South,0
 # Pueblo Azalea (10) - Ruta 33 (9)
@@ -16,9 +24,3 @@
 17,West,7,18,East,0
 # Ruta 39 (18) - Ciudad Olivo (19)
 18,South,15,19,North,0
-# Ruta 29 (3) - Ciudad Cerezo (4)
-3,West,0,4,East,7
-# Ruta 30 (5) - Ciudad Cerezo (4)
-5,South,0,4,North,48
-# Pueblo Primavera (2) - Ruta 29 (3)
-2,West,0,3,East,2
