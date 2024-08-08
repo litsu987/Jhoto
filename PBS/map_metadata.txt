@@ -203,3 +203,7 @@ Name = Gym Blanca
 BattleBack = blanca
 #-------------------------------
 [074]   # Tunel trigal
+Name = Tunel trigal
+#-------------------------------
+[094]   # Raid 1
+BattleBack = forest
