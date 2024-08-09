@@ -9,11 +9,11 @@ module QuestModule
   # Este es el ejemplo más simple de una misión de una sola etapa con todo lo especificado
   Quest1 = {
     :ID => "1",
-    :Name => "Raid Gigamax - Beedrill",
-	:Stage1 => "Captura al Pokémon",
-    :QuestGiver => "Noah",
-    :Location1 => "Bosque encinar",
-    :QuestDescription => "Noah ah encontrado informacion sobre un Pokémon fuerte en las profundidades del Bosque encinar.",
+    :Name => "Nido - Ruta 32",
+	:Stage1 => "Derrotar al Pokémon",
+    :QuestGiver => "César",
+    :Location1 => "Ruta 32",
+    :QuestDescription => "César ah encontrado informacion sobre un Pokémon fuerte en una gruta en la ruta 32.",
     :RewardString => "nil"
   }
 
