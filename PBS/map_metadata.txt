@@ -130,10 +130,8 @@ BattleBack = interior
 Name = Escuela
 BattleBack = interior
 #-------------------------------
-[044]   # Bosque Encinar
+[044]   # Encinar
 Name = GYM
-Outdoor = true
-ShowArea = true
 SnapEdges = true
 BattleBack = bosque
 #-------------------------------
@@ -201,9 +199,12 @@ BattleBack = torreb
 [068]   # Gym Blanca
 Name = Gym Blanca
 BattleBack = blanca
+<<<<<<< HEAD
 #-------------------------------
 [074]   # Tunel trigal
 Name = Tunel trigal
 #-------------------------------
 [094]   # Raid 1
 BattleBack = forest
+=======
+>>>>>>> parent of f823f940 (siu)

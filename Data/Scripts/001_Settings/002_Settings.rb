@@ -68,7 +68,7 @@ module Settings
   #=============================================================================
 
   # Si la iluminación de los mapas dependa de la hora del día.
-  TIME_SHADING                               = false
+  TIME_SHADING                               = true
   # Si los reflejos del jugador y eventos onduleen horizontalmente.
   ANIMATE_REFLECTIONS                        = true
   # Si los Pokémon envenenados pierden PS al caminar el jugador.
