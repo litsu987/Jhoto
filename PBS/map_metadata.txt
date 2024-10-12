@@ -65,8 +65,8 @@ BattleBack = field
 #-------------------------------
 [012]   # Ciudad Trigal
 Name = Ciudad Trigal
-Outdoor = true
-ShowArea = true
+Outdoor=true
+ShowArea = false
 BattleBack = city
 #-------------------------------
 [013]   # Ruta 35
