@@ -138,43 +138,51 @@ class Game_Player < Game_Character
     $stats.distance_slid_on_ice += distance if $PokemonGlobal.ice_sliding
   end
 
-  def move_generic(dir, turn_enabled = true)
-    turn_generic(dir, true) if turn_enabled
-    if !$game_temp.encounter_triggered
-      if can_move_in_direction?(dir)
-        x_offset = (dir == 4) ? -1 : (dir == 6) ? 1 : 0
-        y_offset = (dir == 8) ? -1 : (dir == 2) ? 1 : 0
-        # Jump over ledges
-        if pbFacingTerrainTag.ledge
-          if jumpForward(2)
-            pbSEPlay("Player jump")
-            increase_steps
-          end
-          return
-        elsif pbFacingTerrainTag.waterfall_crest && dir == 2
-          $PokemonGlobal.descending_waterfall = true
-          $game_player.through = true
-          $stats.waterfalls_descended += 1
-        end
-        # Jumping out of surfing back onto land
-        return if pbEndSurf(x_offset, y_offset)
-        # General movement
-        turn_generic(dir, true)
-        if !$game_temp.encounter_triggered
-          @move_initial_x = @x
-          @move_initial_y = @y
-          @x += x_offset
-          @y += y_offset
-          @move_timer = 0.0
-          add_move_distance_to_stats(x_offset.abs + y_offset.abs)
+def move_generic(dir, turn_enabled = true)
+  turn_generic(dir, true) if turn_enabled
+
+  # Verifica si el switch 50 está activado
+  if $game_switches[100]
+    # Si está activado, no permite el movimiento
+    return
+  end
+
+  if !$game_temp.encounter_triggered
+    if can_move_in_direction?(dir)
+      x_offset = (dir == 4) ? -1 : (dir == 6) ? 1 : 0
+      y_offset = (dir == 8) ? -1 : (dir == 2) ? 1 : 0
+      # Jump over ledges
+      if pbFacingTerrainTag.ledge
+        if jumpForward(2)
+          pbSEPlay("Player jump")
           increase_steps
         end
-      elsif !check_event_trigger_touch(dir)
-        bump_into_object
+        return
+      elsif pbFacingTerrainTag.waterfall_crest && dir == 2
+        $PokemonGlobal.descending_waterfall = true
+        $game_player.through = true
+        $stats.waterfalls_descended += 1
       end
+      # Jumping out of surfing back onto land
+      return if pbEndSurf(x_offset, y_offset)
+      # General movement
+      turn_generic(dir, true)
+      if !$game_temp.encounter_triggered
+        @move_initial_x = @x
+        @move_initial_y = @y
+        @x += x_offset
+        @y += y_offset
+        @move_timer = 0.0
+        add_move_distance_to_stats(x_offset.abs + y_offset.abs)
+        increase_steps
+      end
+    elsif !check_event_trigger_touch(dir)
+      bump_into_object
     end
-    $game_temp.encounter_triggered = false
   end
+  $game_temp.encounter_triggered = false
+end
+
 
   def turn_generic(dir, keep_enc_indicator = false)
     old_direction = @direction
