@@ -206,4 +206,5 @@ BattleBack = blanca
 Name = Tunel trigal
 #-------------------------------
 [094]   # Raid 1
+Name = Raid 1
 BattleBack = forest
