@@ -126,6 +126,18 @@ BattleBack = interior
 Name = torre bellsprout 3
 BattleBack = interior
 #-------------------------------
+[039]   # Torre quemada
+Name = Torre Quemada
+ShowArea = true
+BattleBack = templo
+SnapEdges = true
+#-------------------------------
+[077]   # Torre quemada / 2
+Name = Torre Quemada
+ShowArea = true
+BattleBack = templo
+SnapEdges = true
+#-------------------------------
 [043]   # Escuela
 Name = Escuela
 BattleBack = interior
@@ -141,7 +153,7 @@ BattleBack = bosque
 Name = Ruinas Alfa
 Outdoor = true
 ShowArea = true
-Bicycle = true
+Bicycle = false
 SnapEdges = true
 BattleBack = Field
 #-------------------------------

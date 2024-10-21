@@ -6827,3 +6827,12 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = Tijeras ultraresistentes que permiten cortar algunos arboles del camino.
+#-------------------------------
+[ALA_PLATEADA]
+Name = Ala Plateada
+NamePlural = Ala Plateada
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Misteriosa ala de un brillante color plateado.
