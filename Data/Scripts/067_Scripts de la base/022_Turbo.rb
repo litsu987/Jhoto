@@ -35,7 +35,7 @@ module Input
   def self.update
     update_KGC_ScreenCapture
     pbScreenCapture if trigger?(Input::F8)
-    if $CanToggle && trigger?(Input::ALT)
+    if $CanToggle && trigger?(Input::ALT) && !($game_switches && $game_switches[400]) # Comprobar el switch 400
       $GameSpeed += 1
       $GameSpeed = 0 if $GameSpeed >= SPEEDUP_STAGES.size
       $PokemonSystem.battle_speed = $GameSpeed if $PokemonSystem && $PokemonSystem.only_speedup_battles == 1
@@ -44,6 +44,7 @@ module Input
     end
   end
 end
+
 
 #===============================================================================#
 # Return System.Uptime with a multiplier to create an alternative timeline
@@ -92,17 +93,17 @@ def pbBattleOnStepTaken(repel_active)
 end
 
 class Game_Event < Game_Character
-def pbGetInterpreter
-  return @interpreter
-end
+  def pbGetInterpreter
+    return @interpreter
+  end
 
-def pbResetInterpreterWaitCount
-  @interpreter.pbRefreshWaitCount if @interpreter
-end
+  def pbResetInterpreterWaitCount
+    @interpreter.pbRefreshWaitCount if @interpreter
+  end
 
-def IsParallel
-  return @trigger == 4
-end  
+  def IsParallel
+    return @trigger == 4
+  end  
 end  
 
 class Interpreter
@@ -120,7 +121,7 @@ class Window_AdvancedTextPokemon < SpriteWindow_Base
   end  
 end  
 
-$CurrentMsgWindow = nil;
+$CurrentMsgWindow = nil
 def pbMessage(message, commands = nil, cmdIfCancel = 0, skin = nil, defaultCmd = 0, &block)
   ret = 0
   msgwindow = pbCreateMessageWindow(nil, skin)

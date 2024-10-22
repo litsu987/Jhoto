@@ -6829,10 +6829,37 @@ Flags = KeyItem
 Description = Tijeras ultraresistentes que permiten cortar algunos arboles del camino.
 #-------------------------------
 [ALA_PLATEADA]
-Name = Ala Plateada
-NamePlural = Ala Plateada
+Name = Pluma Plateada
+NamePlural = Pluma Plateada
 Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = Misteriosa ala de un brillante color plateado.
+#-------------------------------
+[ALA_ARCOIRIS]
+Name = Pluma arcoíris
+NamePlural = Pluma arcoíris
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Se trata de una mística pluma de todos los colores como el arcoíris
+#-------------------------------
+[PLUMA_INCOLORA]
+Name = Pluma incolora
+NamePlural = Pluma incolora
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Parece una pluma común y corriente.
+#-------------------------------
+[PIEDRA_EXTRANA]
+Name = Piedra_Extraña
+NamePlural = Piedra_Extraña
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Parece una Piedra común y corriente.
