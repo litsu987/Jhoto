@@ -263,3 +263,10 @@ BaseMoney = 100
 IntroBGM = GymBattle2.ogg
 VictoryBGM = VictoryLeader.ogg
 BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[SILVER2]
+Name = Transeunte
+Gender = Male
+BaseMoney = 100
+BattleBGM = VsSilver.ogg
+VictoryBGM = TrainerVictory.ogg

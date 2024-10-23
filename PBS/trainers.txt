@@ -524,3 +524,27 @@ Pokemon = TOGETIC,37
 Pokemon = SYLVEON,37
 Pokemon = GASTRODON,37
 Pokemon = FERALIGATR,38
+#-------------------------------
+[SILVER2,Silver]
+LoseText = ¡Maldita sea!
+Pokemon = STARAPTOR,40
+Pokemon = ELECTABUZZ,40
+Pokemon = UMBREON,40
+Pokemon = ALAKAZAM,40
+Pokemon = TYPHLOSION,41
+#-------------------------------
+[SILVER2,Silver,1]
+LoseText = ¡Maldita sea!
+Pokemon = STARAPTOR,40
+Pokemon = ELECTABUZZ,40
+Pokemon = UMBREON,40
+Pokemon = ALAKAZAM,40   
+Pokemon = FERALIGATR,41
+#-------------------------------
+[SILVER2,Silver,2]
+LoseText = ¡Maldita sea!
+Pokemon = STARAPTOR,40
+Pokemon = ELECTABUZZ,40
+Pokemon = UMBREON,40
+Pokemon = ALAKAZAM,40
+Pokemon = MEGANIUM,41
