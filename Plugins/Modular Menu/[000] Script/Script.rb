@@ -137,10 +137,10 @@ class PokemonPauseMenu_Scene
 	#sprite menú
 @sprites["sprite_menu"]=IconSprite.new(0,0,@viewport)
     if $game_variables[42] == 1
-    @sprites["sprite_menu"].setBitmap("Graphics/Pictures/PIBE")
+    @sprites["sprite_menu"].setBitmap("Graphics/Pictures/MenuChico")
 end
     if $game_variables[42] == 2
-    @sprites["sprite_menu"].setBitmap("Graphics/Pictures/introGirl1")
+    @sprites["sprite_menu"].setBitmap("Graphics/Pictures/MenuChica")
 
 end
 
@@ -192,6 +192,14 @@ end
 	 if $game_variables[56] == 1
 	text.push([_INTL("$ #{$player.money}"),18,88,0,Color.new(255,255,255),Color.new(0,0,0,100),true])
 	end
+
+    if $game_variables[26] < 10
+      text.push([_INTL("#{ $game_variables[26] }"), 76, 390, 0, Color.new(255, 255, 255), Color.new(0, 0, 0, 100), true])
+    elsif $game_variables[26] < 100
+      text.push([_INTL("#{ $game_variables[26] }"), 73, 390, 0, Color.new(255, 255, 255), Color.new(0, 0, 0, 100), true])
+    else
+      text.push([_INTL("#{ $game_variables[26] }"), 68, 390, 0, Color.new(255, 255, 255), Color.new(0, 0, 0, 100), true])
+    end
 
     if pbInSafari?
       content.push(_INTL("Steps: {1}/{2}", pbSafariState.steps, Settings::SAFARI_STEPS)) if Settings::SAFARI_STEPS > 0
@@ -376,11 +384,17 @@ class PokemonPauseMenu
   def pbShowMenu
     @scene.pbShowMenu
   end
+
+  def hide
+    @visible = false
+    # Logic to hide the menu visually
+    # For example, you might need to adjust graphics or flags to stop drawing it
+  end
   #-----------------------------------------------------------------------------
   # start menu
   #-----------------------------------------------------------------------------
   def pbStartPokemonMenu
-    # loads up the scene
+    event_in_progress = true
     pbSEPlay("GUI menu open")
     @scene.pbStartScene
     @scene.pbShowMenu
@@ -389,6 +403,7 @@ class PokemonPauseMenu
       Graphics.update
       Input.update
       @scene.update
+    
       if Input.repeat?(Input::DOWN)
         @scene.index += 1
         @scene.index = 0 if @scene.index > @scene.entries.length - 1
@@ -399,15 +414,97 @@ class PokemonPauseMenu
         @scene.index = @scene.entries.length - 1 if @scene.index < 0
         $game_temp.menuLastChoice = @scene.index
         pbSEPlay("SE_Select1", 75)
+      
       elsif Input.trigger?(Input::C)
         pbPlayDecisionSE()
         ModularMenu.run(@scene.entries[@scene.index], @scene)
+  
+      elsif Input.trigger?(Input::A)
+        pbPlayDecisionSE()
+      
+        # Variable para pausar la condición de escape o cierre
+        event_in_progress = false
+      
+        # Comprobar el valor de la variable 28 (curaciones disponibles)
+        if $game_variables[28] > 0
+          msg_window = pbCreateMessageWindow # Crear la ventana de mensaje
+      
+          # Verificar singular o plural
+          if $game_variables[28] == 1
+            pbMessageDisplay(msg_window, _INTL("Tienes #{$game_variables[28]} curación disponible. ¿Quieres utilizar el Vial en tus Pokémon?"))
+          else
+            pbMessageDisplay(msg_window, _INTL("Tienes #{$game_variables[28]} curaciones disponibles. ¿Quieres utilizar el Vial en tus Pokémon?"))
+          end
+      
+          # Preguntar si desea curar
+          choices = [_INTL("Sí"), _INTL("No")]
+          choice = pbShowCommands(msg_window, choices)
+      
+          if choice == 0  # Si el jugador elige "Sí"
+            # Curar al equipo Pokémon
+            $player.party.each do |pkmn|
+              if pkmn && !pkmn.egg?
+                pkmn.heal
+              end
+            end
+      
+            pbMessageDisplay(msg_window, _INTL("Todo tu equipo Pokémon ha sido curado."))
+      
+            # Restar una unidad de la variable 28 para gastar una curación
+            $game_variables[28] -= 1
+      
+          else  # Si el jugador elige "No"
+            pbMessageDisplay(msg_window, _INTL("No has curado a tu equipo Pokémon."))
+          end
+      
+        else
+          msg_window = pbCreateMessageWindow # Crear la ventana de mensaje
+          pbMessageDisplay(msg_window, _INTL("No tienes curaciones disponibles."))
+        end
+      
+        # Mantener la ventana de mensaje abierta hasta que se presione Input::C o Input::B
+        loop do
+          Graphics.update
+          Input.update
+  
+          # Consumir el input de B o C para solo cerrar el mensaje y no afectar el menú principal
+          if Input.trigger?(Input::C) || Input.trigger?(Input::B)
+            break  # Salir del bucle de curación
+          end
+        end
+  
+        pbDisposeMessageWindow(msg_window) # Cerrar y eliminar la ventana de mensaje
+        
+        # Aquí hacemos una actualización extra de Input para que el botón B no afecte el menú principal
+        Input.update
+        event_in_progress = true # Volvemos al flujo del menú principal
+      
+      elsif Input.trigger?(Input::Y)
+        pbPlayDecisionSE()
+        # Comprobar si se puede usar vuelo
+        if pbCanFly?(pkmn = nil, true) # Llama al método para comprobar si se puede volar
+          scene = PokemonRegionMap_Scene.new(-1, false) # Crear una nueva escena del mapa de vuelo
+          screen = PokemonRegionMapScreen.new(scene) # Crear una nueva pantalla de vuelo
+          ret = screen.pbStartFlyScreen # Iniciar la pantalla de selección de vuelo
+          
+          if ret
+            @scene.pbHideMenu # Ocultar todo el menú
+            $game_temp.fly_destination = ret # Guardar el destino de vuelo seleccionado
+            break
+          end
+        end
       end
-      break if @scene.close || Input.trigger?(Input::B)
+     
+      if event_in_progress
+        break if @scene.close || Input.trigger?(Input::B)
+      end
+      
     end
     # used to dispose of the scene
     @scene.pbEndScene if @scene.endscene
   end
+  
+  
   #-----------------------------------------------------------------------------
 end
 

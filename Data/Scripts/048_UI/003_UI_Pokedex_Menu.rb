@@ -9,7 +9,7 @@ class Window_DexesList < Window_CommandPokemon
     @commands2 = commands2
     super(commands, width)
     @selarrow = AnimatedBitmap.new("Graphics/UI/sel_arrow_white")
-    self.baseColor   = Color.new(248, 248, 248)
+    self.baseColor   = Color.new(255, 255, 255)
     self.shadowColor = Color.black
     self.windowskin  = nil
   end
@@ -52,7 +52,7 @@ class PokemonPokedexMenu_Scene
     @sprites["background"].setBitmap(_INTL("Graphics/UI/Pokedex/bg_menu"))
     text_tag = shadowc3tag(SEEN_OBTAINED_TEXT_BASE, SEEN_OBTAINED_TEXT_SHADOW)
     @sprites["headings"] = Window_AdvancedTextPokemon.newWithSize(
-      text_tag + _INTL("VISTOS") + " " + _INTL("OBTENIDOS") + "</c3>", 270, 136, 208, 64, @viewport
+      text_tag + _INTL("VISTOS") + " " + _INTL("OBTENIDOS") + "</c3>", 260, 136, 208, 64, @viewport
     )
     @sprites["headings"].windowskin = nil
     @sprites["commands"] = Window_DexesList.new(commands, commands2, Graphics.width - 84)
@@ -127,4 +127,3 @@ class PokemonPokedexMenuScreen
     @scene.pbEndScene
   end
 end
-

@@ -19,7 +19,7 @@ class PokemonPartyConfirmCancelSprite < Sprite
     @overlaysprite = BitmapSprite.new(@bgsprite.bitmap.width, @bgsprite.bitmap.height, viewport)
     @overlaysprite.z = self.z + 1
     pbSetSystemFont(@overlaysprite.bitmap)
-    textpos = [[text, 56, (narrowbox) ? 8 : 14, :center, Color.new(248, 248, 248), Color.new(40, 40, 40)]]
+    textpos = [[text, 56, (narrowbox) ? 19 : 9, :center, Color.new(248, 248, 248), Color.new(40, 40, 40)]]
     pbDrawTextPositions(@overlaysprite.bitmap, textpos)
     self.x = x
     self.y = y
@@ -62,12 +62,12 @@ class PokemonPartyConfirmCancelSprite < Sprite
   def refresh
     if @bgsprite && !@bgsprite.disposed?
       @bgsprite.changeBitmap((@selected) ? "sel" : "desel")
-      @bgsprite.x     = self.x
+      @bgsprite.x     = self.x 
       @bgsprite.y     = self.y
       @bgsprite.color = self.color
     end
     if @overlaysprite && !@overlaysprite.disposed?
-      @overlaysprite.x     = self.x
+      @overlaysprite.x     = self.x 
       @overlaysprite.y     = self.y
       @overlaysprite.color = self.color
     end
@@ -79,7 +79,7 @@ end
 #===============================================================================
 class PokemonPartyCancelSprite < PokemonPartyConfirmCancelSprite
   def initialize(viewport = nil)
-    super(_INTL("CANCELAR"), 480, 384, false, viewport)
+    super(_INTL("CANCELAR"), 471, 390, false, viewport)
   end
 end
 
@@ -88,7 +88,7 @@ end
 #===============================================================================
 class PokemonPartyConfirmSprite < PokemonPartyConfirmCancelSprite
   def initialize(viewport = nil)
-    super(_INTL("CONFIRMAR"), 480, 384, true, viewport)
+    super(_INTL("CONFIRMAR"), 471, 390, true, viewport)
   end
 end
 
@@ -97,7 +97,7 @@ end
 #===============================================================================
 class PokemonPartyCancelSprite2 < PokemonPartyConfirmCancelSprite
   def initialize(viewport = nil)
-    super(_INTL("CANCELAR"), 480, 384, true, viewport)
+    super(_INTL("CANCELAR"), 471, 390, true, viewport)
   end
 end
 
@@ -380,11 +380,11 @@ class PokemonPartyPanel < Sprite
     return if @pokemon.egg?
     # "Lv" graphic
     pbDrawImagePositions(@overlaysprite.bitmap,
-                         [[_INTL("Graphics/UI/Party/overlay_lv"), 20, 70, 0, 0, 22, 14]])
+                         [[_INTL("Graphics/UI/Party/overlay_lv"), 25, 70, 0, 0, 22, 14]])
     # Level number
     pbSetSmallFont(@overlaysprite.bitmap)
     pbDrawTextPositions(@overlaysprite.bitmap,
-                        [[@pokemon.level.to_s, 42, 68, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
+                        [[@pokemon.level.to_s, 47, 68, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
     pbSetSystemFont(@overlaysprite.bitmap)
   end
 
@@ -1149,7 +1149,7 @@ class PokemonPartyScreen
     ret = -1
     @scene.pbStartScene(
       @party,
-      (@party.length > 1) ? _INTL("Elige un Pokémon.") : _INTL("Elige un Pokémon o cancela."),
+      (@party.length > 1) ? _INTL("Elige un Pokémon.") : _INTL("Elige un Pokémon o a."),
       annot
     )
     loop do
@@ -1483,6 +1483,58 @@ MenuHandlers.add(:party_menu_item, :move, {
     screen.scene.pbSelect(old_party_idx) if !moved
   }
 })
+
+
+####MIO
+MenuHandlers.add(:party_menu, :swap_pokeball, {
+  "name"   => _INTL("Cambiar Pokéball"),
+  "order"  => 60,
+  "effect" => proc { |screen, party, party_idx|
+    pkmn = party[party_idx]
+    current_ball_id = pkmn.poke_ball
+    balls = []
+
+    GameData::Item.each do |item_data|
+      if item_data.is_poke_ball? && $bag.has?(item_data.id)
+        balls.push([item_data.id, item_data.name])
+      end
+    end
+
+    balls.sort_by! { |ball| ball[1] }
+    commands = balls.map { |ball| ball[1] }
+    current_cmd = balls.index { |ball| ball[0] == current_ball_id } || 0
+
+    if balls.empty?
+      pbMessage(_INTL("No tienes ninguna PokéBall para intercambiar."))
+      next false
+    end
+
+    loop do
+      old_ball_name = GameData::Item.get(current_ball_id).name
+      selected_cmd = screen.pbShowCommands(_INTL("current：{1}", old_ball_name), commands, current_cmd)
+
+      break if selected_cmd < 0
+
+      if selected_cmd < balls.length
+        new_ball_id = balls[selected_cmd][0]
+        if new_ball_id != current_ball_id
+          $bag.remove(new_ball_id, 1)
+          pkmn.poke_ball = new_ball_id
+          screen.pbRefreshSingle(party_idx)
+          break
+        else
+          pbMessage(_INTL("El tipo de PokéBall que has seleccionado es el mismo que el tipo actual."))
+          break
+        end
+      else
+        break
+      end
+    end
+    next false
+  }
+})
+
+####MIO
 
 #===============================================================================
 # Open the party screen

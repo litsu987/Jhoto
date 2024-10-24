@@ -229,6 +229,9 @@ end
 #
 #===============================================================================
 class PokemonReadyMenu
+  # Lista de movimientos que quieres excluir del menú
+  HIDDEN_MOVES = [:FLY, :STRENGTH, :SURF, :CUT, :ROCKSMASH]  # Añade más si es necesario
+
   def initialize(scene)
     @scene = scene
   end
@@ -244,47 +247,50 @@ class PokemonReadyMenu
 
   def pbStartReadyMenu(moves, items)
     commands = [[], []]   # Moves, items
+
+    # Filtro para movimientos (no incluimos hidden moves como Vuelo, Fuerza, etc.)
     moves.each do |i|
-      commands[0].push([i[0], GameData::Move.get(i[0]).name, true, i[1]])
+      move_id = i[0]
+      # Excluimos los movimientos en HIDDEN_MOVES
+      unless HIDDEN_MOVES.include?(move_id)
+        commands[0].push([move_id, GameData::Move.get(move_id).name, true, i[1]])
+      end
     end
+    # Ordenamos los movimientos por nombre
     commands[0].sort! { |a, b| a[1] <=> b[1] }
+
+    # Filtro para items
     items.each do |i|
       commands[1].push([i, GameData::Item.get(i).name, false])
     end
+    # Ordenamos los ítems por nombre
     commands[1].sort! { |a, b| a[1] <=> b[1] }
+
     @scene.pbStartScene(commands)
     loop do
       command = @scene.pbShowCommands
       break if command == -1
-      if command[0] == 0   # Use a move
+
+      if command[0] == 0   # Usar un movimiento
         move = commands[0][command[1]][0]
         user = $player.party[commands[0][command[1]][3]]
-        if move == :FLY
-          ret = nil
-          pbFadeOutInWithUpdate(99999, @scene.sprites) do
-            pbHideMenu
-            scene = PokemonRegionMap_Scene.new(-1, false)
-            screen = PokemonRegionMapScreen.new(scene)
-            ret = screen.pbStartFlyScreen
-            pbShowMenu if !ret
-          end
-          if ret
-            $game_temp.fly_destination = ret
-            $game_temp.in_menu = false
-            pbUseHiddenMove(user, move)
-            break
-          end
-        else
-          pbHideMenu
-          if pbConfirmUseHiddenMove(user, move)
-            $game_temp.in_menu = false
-            pbUseHiddenMove(user, move)
-            break
-          else
-            pbShowMenu
-          end
+
+        # Aquí comprobamos que el movimiento NO sea uno de los hidden moves
+        if HIDDEN_MOVES.include?(move)
+          pbMessage(_INTL("No puedes usar ese movimiento aquí."))
+          next  # Regresa al menú sin permitir usar el movimiento
         end
-      else   # Use an item
+
+        pbHideMenu
+        if pbConfirmUseHiddenMove(user, move)
+          $game_temp.in_menu = false
+          pbUseHiddenMove(user, move)
+          break
+        else
+          pbShowMenu
+        end
+
+      else   # Usar un ítem
         item = commands[1][command[1]][0]
         pbHideMenu
         if ItemHandlers.triggerConfirmUseInField(item)
@@ -298,6 +304,7 @@ class PokemonReadyMenu
     @scene.pbEndScene
   end
 end
+
 
 #===============================================================================
 # Using a registered item

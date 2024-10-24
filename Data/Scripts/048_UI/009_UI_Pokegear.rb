@@ -204,4 +204,3 @@ MenuHandlers.add(:pokegear_menu, :jukebox, {
     next false
   }
 })
-

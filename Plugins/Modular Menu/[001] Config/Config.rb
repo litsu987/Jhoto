@@ -104,16 +104,17 @@ ModularMenu.add_condition(:POKEGEAR) { next $player.has_pokegear }
 #-------------------------------------------------------------------------------
 #  RADAR
 #-------------------------------------------------------------------------------
-ModularMenu.add_entry(:POKERADAR, _INTL("Misiones"), "menuRadar") do |menu|
-  pbPlayDecisionSE
-  pbFadeOutIn {
-    pbViewQuests
-    menu.pbRefresh
+ModularMenu.add_entry(:POKERADAR, _INTL("Radar"), "menuRadar") do |menu|
+    pbPlayDecisionSE
+    pbFadeOutIn {
+      scene = EncounterList_Scene.new
+      screen = EncounterList_Screen.new(scene)
+      screen.pbStartScreen
+      menu.pbRefresh
   }
 end
 # condition to satisfy
 ModularMenu.add_condition(:RADAR) { next $player.has_pokegear }
-
 
 
 

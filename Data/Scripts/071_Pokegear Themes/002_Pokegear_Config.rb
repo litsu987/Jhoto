@@ -42,4 +42,4 @@ module PokegearConfig
 
   # The path for the background to use for Arcky's Region Map.
   BACKGROUND_PATH = _INTL("Graphics/UI/Town Map/UI/")
-end
+end 

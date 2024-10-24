@@ -8,8 +8,10 @@ class Window_Pokedex < Window_DrawableCommand
     @selarrow     = AnimatedBitmap.new("Graphics/UI/Pokedex/cursor_list")
     @pokeballOwn  = AnimatedBitmap.new("Graphics/UI/Pokedex/icon_own")
     @pokeballSeen = AnimatedBitmap.new("Graphics/UI/Pokedex/icon_seen")
-    self.baseColor   = Color.new(88, 88, 80)
-    self.shadowColor = Color.new(168, 184, 184)
+    baseWhite   = Color.new(248, 248, 248)
+    shadowWhite = Color.new(10, 10, 10)
+    self.baseColor   = baseWhite #Color.new(88, 88, 80)
+    self.shadowColor = shadowWhite #Color.new(168, 184, 184)
     self.windowskin  = nil
   end
 
@@ -107,36 +109,36 @@ class PokedexSearchSelectionSprite < Sprite
     @mode = value
     case @mode
     when 0     # Order
-      @xstart = 46
+      @xstart = 46+64
       @ystart = 128
       @xgap = 236
       @ygap = 64
       @cols = 2
     when 1     # Name
-      @xstart = 78
+      @xstart = 78+64
       @ystart = 114
       @xgap = 52
       @ygap = 52
       @cols = 7
     when 2     # Type
-      @xstart = 8
+      @xstart = 8+64
       @ystart = 104
       @xgap = 124
       @ygap = 44
       @cols = 4
     when 3, 4   # Height, weight
-      @xstart = 44
+      @xstart = 44+64
       @ystart = 110
       @xgap = 8
       @ygap = 112
     when 5     # Color
-      @xstart = 62
+      @xstart = 62+64
       @ystart = 114
       @xgap = 132
       @ygap = 52
       @cols = 3
     when 6     # Shape
-      @xstart = 82
+      @xstart = 82+64
       @ystart = 116
       @xgap = 70
       @ygap = 70
@@ -169,20 +171,20 @@ class PokedexSearchSelectionSprite < Sprite
       end
       case @index
       when 0         # Order
-        self.x = 252
+        self.x = 252+64
         self.y = 52
       when 1, 2, 3, 4   # Name, type, height, weight
-        self.x = 114
+        self.x = 114+64
         self.y = 110 + ((@index - 1) * 52)
       when 5         # Color
-        self.x = 382
+        self.x = 382+64
         self.y = 110
       when 6         # Shape
-        self.x = 420
+        self.x = 420+64
         self.y = 214
       when 7, 8, 9     # Reset, start, cancel
-        self.x = 4 + ((@index - 7) * 176)
-        self.y = 334
+        self.x = 4 + ((@index - 7) * 176)+64
+        self.y = 334 + 26
       end
     else   # Parameter screen
       case @index
@@ -218,11 +220,11 @@ class PokedexSearchSelectionSprite < Sprite
           self.y = @ystart + ((@cmds / @cols).floor * @ygap)
         end
       when -2   # OK
-        self.x = 4
-        self.y = 334
+        self.x = 4+64
+        self.y = 334+26
       when -3   # Cancel
-        self.x = 356
-        self.y = 334
+        self.x = 356+64
+        self.y = 334+26
       else
         case @mode
         when 0, 1, 2, 5, 6   # Order, name, type, color, shape
@@ -281,11 +283,11 @@ class PokemonPokedex_Scene
 #    end
     addBackgroundPlane(@sprites, "searchbg", "Pokedex/bg_search", @viewport)
     @sprites["searchbg"].visible = false
-    @sprites["pokedex"] = Window_Pokedex.new(206, 30, 276, 364, @viewport)
+    @sprites["pokedex"] = Window_Pokedex.new(206+90, 30, 276, 364, @viewport)
     @sprites["icon"] = PokemonSprite.new(@viewport)
     @sprites["icon"].setOffset(PictureOrigin::CENTER)
-    @sprites["icon"].x = 112
-    @sprites["icon"].y = 196
+    @sprites["icon"].x = 132
+    @sprites["icon"].y = 216
     @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
     pbSetSystemFont(@sprites["overlay"].bitmap)
     @sprites["searchcursor"] = PokedexSearchSelectionSprite.new(@viewport)
@@ -414,7 +416,7 @@ class PokemonPokedex_Scene
     pbRefresh
   end
 
-  # DP - Agrega funcion para buscar por nombre presionando la D
+    # DP - Agrega funcion para buscar por nombre presionando la D
   def searchByName()
     term = pbMessageFreeText(_INTL("¿Qué Pokémon desea buscar?"), "", false, 32)
     return false if term == "" || term == nil
@@ -426,13 +428,15 @@ class PokemonPokedex_Scene
     return false
   end
 
+  
   def pbRefresh
     overlay = @sprites["overlay"].bitmap
     overlay.clear
     base   = Color.new(88, 88, 80)
     shadow = Color.new(168, 184, 184)
+    baseWhite   = Color.new(248, 248, 248)
+    shadowWhite = Color.new(10, 10, 10)
     iconspecies = @sprites["pokedex"].species
-    iconspecies = nil if !$player.seen?(iconspecies)
     # Write various bits of text
     dexname = _INTL("Pokédex")
     if $player.pokedex.dexes_count > 1
@@ -442,17 +446,18 @@ class PokemonPokedex_Scene
       end
     end
     textpos = [
-      [dexname, (Graphics.width / 2)+40, 10, :center, Color.new(248, 248, 248), Color.black]
+      [dexname, (Graphics.width / 2), 18, :center, baseWhite, shadowWhite],
+      ["Z: Búsqueda", Graphics.width-32, 404, :right, baseWhite, shadowWhite]
     ]
-    textpos.push([GameData::Species.get(iconspecies).name, 112, 58, :center, base, shadow]) if iconspecies
+    textpos.push([GameData::Species.get(iconspecies).name, 128, 81, :center, baseWhite, shadowWhite]) if $player.seen?(iconspecies)
     if @searchResults
-      textpos.push([_INTL("Resultados:"), 112, 314, :center, base, shadow])
-      textpos.push([@dexlist.length.to_s, 112, 346, :center, base, shadow])
+      textpos.push([_INTL("Resultados:"), 148, 314, :center, baseWhite, shadowWhite])
+      textpos.push([@dexlist.length.to_s, 148, 346, :center, baseWhite, shadowWhite])
     else
-      textpos.push([_INTL("Avistados:"), 26, 314, :left, base, shadow])
-      textpos.push([$player.pokedex.seen_count(pbGetPokedexRegion).to_s, 136, 314, :left, base, shadow])
-      textpos.push([_INTL("Capturados:"), 26, 346, :left, base, shadow])
-      textpos.push([$player.pokedex.owned_count(pbGetPokedexRegion).to_s, 152, 346, :left, base, shadow])
+      textpos.push([_INTL("Avistados:"), 15, 360, :left, baseWhite, shadowWhite])
+      textpos.push([$player.pokedex.seen_count(pbGetPokedexRegion).to_s, 152+28, 360, :left, baseWhite, shadowWhite])
+      textpos.push([_INTL("Capturados:"), 15, 406, :left, baseWhite, shadowWhite])
+      textpos.push([$player.pokedex.owned_count(pbGetPokedexRegion).to_s, 152+28, 406, :left, baseWhite, shadowWhite])
     end
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
@@ -460,14 +465,14 @@ class PokemonPokedex_Scene
     setIconBitmap(iconspecies)
     # Draw slider arrows
     itemlist = @sprites["pokedex"]
-    showslider = false
+    showslider = true
     if itemlist.top_row > 0
-      overlay.blt(468, 48, @sliderbitmap.bitmap, Rect.new(0, 0, 40, 30))
-      showslider = true
+      overlay.blt(468+100, 48, @sliderbitmap.bitmap, Rect.new(0, 0, 40, 30))
+      showslider = false
     end
     if itemlist.top_item + itemlist.page_item_max < itemlist.itemCount
-      overlay.blt(468, 346, @sliderbitmap.bitmap, Rect.new(0, 30, 40, 30))
-      showslider = true
+      overlay.blt(468+100, 346, @sliderbitmap.bitmap, Rect.new(0, 30, 40, 30))
+      showslider = false
     end
     # Draw slider box
     if showslider
@@ -477,14 +482,14 @@ class PokemonPokedex_Scene
       boxheight = [boxheight.floor, 40].max
       y = 78
       y += ((sliderheight - boxheight) * itemlist.top_row / (itemlist.row_max - itemlist.page_row_max)).floor
-      overlay.blt(468, y, @sliderbitmap.bitmap, Rect.new(40, 0, 40, 8))
+      overlay.blt(468+100, y, @sliderbitmap.bitmap, Rect.new(40, 0, 40, 8))
       i = 0
       while i * 16 < boxheight - 8 - 16
         height = [boxheight - 8 - 16 - (i * 16), 16].min
-        overlay.blt(468, y + 8 + (i * 16), @sliderbitmap.bitmap, Rect.new(40, 8, 40, height))
+        overlay.blt(468+100, y + 8 + (i * 16), @sliderbitmap.bitmap, Rect.new(40, 8, 40, height))
         i += 1
       end
-      overlay.blt(468, y + boxheight - 16, @sliderbitmap.bitmap, Rect.new(40, 24, 40, 16))
+      overlay.blt(468+100, y + boxheight - 16, @sliderbitmap.bitmap, Rect.new(40, 24, 40, 16))
     end
   end
 
@@ -495,36 +500,36 @@ class PokemonPokedex_Scene
     shadow = Color.new(72, 72, 72)
     # Write various bits of text
     textpos = [
-      [_INTL("Modo de Búsqueda"), Graphics.width / 2, 10, :center, base, shadow],
-      [_INTL("Orden"), 136, 64, :center, base, shadow],
-      [_INTL("Nombre"), 58, 122, :center, base, shadow],
-      [_INTL("Tipo"), 58, 174, :center, base, shadow],
-      [_INTL("Altura"), 58, 226, :center, base, shadow],
-      [_INTL("Peso"), 58, 278, :center, base, shadow],
-      [_INTL("Color"), 326, 122, :center, base, shadow],
-      [_INTL("Forma"), 454, 174, :center, base, shadow],
-      [_INTL("Reiniciar"), 80, 346, :center, base, shadow, 1],
-      [_INTL("Empezar"), Graphics.width / 2, 346, :center, base, shadow, :outline],
-      [_INTL("Cancelar"), Graphics.width - 80, 346, :center, base, shadow, :outline]
+      [_INTL("Modo de Búsqueda"), Graphics.width / 2+64, 10, :center, base, shadow],
+      [_INTL("Orden"), 136+64, 64, :center, base, shadow],
+      [_INTL("Nombre"), 58+64, 122, :center, base, shadow],
+      [_INTL("Tipo"), 58+64, 174, :center, base, shadow],
+      [_INTL("Altura"), 58+64, 226, :center, base, shadow],
+      [_INTL("Peso"), 58+64, 278, :center, base, shadow],
+      [_INTL("Color"), 326+64, 122, :center, base, shadow],
+      [_INTL("Forma"), 454+64, 174, :center, base, shadow],
+      [_INTL("Reiniciar"), 80+64, 346+24, :center, base, shadow, 1],
+      [_INTL("Empezar"), Graphics.width / 2, 346+24, :center, base, shadow, :outline],
+      [_INTL("Cancelar"), Graphics.width - (80+64), 346+24, :center, base, shadow, :outline]
     ]
     # Write order, name and color parameters
-    textpos.push([@orderCommands[params[0]], 344, 66, :center, base, shadow, :outline])
-    textpos.push([(params[1] < 0) ? "----" : @nameCommands[params[1]], 176, 124, :center, base, shadow, :outline])
-    textpos.push([(params[8] < 0) ? "----" : @colorCommands[params[8]].name, 444, 124, :center, base, shadow, :outline])
+    textpos.push([@orderCommands[params[0]], 344+64, 66, :center, base, shadow, :outline])
+    textpos.push([(params[1] < 0) ? "----" : @nameCommands[params[1]], 176+64, 124, :center, base, shadow, :outline])
+    textpos.push([(params[8] < 0) ? "----" : @colorCommands[params[8]].name, 444+64, 124, :center, base, shadow, :outline])
     # Draw type icons
     if params[2] >= 0
       type_number = @typeCommands[params[2]].icon_position
       typerect = Rect.new(0, type_number * 32, 96, 32)
-      overlay.blt(128, 168, @typebitmap.bitmap, typerect)
+      overlay.blt(128+64, 168, @typebitmap.bitmap, typerect)
     else
-      textpos.push(["----", 176, 176, :center, base, shadow, :outline])
+      textpos.push(["----", 176+64, 176, :center, base, shadow, :outline])
     end
     if params[3] >= 0
       type_number = @typeCommands[params[3]].icon_position
       typerect = Rect.new(0, type_number * 32, 96, 32)
-      overlay.blt(256, 168, @typebitmap.bitmap, typerect)
+      overlay.blt(256+64, 168, @typebitmap.bitmap, typerect)
     else
-      textpos.push(["----", 304, 176, :center, base, shadow, :outline])
+      textpos.push(["----", 304+64, 176, :center, base, shadow, :outline])
     end
     # Write height and weight limits
     ht1 = (params[4] < 0) ? 0 : (params[4] >= @heightCommands.length) ? 999 : @heightCommands[params[4]]
@@ -537,24 +542,24 @@ class PokemonPokedex_Scene
       ht2 = (params[5] < 0) ? 99 * 12 : (ht2 / 0.254).round
       wt1 = (params[6] >= @weightCommands.length) ? 99_990 : (wt1 / 0.254).round
       wt2 = (params[7] < 0) ? 99_990 : (wt2 / 0.254).round
-      textpos.push([sprintf("%d'%02d''", ht1 / 12, ht1 % 12), 166, 228, :center, base, shadow, :outline])
-      textpos.push([sprintf("%d'%02d''", ht2 / 12, ht2 % 12), 294, 228, :center, base, shadow, :outline])
-      textpos.push([sprintf("%.1f", wt1 / 10.0), 166, 280, :center, base, shadow, :outline])
-      textpos.push([sprintf("%.1f", wt2 / 10.0), 294, 280, :center, base, shadow, :outline])
+      textpos.push([sprintf("%d'%02d''", ht1 / 12, ht1 % 12), 166+64, 228, :center, base, shadow, :outline])
+      textpos.push([sprintf("%d'%02d''", ht2 / 12, ht2 % 12), 294+64, 228, :center, base, shadow, :outline])
+      textpos.push([sprintf("%.1f", wt1 / 10.0), 166+64, 280, :center, base, shadow, :outline])
+      textpos.push([sprintf("%.1f", wt2 / 10.0), 294+64, 280, :center, base, shadow, :outline])
       hwoffset = true
     else
-      textpos.push([sprintf("%.1f", ht1 / 10.0), 166, 228, :center, base, shadow, :outline])
-      textpos.push([sprintf("%.1f", ht2 / 10.0), 294, 228, :center, base, shadow, :outline])
-      textpos.push([sprintf("%.1f", wt1 / 10.0), 166, 280, :center, base, shadow, :outline])
-      textpos.push([sprintf("%.1f", wt2 / 10.0), 294, 280, :center, base, shadow, :outline])
+      textpos.push([sprintf("%.1f", ht1 / 10.0), 166+64, 228, :center, base, shadow, :outline])
+      textpos.push([sprintf("%.1f", ht2 / 10.0), 294+64, 228, :center, base, shadow, :outline])
+      textpos.push([sprintf("%.1f", wt1 / 10.0), 166+64, 280, :center, base, shadow, :outline])
+      textpos.push([sprintf("%.1f", wt2 / 10.0), 294+64, 280, :center, base, shadow, :outline])
     end
-    overlay.blt(344, 214, @hwbitmap.bitmap, Rect.new(0, (hwoffset) ? 44 : 0, 32, 44))
-    overlay.blt(344, 266, @hwbitmap.bitmap, Rect.new(32, (hwoffset) ? 44 : 0, 32, 44))
+    overlay.blt(344+64, 214, @hwbitmap.bitmap, Rect.new(0, (hwoffset) ? 44 : 0, 32, 44))
+    overlay.blt(344+64, 266, @hwbitmap.bitmap, Rect.new(32, (hwoffset) ? 44 : 0, 32, 44))
     # Draw shape icon
     if params[9] >= 0
       shape_number = @shapeCommands[params[9]].icon_position
       shaperect = Rect.new(0, shape_number * 60, 60, 60)
-      overlay.blt(424, 218, @shapebitmap.bitmap, shaperect)
+      overlay.blt(424+64, 218, @shapebitmap.bitmap, shaperect)
     end
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
@@ -567,16 +572,16 @@ class PokemonPokedex_Scene
     shadow = Color.new(72, 72, 72)
     # Write various bits of text
     textpos = [
-      [_INTL("Modo de Búsqueda"), Graphics.width / 2, 10, :center, base, shadow],
-      [_INTL("OK"), 80, 346, :center, base, shadow, :outline],
-      [_INTL("Cancelar"), Graphics.width - 80, 346, :center, base, shadow, :outline]
+      [_INTL("Modo de Búsqueda"), (Graphics.width / 2)+64, 10, :center, base, shadow],
+      [_INTL("OK"), 80+64, 346+26, :center, base, shadow, :outline],
+      [_INTL("Cancelar"), Graphics.width - 80 - 64, 346+26, :center, base, shadow, :outline]
     ]
     title = [_INTL("Orden"), _INTL("Nombre"), _INTL("Tipo"), _INTL("Altura"),
              _INTL("Peso"), _INTL("Color"), _INTL("Forma")][mode]
-    textpos.push([title, 102, (mode == 6) ? 70 : 64, :left, base, shadow])
+    textpos.push([title, 102+64, (mode == 6) ? 70 : 64, :left, base, shadow])
     case mode
     when 0   # Order
-      xstart = 46
+      xstart = 46+64
       ystart = 128
       xgap = 236
       ygap = 64
@@ -585,7 +590,7 @@ class PokemonPokedex_Scene
       selbuttony = 0
       selbuttonheight = 44
     when 1   # Name
-      xstart = 78
+      xstart = 78+64
       ystart = 114
       xgap = 52
       ygap = 52
@@ -594,7 +599,7 @@ class PokemonPokedex_Scene
       selbuttony = 156
       selbuttonheight = 44
     when 2   # Type
-      xstart = 8
+      xstart = 8+64
       ystart = 104
       xgap = 124
       ygap = 44
@@ -603,14 +608,14 @@ class PokemonPokedex_Scene
       selbuttony = 44
       selbuttonheight = 44
     when 3, 4   # Height, weight
-      xstart = 44
+      xstart = 44+64
       ystart = 110
       xgap = 304 / (cmds.length + 1)
       ygap = 112
       halfwidth = 60
       cols = cmds.length + 1
     when 5   # Color
-      xstart = 62
+      xstart = 62+64
       ystart = 114
       xgap = 132
       ygap = 52
@@ -619,7 +624,7 @@ class PokemonPokedex_Scene
       selbuttony = 44
       selbuttonheight = 44
     when 6   # Shape
-      xstart = 82
+      xstart = 82+64
       ystart = 116
       xgap = 70
       ygap = 70
@@ -633,11 +638,11 @@ class PokemonPokedex_Scene
     when 2   # Type icons
       2.times do |i|
         if !sel[i] || sel[i] < 0
-          textpos.push(["----", 298 + (128 * i), 66, :center, base, shadow, :outline])
+          textpos.push(["----", 298 + (128 * i)+64, 66, :center, base, shadow, :outline])
         else
           type_number = @typeCommands[sel[i]].icon_position
           typerect = Rect.new(0, type_number * 32, 96, 32)
-          overlay.blt(250 + (128 * i), 58, @typebitmap.bitmap, typerect)
+          overlay.blt(250 + (128 * i)+64, 58, @typebitmap.bitmap, typerect)
         end
       end
     when 3   # Height range
@@ -654,9 +659,9 @@ class PokemonPokedex_Scene
         txt1 = sprintf("%.1f", ht1 / 10.0)
         txt2 = sprintf("%.1f", ht2 / 10.0)
       end
-      textpos.push([txt1, 286, 66, :center, base, shadow, :outline])
-      textpos.push([txt2, 414, 66, :center, base, shadow, :outline])
-      overlay.blt(462, 52, @hwbitmap.bitmap, Rect.new(0, (hwoffset) ? 44 : 0, 32, 44))
+      textpos.push([txt1, 286+64, 66, :center, base, shadow, :outline])
+      textpos.push([txt2, 414+64, 66, :center, base, shadow, :outline])
+      overlay.blt(462+64, 52, @hwbitmap.bitmap, Rect.new(0, (hwoffset) ? 44 : 0, 32, 44))
     when 4   # Weight range
       wt1 = (sel[0] < 0) ? 0 : (sel[0] >= @weightCommands.length) ? 9999 : @weightCommands[sel[0]]
       wt2 = (sel[1] < 0) ? 9999 : (sel[1] >= @weightCommands.length) ? 0 : @weightCommands[sel[1]]
@@ -671,26 +676,26 @@ class PokemonPokedex_Scene
         txt1 = sprintf("%.1f", wt1 / 10.0)
         txt2 = sprintf("%.1f", wt2 / 10.0)
       end
-      textpos.push([txt1, 286, 66, :center, base, shadow, :outline])
-      textpos.push([txt2, 414, 66, :center, base, shadow, :outline])
-      overlay.blt(462, 52, @hwbitmap.bitmap, Rect.new(32, (hwoffset) ? 44 : 0, 32, 44))
+      textpos.push([txt1, 286+64, 66, :center, base, shadow, :outline])
+      textpos.push([txt2, 414+64, 66, :center, base, shadow, :outline])
+      overlay.blt(462+64, 52, @hwbitmap.bitmap, Rect.new(32, (hwoffset) ? 44 : 0, 32, 44))
     when 5   # Color
       if sel[0] < 0
-        textpos.push(["----", 362, 66, :center, base, shadow, :outline])
+        textpos.push(["----", 362+64, 66, :center, base, shadow, :outline])
       else
-        textpos.push([cmds[sel[0]].name, 362, 66, :center, base, shadow, :outline])
+        textpos.push([cmds[sel[0]].name, 362+64, 66, :center, base, shadow, :outline])
       end
     when 6   # Shape icon
       if sel[0] >= 0
         shaperect = Rect.new(0, @shapeCommands[sel[0]].icon_position * 60, 60, 60)
-        overlay.blt(332, 50, @shapebitmap.bitmap, shaperect)
+        overlay.blt(332+64, 50, @shapebitmap.bitmap, shaperect)
       end
     else
       if sel[0] < 0
         text = ["----", "-", "----", "", "", "----", ""][mode]
-        textpos.push([text, 362, 66, :center, base, shadow, :outline])
+        textpos.push([text, 362+64, 66, :center, base, shadow, :outline])
       else
-        textpos.push([cmds[sel[0]], 362, 66, :center, base, shadow, :outline])
+        textpos.push([cmds[sel[0]], 362+64, 66, :center, base, shadow, :outline])
       end
     end
     # Draw selected option(s) button graphic
@@ -778,6 +783,11 @@ class PokemonPokedex_Scene
   def setIconBitmap(species)
     gender, form, _shiny = $player.pokedex.last_form_seen(species)
     @sprites["icon"].setSpeciesBitmap(species, gender, form, false)
+        if !$player.seen?(@sprites["pokedex"].species)
+      @sprites["icon"].tone = Tone.new(-255,-255,-255,255)
+    else
+      @sprites["icon"].tone = Tone.new(0,0,0,0)
+    end
   end
 
   def pbSearchDexList(params)
@@ -1314,4 +1324,3 @@ class PokemonPokedexScreen
     @scene.pbEndScene
   end
 end
-

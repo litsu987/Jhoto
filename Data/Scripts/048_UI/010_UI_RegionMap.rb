@@ -39,9 +39,9 @@ class MapBottomSprite < Sprite
   def refresh
     bitmap.clear
     textpos = [
-      [@mapname,                     18,   4, :left, TEXT_MAIN_COLOR, TEXT_SHADOW_COLOR],
-      [@maplocation,                 18, 360, :left, TEXT_MAIN_COLOR, TEXT_SHADOW_COLOR],
-      [@mapdetails, Graphics.width - 16, 360, :right, TEXT_MAIN_COLOR, TEXT_SHADOW_COLOR]
+      [@mapname,                     25,   18, :left, TEXT_MAIN_COLOR, TEXT_SHADOW_COLOR],
+      [@maplocation,                 20, 402, :left, TEXT_MAIN_COLOR, TEXT_SHADOW_COLOR],
+      [@mapdetails, Graphics.width - 24, 402, :right, TEXT_MAIN_COLOR, TEXT_SHADOW_COLOR]
     ]
     pbDrawTextPositions(bitmap, textpos)
   end
@@ -130,6 +130,7 @@ class PokemonRegionMap_Scene
       @sprites["player"].x = point_x_to_screen_x(@map_x)
       @sprites["player"].y = point_y_to_screen_y(@map_y)
     end
+    draw_roaming_position(mapindex)
     k = 0
     (LEFT..RIGHT).each do |i|
       (TOP..BOTTOM).each do |j|
@@ -353,4 +354,3 @@ def pbShowMap(region = -1, wallmap = true)
     $game_temp.fly_destination = ret if ret && !wallmap
   end
 end
-
