@@ -479,9 +479,9 @@ class PokemonPauseMenu
         Input.update
         event_in_progress = true # Volvemos al flujo del menú principal
       
-      elsif Input.trigger?(Input::Y)
+      elsif  Input.trigger?(Input::Y)
         pbPlayDecisionSE()
-        # Comprobar si se puede usar vuelo
+       # Comprobar si se puede usar vuelo
         if pbCanFly?(pkmn = nil, true) # Llama al método para comprobar si se puede volar
           scene = PokemonRegionMap_Scene.new(-1, false) # Crear una nueva escena del mapa de vuelo
           screen = PokemonRegionMapScreen.new(scene) # Crear una nueva pantalla de vuelo
@@ -490,9 +490,12 @@ class PokemonPauseMenu
           if ret
             @scene.pbHideMenu # Ocultar todo el menú
             $game_temp.fly_destination = ret # Guardar el destino de vuelo seleccionado
+            pbFlyToNewLocation(pkmn = nil, move = :FLY)
             break
           end
         end
+ 
+        
       end
      
       if event_in_progress

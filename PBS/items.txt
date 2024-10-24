@@ -6863,3 +6863,12 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = Parece una Piedra común y corriente.
+#-------------------------------
+[POKEVIAL]
+Name = Poke Vial
+NamePlural = Poke Vial
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Vial recargable, se puede usar para recuper la salud de los Pokémon.

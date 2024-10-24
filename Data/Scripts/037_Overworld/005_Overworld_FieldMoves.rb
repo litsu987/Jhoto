@@ -427,7 +427,9 @@ def pbFlyToNewLocation(pkmn = nil, move = :FLY)
   return true
 end
 
-
+HiddenMoveHandlers::CanUseMove.add(:FLY, proc { |move, pkmn, showmsg|
+  next pbCanFly?(pkmn, showmsg)
+})
 
 HiddenMoveHandlers::UseMove.add(:FLY, proc { |move, pkmn|
   if $game_temp.fly_destination.nil?
