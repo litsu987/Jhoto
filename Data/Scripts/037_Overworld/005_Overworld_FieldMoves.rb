@@ -586,23 +586,33 @@ HiddenMoveHandlers::UseMove.add(:STRENGTH, proc { |move, pokemon|
 # Surf
 #===============================================================================
 def pbSurf
+  # Verifica si el switch 987 está activado
+  return false unless $game_switches[897]
+  
+
   return false if !$game_player.can_ride_vehicle_with_follower?
+  
   move = :SURF
   movefinder = $player.get_pokemon_with_move(move)
-  if !pbCheckHiddenMoveBadge(Settings::BADGE_FOR_SURF, false) || (!$DEBUG && !movefinder)
-    return false
-  end
+  
+  
+  # Confirma si el jugador desea hacer Surf
   if pbConfirmMessage(_INTL("El agua se ve un poco profunda... ¿Te gustaría hacer Surf?"))
     speciesname = (movefinder) ? movefinder.name : $player.name
-    pbMessage(_INTL("¡{1} usó {2}!", speciesname, GameData::Move.get(move).name))
+    pbMessage(_INTL("¡{1} usó {2}!", speciesname, GameData::Move.get(move).name)) 
+    
     pbCancelVehicles
     pbHiddenMoveAnimation(movefinder)
+    
     surfbgm = GameData::Metadata.get.surf_BGM
     pbCueBGM(surfbgm, 0.5) if surfbgm
+    
     pbStartSurfing
     return true
   end
+
   return false
+
 end
 
 def pbStartSurfing
@@ -658,7 +668,8 @@ EventHandlers.add(:on_step_taken, :surf_jump,
 HiddenMoveHandlers::UseMove.add(:SURF, proc { |move, pokemon|
   $game_temp.in_menu = false
   pbCancelVehicles
-  if !pbHiddenMoveAnimation(pokemon)
+  pkmn = Pokemon.new(:LAPRAS, 50)
+  if !pbHiddenMoveAnimation(pkmn)
     pbMessage(_INTL("¡{1} usó {2}!", pokemon.name, GameData::Move.get(move).name))
   end
   surfbgm = GameData::Metadata.get.surf_BGM

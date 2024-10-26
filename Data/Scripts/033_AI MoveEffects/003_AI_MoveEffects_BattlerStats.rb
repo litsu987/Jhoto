@@ -1887,7 +1887,7 @@ Battle::AI::Handlers::MoveEffectScore.add("RemoveUserBindingAndEntryHazardsPoiso
     ai.each_foe_battler(user.side) do |b, i|
       # Prefer if the foe is likely to be poisoned by this move
       poison_score = Battle::AI::Handlers.apply_move_effect_against_target_score("PoisonTarget",
-        0, move, user, b, ai, battle)
+        0, move, user, target, ai, battle)
       score += poison_score if poison_score != Battle::AI::MOVE_USELESS_SCORE
     end
     next score
@@ -1926,7 +1926,7 @@ Battle::AI::Handlers::MoveEffectScore.add("ProtectUserBanefulBunker",
       # Prefer if the foe is likely to be burned by this move
       if b.check_for_move { |m| m.contactMove? }
         burn_score = Battle::AI::Handlers.apply_move_effect_against_target_score("BurnTarget",
-           0, move, user, b, ai, battle)
+          0, move, user, target, ai, battle)
         if burn_score != Battle::AI::MOVE_USELESS_SCORE
           score += burn_score / 2   # Halved because we don't know what move b will use
         end

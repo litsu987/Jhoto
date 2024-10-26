@@ -792,7 +792,7 @@ Battle::AI::Handlers::MoveBasePower.add("DoublePowerIfTargetPoisonedPoisonTarget
 Battle::AI::Handlers::MoveEffectAgainstTargetScore.add("DoublePowerIfTargetPoisonedPoisonTarget",
   proc { |score, move, user, target, ai, battle|
     poison_score = Battle::AI::Handlers.apply_move_effect_against_target_score("PoisonTarget",
-      0, move, user, b, ai, battle)
+      0, move, user, target, ai, battle)
     if poison_score != Battle::AI::MOVE_USELESS_SCORE
       score += poison_score if poison_score != Battle::AI::MOVE_USELESS_SCORE
     end
@@ -811,7 +811,7 @@ Battle::AI::Handlers::MoveBasePower.add("DoublePowerIfTargetStatusProblemBurnTar
 Battle::AI::Handlers::MoveEffectAgainstTargetScore.add("DoublePowerIfTargetStatusProblemBurnTarget",
   proc { |score, move, user, target, ai, battle|
     burn_score = Battle::AI::Handlers.apply_move_effect_against_target_score("BurnTarget",
-      0, move, user, b, ai, battle)
+      0, move, user, target, ai, battle)
     if burn_score != Battle::AI::MOVE_USELESS_SCORE
       score += burn_score if burn_score != Battle::AI::MOVE_USELESS_SCORE
     end
@@ -838,7 +838,7 @@ Battle::AI::Handlers::MoveEffectScore.add("DamageTargetAddSpikesToFoeSide",
     score += 15
     if Settings::MECHANICS_GENERATION >= 9
       spike_score = Battle::AI::Handlers.apply_move_effect_against_target_score("AddSpikesToFoeSide",
-        0, move, user, b, ai, battle)
+        0, move, user, target, ai, battle)
       if spike_score != Battle::AI::MOVE_USELESS_SCORE
         score += spike_score if spike_score != Battle::AI::MOVE_USELESS_SCORE
       end
@@ -881,7 +881,7 @@ Battle::AI::Handlers::MoveEffectScore.add("DamageTargetAddStealthRocksToFoeSide"
     score += 15
     if Settings::MECHANICS_GENERATION >= 9
       stealth_rock_score = Battle::AI::Handlers.apply_move_effect_against_target_score("AddStealthRocksToFoeSide",
-        0, move, user, b, ai, battle)
+        0, move, user, target, ai, battle)
       if stealth_rock_score != Battle::AI::MOVE_USELESS_SCORE
         score += stealth_rock_score if stealth_rock_score != Battle::AI::MOVE_USELESS_SCORE
       end

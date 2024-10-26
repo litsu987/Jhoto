@@ -726,7 +726,8 @@ Battle::AI::Handlers::MoveEffectAgainstTargetScore.add("HealUserByHalfOfDamageDo
     end
     # burn score
     burn_score = Battle::AI::Handlers.apply_move_effect_against_target_score("BurnTarget",
-      0, move, user, b, ai, battle)
+      0, move, user, target, ai, battle)
+    
     if burn_score != Battle::AI::MOVE_USELESS_SCORE
       score += burn_score if burn_score != Battle::AI::MOVE_USELESS_SCORE
     end

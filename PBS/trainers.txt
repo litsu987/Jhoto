@@ -548,3 +548,117 @@ Pokemon = ELECTABUZZ,40
 Pokemon = UMBREON,40
 Pokemon = ALAKAZAM,40
 Pokemon = MEGANIUM,41
+#-------------------------------
+[Ornitologo,Víctor]
+LoseText = ¡Aaah!
+Pokemon = STARAPTOR,41
+Pokemon = NOCTOWL,41
+Pokemon = HAWLUCHA,41
+#-------------------------------
+[Ornitologo,Manu]
+LoseText = ¡Ufff!
+Pokemon = GLISCOR,41
+Pokemon = DODRIO,41
+Pokemon = EMOLGA,41
+#-------------------------------
+[Medium2,Loli]
+LoseText = ¡Huy!
+Pokemon = DUSCLOPS,35
+Pokemon = COFAGRIGUS,35
+#-------------------------------
+[CAMPERA,Lola]
+LoseText = ¡Menuda derrota! No me esperaba perder así.
+Pokemon = SWALOT,42
+Pokemon = GYARADOS,42
+Pokemon = SIRFETCHD,42
+Pokemon = LUXRAY,42
+#-------------------------------
+[Medium2,Carla]
+LoseText = He perdido. ¡Qué pena...!
+Pokemon = HYPNO,42
+Pokemon = REUNICLUS,42
+Pokemon = PALOSSAND,42
+Pokemon = JELLICENT,42
+#-------------------------------
+[NINAS,Mily y Pily]
+LoseText = ¡He perdido el combate!
+Pokemon = HYPNO,42
+Pokemon = REUNICLUS,42
+Pokemon = PALOSSAND,42
+Pokemon = JELLICENT,42
+#-------------------------------
+[Medium3,Tamara]
+LoseText = ¡Ah! ¡Bien hecho!
+Pokemon = DUSKNOIR,43
+Pokemon = DRIFBLIM,43
+Pokemon = DHELMISE,43
+#-------------------------------
+[Medium3,Emma]
+LoseText = ¡He... perdido!
+Pokemon = JELLICENT,43
+Pokemon = TREVENANT,43
+Pokemon = SPIRITOMB,43
+#-------------------------------
+[Medium3,Marta]
+LoseText = ¡He... perdido!
+Pokemon = MIMIKYU,44
+Pokemon = GOLURK,44
+Pokemon = CERULEDGE,44
+#-------------------------------
+[LEADER_MORTI,Morti]
+LoseText = No logro entenderlo.
+Items = HYPERPOTION,HYPERPOTION
+Pokemon = ZOROARK,45
+    Moves = BURNINGJEALOUSY,BITTERMALICE,PSYCHIC,FOCUSBLAST
+    AbilityIndex = 1
+    Form=1
+    Item = CHOICESPECS
+    IV = 20,20,20,20,20,20
+Pokemon = GENGAR,46
+    Moves = DISABLE,SUBSTITUTE,SLUDGEWAVE,SHADOWBALL
+    AbilityIndex = 2
+    Item = LUMBERRY
+    IV = 20,20,20,20,20,20
+Pokemon = SINISTCHA,45
+    Moves = MATCHAGOTCHA,HEX,CALMMIND,STRENGTHSAP
+    AbilityIndex = 2
+    Item = ROCKYHELMET
+    IV = 20,20,20,20,20,20
+Pokemon = TYPHLOSION,45
+    Moves = INFERNALPARADE,ERUPTION,ENDEAVOR,FOCUSBLAST
+    AbilityIndex = 0
+    Form=1
+    Item = FOCUSSASH
+    IV = 20,20,20,20,20,20
+Pokemon = DUSKNOIR,45
+    Moves = EARTHQUAKE,THUNDERPUNCH,LEECHLIFE,SHADOWSNEAK
+    AbilityIndex = 0
+    Item = ASSAULTVEST
+    IV = 20,20,20,20,20,20
+Pokemon = HOUNDSTONE,45
+    Moves = LASTRESPECTS,PLAYROUGH,STOMPINGTANTRUM,FACADE
+    AbilityIndex = 2
+    Item = CHOICESCARF
+    IV = 20,20,20,20,20,20
+    -------------------------------
+[SACERDOTISA,María]
+LoseText = No me gustas
+Pokemon = MISMAGIUS,41
+Pokemon = POLTEAGEIST,41
+#-------------------------------
+[SACERDOTISA,Sara]
+LoseText = Yo te maldigo
+Pokemon = JELLICENT,42
+Pokemon = CHANDELURE,42
+#-------------------------------
+[Medium2,Dora]
+LoseText = A pesar de leerte el pensamiento, ¡he perdido!
+Pokemon = SLOWKING,42
+    Form = 1
+Pokemon = FARIGIRAF,42
+#-------------------------------
+[Medium2,Isabel]
+LoseText = A pesar de leerte el pensamiento, ¡he perdido!
+Pokemon = SLOWKING,42
+    Form = 1
+Pokemon = FARIGIRAF,42

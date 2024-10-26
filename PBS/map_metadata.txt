@@ -129,14 +129,8 @@ BattleBack = interior
 [039]   # Torre quemada
 Name = Torre Quemada
 ShowArea = true
-BattleBack = templo
 SnapEdges = true
-#-------------------------------
-[077]   # Torre quemada / 2
-Name = Torre Quemada
-ShowArea = true
-BattleBack = templo
-SnapEdges = true
+BattleBack = quemada
 #-------------------------------
 [043]   # Escuela
 Name = Escuela
@@ -153,7 +147,6 @@ BattleBack = bosque
 Name = Ruinas Alfa
 Outdoor = true
 ShowArea = true
-Bicycle = false
 SnapEdges = true
 BattleBack = Field
 #-------------------------------
@@ -217,6 +210,17 @@ BattleBack = blanca
 [074]   # Tunel trigal
 Name = Tunel trigal
 #-------------------------------
+[077]   # Torre quemada / 2
+Name = Torre Quemada
+ShowArea = true
+SnapEdges = true
+BattleBack = templo
+#-------------------------------
 [094]   # Raid 1
 Name = Raid 1
 BattleBack = forest
+#-------------------------------
+[101]   # Gimnasio de Ciudad Iris
+Name = Gimnasio de Ciudad Iris
+DarkMap = true
+BattleBack = morty

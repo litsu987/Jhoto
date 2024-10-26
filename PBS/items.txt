@@ -6872,3 +6872,12 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = Vial recargable, se puede usar para recuper la salud de los Pokémon.
+#-------------------------------
+[POKEMONTURA]
+Name = Poke Montura
+NamePlural = Poke Montura
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Se utiliza para llamar a los Pokémon aquáticos que sirven de Pokémontura.

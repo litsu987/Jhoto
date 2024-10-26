@@ -1819,7 +1819,7 @@ Battle::AI::Handlers::MoveEffectScore.add("ProtectUserBanefulBunker",
       # Prefer if the foe is likely to be poisoned by this move
       if b.check_for_move { |m| m.contactMove? }
         poison_score = Battle::AI::Handlers.apply_move_effect_against_target_score("PoisonTarget",
-           0, move, user, b, ai, battle)
+          0, move, user, target, ai, battle)
         if poison_score != Battle::AI::MOVE_USELESS_SCORE
           score += poison_score / 2   # Halved because we don't know what move b will use
         end

@@ -893,7 +893,7 @@ Battle::AI::Handlers::MoveFailureCheck.add("SwitchOutUserStartHailWeather",
 Battle::AI::Handlers::MoveEffectScore.add("SwitchOutUserStartHailWeather",
   proc { |score, move, user, ai, battle|
     switchout_score = Battle::AI::Handlers.apply_move_effect_against_target_score("SwitchOutUserStatusMove",
-        0, move, user, b, ai, battle)
+      0, move, user, target, ai, battle)
     score += switchout_score if switchout_score != Battle::AI::MOVE_USELESS_SCORE
     next Battle::AI::MOVE_USELESS_SCORE if switchout_score == Battle::AI::MOVE_USELESS_SCORE && 
                                           (battle.pbCheckGlobalAbility(:AIRLOCK) ||
@@ -923,11 +923,11 @@ Battle::AI::Handlers::MoveEffectScore.add("UserMakeSubstituteSwitchOut",
   proc { |score, move, user, ai, battle|
     # Switch out score
     switchout_score = Battle::AI::Handlers.apply_move_effect_against_target_score("SwitchOutUserStatusMove",
-        0, move, user, b, ai, battle)
+      0, move, user, target, ai, battle)
     score += switchout_score if switchout_score != Battle::AI::MOVE_USELESS_SCORE
     # Substitute score
     substitute_score = Battle::AI::Handlers.apply_move_effect_against_target_score("UserMakeSubstitute",
-        0, move, user, b, ai, battle)
+      0, move, user, target, ai, battle)
     score += substitute_score if substitute_score != Battle::AI::MOVE_USELESS_SCORE
     next score
   }
