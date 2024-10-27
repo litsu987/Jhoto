@@ -582,10 +582,8 @@ Pokemon = JELLICENT,42
 #-------------------------------
 [NINAS,Mily y Pily]
 LoseText = ¡He perdido el combate!
-Pokemon = HYPNO,42
-Pokemon = REUNICLUS,42
-Pokemon = PALOSSAND,42
-Pokemon = JELLICENT,42
+Pokemon = RAICHU,42
+Pokemon = WIGGLYTUFF,42
 #-------------------------------
 [Medium3,Tamara]
 LoseText = ¡Ah! ¡Bien hecho!

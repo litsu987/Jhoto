@@ -85,11 +85,13 @@ BattleBack = field
 Name = Ruta 37
 Outdoor = true
 ShowArea = true
+BattleBack = field
 #-------------------------------
 [016]   # Ciudad Iris
 Name = Ciudad Iris
 Outdoor = true
 ShowArea = true
+BattleBack = field
 #-------------------------------
 [017]   # Ruta 38
 Name = Ruta 38
