@@ -203,7 +203,7 @@ Land,21
 Land,21
     10,AIPOM,33,35
     10,AUDINO,33,35
-    10,DREEPY,33,35
+    10,DREEPY,33,35 
     10,DROWZEE,33,35
     10,FALINKS,33,35
     10,GLIGAR,33,35
@@ -248,7 +248,7 @@ Land,21
     10,SHINX,3,5
     10,SPOINK,3,5
 #-------------------------------
-[044] # Bosque Encinar
+[106] # Bosque Encinar
 Land,21
     10,BURMY,20,23
     10,HERACROSS,20,23

@@ -138,13 +138,6 @@ BattleBack = quemada
 Name = Escuela
 BattleBack = interior
 #-------------------------------
-[044]   # Bosque Encinar
-Name = GYM
-Outdoor = true
-ShowArea = true
-SnapEdges = true
-BattleBack = bosque
-#-------------------------------
 [045]   # Ruinas Alfa
 Name = Ruinas Alfa
 Outdoor = true
@@ -226,3 +219,16 @@ BattleBack = forest
 Name = Gimnasio de Ciudad Iris
 DarkMap = true
 BattleBack = morty
+#-------------------------------
+[106]   # Bosque Encinar
+Name = Bosque Encinar
+ShowArea = true
+Bicycle = true
+SnapEdges = true
+BattleBack = Bosque
+#-------------------------------
+[107]   # Valle Oculto
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = field
