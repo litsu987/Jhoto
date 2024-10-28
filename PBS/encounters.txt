@@ -2,9 +2,9 @@
 #-------------------------------
 [002] # Pueblo Primavera
 Water,2
-    60,TENTACOOL,14,19
-    30,MANTYKE,15,16
-    10,REMORAID,14,16
+    60,TENTACOOL,42,45
+    30,MANTYKE,42,45
+    10,REMORAID,42,45
 OldRod
     100,SHELLDER,5,7
 GoodRod
@@ -12,10 +12,10 @@ GoodRod
     20,KRABBY,15,16
     20,SHELLDER,16,19
 SuperRod
-    40,CHINCHOU,17,19
-    40,QWILFISH,16,19
-    15,CORSOLA,15,18
-    5,STARYU,15,17
+    40,CHINCHOU,42,45
+    40,QWILFISH,42,45
+    15,CORSOLA,42,45
+    5,STARYU,42,45
 #-------------------------------
 [003] # Ruta 29
 Land,21
@@ -45,9 +45,9 @@ Land,21
     10,ZIGZAGOON,3,5
     10,ZORUA,3,5
 Water,2
-    60,TENTACOOL,14,19
-    30,MANTYKE,15,16
-    10,REMORAID,14,16
+    60,CORPHISH,42,45
+    30,SHELLDER,42,45
+    10,MAGIKARP,42,45
 OldRod
     100,CHINCHOU,5,7
 #-------------------------------
@@ -65,11 +65,11 @@ Land,21
     10,TAILLOW,3,5
     10,WEEDLE,3,5
 Water,2
-    60,TENTACOOL,14,19
-    30,MANTYKE,15,16
-    10,REMORAID,14,16
+    60,BUIZEL,42,45
+    30,BASCULIN,42,45
+    10,SHELLOS,42,45
 OldRod
-    100,MAGIKARP,5,7
+    100,BUIZEL,5,7
 #-------------------------------
 [006] # Ruta 31
 Land,21
@@ -87,9 +87,9 @@ Land,21
     10,WOOPER,7,9
     10,YAMPER,7,9
 Water,2
-    60,SURSKIT,14,19
-    30,WISHIWASHI,15,16
-    10,REMORAID,14,16
+    60,SURSKIT,42,45
+    30,WISHIWASHI,42,45
+    10,REMORAID,42,45
 OldRod
     100,GOLDEEN,7,9
 #-------------------------------
@@ -107,8 +107,8 @@ Land,21
     10,TYROGUE,7,9
     10,VULPIX,7,9
 Water,2
-    60,GOLDEEN,14,19
-    40,POLIWAG,15,16
+    60,GOLDEEN,42,45
+    40,POLIWAG,42,45
 OldRod
     100,STARYU,7,9
 #-------------------------------
@@ -129,8 +129,8 @@ Land,21
     10,SUNKERN,11,13
     10,SWIRLIX,11,13
 Water,2
-    60,GOLDEEN,14,19
-    40,POLIWAG,15,16
+    60,GOLDEEN,42,45
+    40,POLIWAG,42,45
 OldRod
     100,STARYU,11,13
 #-------------------------------
@@ -179,8 +179,9 @@ Land,21
     10,SNEASEL_1,28,30
     10,TOGEPI,28,30
 Water,2
-    60,TENTACOOL,14,19
-    40,BUIZEL,15,16
+    60,CLAUNCHER,42,45
+    40,WAILMER,42,45
+    40,SEEL,42,45
 OldRod
     100,SHELLDER,28,30
 #-------------------------------
@@ -214,8 +215,8 @@ Land,21
     10,TOGEDEMARU,33,35
     10,WHISMUR,33,35
 Water,2
-    60,DEWPIDER,33,35
-    40,CORSOLA,33,35
+    60,DEWPIDER,42,45
+    40,CORSOLA,42,45
 OldRod
     100,BASCULIN,33,35
 #-------------------------------
@@ -263,8 +264,8 @@ Land,21
     10,TAROUNTULA,20,23
     10,VOLBEAT,20,23
 Water,2
-    60,QWILFISH,20,23
-    40,MARILL,20,23
+    60,QWILFISH,42,45
+    40,MARILL,42,45
 OldRod
     100,PALPITOAD,20,23
 #-------------------------------
@@ -283,8 +284,8 @@ Land,21
     10,YAMASK_1,11,13
     10,ZANGOOSE,11,13
 Water,2
-    60,GOLDEEN,14,19
-    40,POLIWAG,15,16
+    60,GOLDEEN,42,45
+    40,POLIWAG,42,45
 OldRod
     100,DRATINI,11,13
 #-------------------------------
@@ -302,6 +303,12 @@ Cave,21
     10,WOOBAT,20,23
     10,WOOPER,20,23
     10,ZUBAT,20,23
+Water,2
+    50,SLOWPOKE,42,45
+    50,SLOWPOKE_1,20,23
+OldRod
+    50,SLOWPOKE,20,23
+    50,SLOWPOKE_1,20,23
 #-------------------------------
 [051] # Pozo Slowpoke 1
 Cave,21
@@ -318,7 +325,8 @@ Cave,21
     10,WOOPER,20,23
     10,ZUBAT,20,23
 Water,2
-    100,GOLBAT,30,32
+    50,SLOWPOKE,42,45
+    50,SLOWPOKE_1,20,23
 OldRod
     100,FEEBAS,20,23
 #-------------------------------
@@ -332,6 +340,11 @@ Cave,5
     10,MACHOP,9,10
     10,TRAPINCH,9,10
     10,ZUBAT,9,10
+Water,2
+    50,QUAGSIRE,42,45
+    50,WHISCASH,20,23
+OldRod
+    100,PALPITOAD,20,23
 #-------------------------------
 [056] # Cueva union
 Cave,5
@@ -341,6 +354,9 @@ Cave,5
     10,ROGGENROLA,16,19
     10,TORKOAL,16,19
     10,WOOBAT,16,19
+Water,2
+    50,DREDNAW,42,45
+    50,WHISCASH,20,23
 OldRod
     100,BARBOACH,15,16
 #-------------------------------
@@ -352,6 +368,23 @@ Cave,5
     10,ROGGENROLA,16,19
     10,TORKOAL,16,19
     10,WOOBAT,16,19
+Water,2
+    50,DREDNAW,42,45
+    50,WHISCASH,20,23
+OldRod
+    100,MAGIKARP,15,16
+#-------------------------------
+[058] # Cueva union 3
+Cave,5
+    10,MAKUHITA,16,19
+    10,NACLI,16,19
+    10,ROCKRUFF,16,19
+    10,ROGGENROLA,16,19
+    10,TORKOAL,16,19
+    10,WOOBAT,16,19
+Water,2
+    20,LAPRAS,42,45
+    50,WHISCASH,20,23
 OldRod
     100,MAGIKARP,15,16
 #-------------------------------
@@ -374,9 +407,11 @@ Cave,21
     10,WOOPER,20,23
     10,ZUBAT,20,23
 Water,2
-    100,GOLBAT,30,32
+    50,SLOWPOKE,42,45
+    50,SLOWPOKE_1,20,23
 OldRod
-    100,FEEBAS,15,16
+    50,SLOWPOKE,20,23
+    50,SLOWPOKE_1,20,23
 #-------------------------------
 [064] # Torre Bellsprout
 Cave,5
@@ -415,8 +450,8 @@ Land,21
     10,SHUCKLE,31,33
     10,YANMA,31,33
 Water,2
-    60,DEWPIDER,31,33
-    40,SURSKIT,31,33
+    60,DEWPIDER,42,45
+    40,SURSKIT,42,45
 OldRod
     100,WIMPOD,31,33
 #-------------------------------
@@ -438,11 +473,12 @@ Land,21
 [016] # Ciudad Iris
 Land,21
 Water,2
-    50,ARROKUDA,31,33
-    50,BRUXISH,31,33
+    50,ARROKUDA,42,45
+    50,BRUXISH,42,45
 OldRod
     80,MAGIKARP,31,33
     20,FEEBAS,31,33
+#-------------------------------
 [039] # Torre Quemada
 Cave,21
     10,MISDREAVUS,37,39
@@ -506,15 +542,30 @@ Land,21
 #-------------------------------
 [019] # Ciudad Olivo
 Land,21
-    10,KLINK,37,39
-    10,SHELMET,37,39
-    10,PAWNIARD,37,39
-    10,HAWLUCHA,37,39
-    10,KLEFKI,37,39
-    10,DRAMPA,37,39
-    10,CRAMORANT,37,39
-    10,APPLIN,37,39
-    10,RIOLU,37,39
-    10,GOSSIFLEUR,37,39
-    10,CAPSAKID,37,39
-    10,FLITTLE,37,39
+    10,KLINK,42,45
+    10,SHELMET,42,45
+    10,PAWNIARD,42,45
+    10,HAWLUCHA,42,45
+    10,KLEFKI,42,45
+    10,DRAMPA,42,45
+    10,CRAMORANT,42,45
+    10,APPLIN,42,45
+    10,RIOLU,42,45
+    10,GOSSIFLEUR,42,45
+    10,CAPSAKID,42,45
+    10,FLITTLE,42,45
+#-------------------------------
+[107] # Valle Oculto
+Land,21
+    10,SKARMORY,42,45
+    10,SMEARGLE,42,45
+    10,STANTLER,42,45
+    10,NOSEPASS,42,45
+    10,MAWILE,42,45
+    10,ELECTRIKE,42,45
+    10,CASTFORM,42,45
+    10,CHERUBI,42,45
+    10,PANSAGE,42,45
+    10,PANPOUR,42,45
+    10,PANSEAR,42,45
+    10,MUNNA,42,45

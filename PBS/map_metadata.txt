@@ -138,6 +138,10 @@ BattleBack = quemada
 Name = Escuela
 BattleBack = interior
 #-------------------------------
+[044]   # Raid 4
+Name = Raid
+BattleBack = forest
+#-------------------------------
 [045]   # Ruinas Alfa
 Name = Ruinas Alfa
 Outdoor = true
@@ -215,10 +219,26 @@ BattleBack = templo
 Name = Raid 1
 BattleBack = forest
 #-------------------------------
+[095]   # Raid 3
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[098]   # Raid 14
+Name = Raid
+BattleBack = forest
+#-------------------------------
 [101]   # Gimnasio de Ciudad Iris
 Name = Gimnasio de Ciudad Iris
 DarkMap = true
 BattleBack = morty
+#-------------------------------
+[104]   # Raid 2
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[105]   # Raid 5
+Name = Raid
+BattleBack = forest
 #-------------------------------
 [106]   # Bosque Encinar
 Name = Bosque Encinar
@@ -228,7 +248,36 @@ SnapEdges = true
 BattleBack = Bosque
 #-------------------------------
 [107]   # Valle Oculto
+Name = Valle Oculto
 Outdoor = true
 ShowArea = true
 Bicycle = true
 BattleBack = field
+#-------------------------------
+[108]   # Raid6
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[109]   # Raid 7
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[110]   # Raid 8
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[111]   # Raid 9
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[112]   # Raid 10
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[113]   # Raid 11
+Name = Raid
+BattleBack = forest
+#-------------------------------
+[114]   # Raid 12
+Name = Raid
+BattleBack = forest
