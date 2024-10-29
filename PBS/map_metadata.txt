@@ -215,6 +215,11 @@ ShowArea = true
 SnapEdges = true
 BattleBack = templo
 #-------------------------------
+[082]   # Parque Nacional
+Outdoor = true
+ShowArea = true
+Bicycle = true
+#-------------------------------
 [094]   # Raid 1
 Name = Raid 1
 BattleBack = forest
@@ -281,3 +286,10 @@ BattleBack = forest
 [114]   # Raid 12
 Name = Raid
 BattleBack = forest
+#-------------------------------
+[119]   # Ruta 27
+Name = Ruta 27
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = field
