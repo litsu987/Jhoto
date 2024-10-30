@@ -1,15 +1,18 @@
 ﻿#-------------------------------
 [SILVER1,???]
 LoseText = ¿Feliz de haber ganado?
-Pokemon = CYNDAQUIL,6
+Pokemon = CYNDAQUIL,5
+Pokemon = SNEASEL,5
 #-------------------------------
 [SILVER1,???,1]
 LoseText = ¿Feliz de haber ganado?
-Pokemon = TOTODILE,6
+Pokemon = TOTODILE,5
+Pokemon = SNEASEL,5
 #-------------------------------
 [SILVER1,???,2]
 LoseText = ¿Feliz de haber ganado?
-Pokemon = CHIKORITA,6
+Pokemon = CHIKORITA,5
+Pokemon = SNEASEL,5
 #-------------------------------
 [JOVEN,Chano]
 LoseText = Ya no me quedan más Pokémon...
@@ -257,7 +260,7 @@ Pokemon = VOLTORB,24
 Pokemon = KOFFING,24
         Form = 1
 Pokemon = GOLBAT,24
-Pokemon = PURUGLY,24
+Pokemon = ABSOL,24
 #-------------------------------
 [BICHERO,Tomy]
 LoseText = ¡Maldita sea!
@@ -315,27 +318,27 @@ Pokemon = SCYTHER,29
 #-------------------------------
 [SILVER1,Silver]
 LoseText = ¡Maldita sea!
-Pokemon = STARAVIA,30
+Pokemon = HONCHKROW,29
 Pokemon = ELECTABUZZ,29
-Pokemon = UMBREON,29
-Pokemon = KADABRA,29
-Pokemon = QUILAVA,29
+Pokemon = ESPEON,29
+Pokemon = QUILAVA,30
+Pokemon = SNEASEL,30
 #-------------------------------
 [SILVER1,Silver,1]
 LoseText = ¡Maldita sea!
-Pokemon = STARAVIA,30
+Pokemon = HONCHKROW,29
 Pokemon = ELECTABUZZ,29
-Pokemon = UMBREON,29
-Pokemon = KADABRA,29
-Pokemon = CROCONAW,29
+Pokemon = ESPEON,29
+Pokemon = CROCONAW,30
+Pokemon = SNEASEL,30
 #-------------------------------
 [SILVER1,Silver,2]
 LoseText = ¡Maldita sea!
-Pokemon = STARAVIA,30
+Pokemon = HONCHKROW,29
 Pokemon = ELECTABUZZ,29
-Pokemon = UMBREON,29
-Pokemon = KADABRA,29
-Pokemon = BAYLEEF,29
+Pokemon = ESPEON,29
+Pokemon = BAYLEEF,30
+Pokemon = SNEASEL,30
 #-------------------------------
 [JOVEN,Samuel]
 LoseText = Ya no me quedan más Pokémon...
@@ -527,27 +530,33 @@ Pokemon = FERALIGATR,38
 #-------------------------------
 [SILVER2,Silver]
 LoseText = ¡Maldita sea!
-Pokemon = STARAPTOR,40
+Pokemon = ZOROARK,40
+    form = 1
 Pokemon = ELECTABUZZ,40
-Pokemon = UMBREON,40
-Pokemon = ALAKAZAM,40
+Pokemon = ESPEON,40
+Pokemon = WEAVILE,41
 Pokemon = TYPHLOSION,41
+Pokemon = HONCHKROW,40
 #-------------------------------
 [SILVER2,Silver,1]
 LoseText = ¡Maldita sea!
-Pokemon = STARAPTOR,40
+Pokemon = ZOROARK,40
+    form = 1
 Pokemon = ELECTABUZZ,40
-Pokemon = UMBREON,40
-Pokemon = ALAKAZAM,40   
+Pokemon = ESPEON,40
+Pokemon = WEAVILE,41
 Pokemon = FERALIGATR,41
+Pokemon = HONCHKROW,40
 #-------------------------------
 [SILVER2,Silver,2]
 LoseText = ¡Maldita sea!
-Pokemon = STARAPTOR,40
+Pokemon = ZOROARK,40
+    form = 1
 Pokemon = ELECTABUZZ,40
-Pokemon = UMBREON,40
-Pokemon = ALAKAZAM,40
+Pokemon = ESPEON,40
+Pokemon = WEAVILE,41
 Pokemon = MEGANIUM,41
+Pokemon = HONCHKROW,40
 #-------------------------------
 [Ornitologo,Víctor]
 LoseText = ¡Aaah!
@@ -605,7 +614,7 @@ Pokemon = CERULEDGE,44
 #-------------------------------
 [LEADER_MORTI,Morti]
 LoseText = No logro entenderlo.
-Items = HYPERPOTION,HYPERPOTION
+Items = HYPERPOTION,HYPERPOTION,MEGARING
 Pokemon = ZOROARK,45
     Moves = BURNINGJEALOUSY,BITTERMALICE,PSYCHIC,FOCUSBLAST
     AbilityIndex = 1
@@ -615,15 +624,15 @@ Pokemon = ZOROARK,45
 Pokemon = GENGAR,46
     Moves = DISABLE,SUBSTITUTE,SLUDGEWAVE,SHADOWBALL
     AbilityIndex = 2
-    Item = LUMBERRY
+    Item = GENGARITE
     IV = 20,20,20,20,20,20
 Pokemon = SINISTCHA,45
     Moves = MATCHAGOTCHA,HEX,CALMMIND,STRENGTHSAP
     AbilityIndex = 2
     Item = ROCKYHELMET
     IV = 20,20,20,20,20,20
-Pokemon = TYPHLOSION,45
-    Moves = INFERNALPARADE,ERUPTION,ENDEAVOR,FOCUSBLAST
+Pokemon = MISMAGIUS,45
+    Moves = SHADOWBALL,DAZZLINGGLEAM,MYSTICALFIRE,ENERGYBALL
     AbilityIndex = 0
     Form=1
     Item = FOCUSSASH
@@ -660,3 +669,32 @@ LoseText = A pesar de leerte el pensamiento, ¡he perdido!
 Pokemon = SLOWKING,42
     Form = 1
 Pokemon = FARIGIRAF,42
+#-------------------------------
+[GYMVolador,Tobi]
+LoseText = ¡Me apetece salir volando ahora!
+Pokemon = DODRIO,42
+Pokemon = TOGEKISS,42
+Pokemon = SWELLOW,42
+#-------------------------------
+[JOVEN,Javier]
+LoseText = ¿Eh? Esto si que es raro...
+Pokemon = MRMIME,43
+Pokemon = MAGNETON,43
+#-------------------------------
+[MARINERO,Saturno]
+LoseText = ¡Tu destreza es de nivel mundial!
+Pokemon = QUAGSIRE,42
+    Form = 1
+Pokemon = MACHAMP,42
+#-------------------------------
+[FRIKI,Marc]
+LoseText = Creo que no he estudiado bastante.
+Pokemon = ZOROARK,42
+Pokemon = GRANBULL,42
+Pokemon = EXEGGUTOR,42
+#-------------------------------
+[CHICA,Sara]
+LoseText = Ya veo. De modo que luchas así.
+Pokemon = AMPHAROS,42
+Pokemon = GOLDUCK,42
+Pokemon = SHIFTRY,42
