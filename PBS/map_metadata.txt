@@ -216,6 +216,7 @@ SnapEdges = true
 BattleBack = templo
 #-------------------------------
 [082]   # Parque Nacional
+Name = Parque Nacional
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -293,3 +294,8 @@ Outdoor = true
 ShowArea = true
 Bicycle = true
 BattleBack = field
+#-------------------------------
+[122]   # Ruta 40
+Outdoor = true
+ShowArea = true
+Bicycle = true
