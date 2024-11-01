@@ -698,3 +698,39 @@ LoseText = Ya veo. De modo que luchas así.
 Pokemon = AMPHAROS,42
 Pokemon = GOLDUCK,42
 Pokemon = SHIFTRY,42
+#-------------------------------
+[ROKETO,Soldado,2]
+LoseText = ¡Aaargh! ¡Hoy no es mi día!
+Pokemon = RATICATE,46
+        Form = 1
+Pokemon = CROBAT,46
+Pokemon = ARBOK,56
+#-------------------------------
+[CHICA2,Isabel]
+LoseText = No me importa perder.
+Pokemon = RAICHU,46
+Pokemon = ELDEGOSS,46
+Pokemon = TOEDSCRUEL,46
+#-------------------------------
+[FRIKI,Dani]
+LoseText = ¡Uff...!
+Pokemon = CLODSIRE,46
+Pokemon = KINGLER,46
+#-------------------------------
+[MARINERO,Gabi]
+LoseText = ¡Aarg!
+Pokemon = DONDOZO,46
+Pokemon = PALOSSAND,46
+#-------------------------------
+[JOVEN,Javi]
+LoseText = Ya no me quedan más Pokémon...
+Pokemon = CYCLIZAR,47
+Pokemon = HELIOLISK,47
+Pokemon = SCOLIPEDE,47
+Pokemon = ALTARIA,47
+#-------------------------------
+[BICHERO,Alex]
+LoseText = ¡Maldita sea!
+Pokemon = SCIZOR,47
+Pokemon = CRUSTLE,47
+Pokemon = VIKAVOLT,47

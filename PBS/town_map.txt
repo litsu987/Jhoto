@@ -111,6 +111,7 @@ Point = 9,17,Isla Ignisar
 Point = 5,18,Isla Glaciara
 Point = 8,13,Isla Tempestris
 Point = 22,6,Ruta 44
+Point = 16,8,Valle Oculto,
 #-------------------------------
 [1]
 Name = Tiall
