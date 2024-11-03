@@ -141,36 +141,43 @@ Bicycle = true
 MapPosition = 0,9,10
 #-------------------------------
 [021]   # Interseccion
+Name = Interseccion
 MapPosition = 0,16,6
 #-------------------------------
 [023]   # Raid 15
+Name = Raid 15
 MapPosition = 0,9,8
 #-------------------------------
 [025]   # Ruta 42
+Name = Ruta 42
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,17,6
 #-------------------------------
 [026]   # Pueblo Caoba
+Name = Pueblo Caoba
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,19,6
 #-------------------------------
 [027]   # Ruta 44
+Name = Ruta 44
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,21,6
 #-------------------------------
 [028]   # Ciudad Endrino
+Name = Ciudad Endrino
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,27,4
 #-------------------------------
 [029]   # Ruta 45
+Name = Ruta 45
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -200,12 +207,15 @@ MapPosition = 0,15,18
 BattleBack = interior
 #-------------------------------
 [035]   # Casas
+Name = Casas
 MapPosition = 0,26,15
 #-------------------------------
 [036]   # Laboratorio
+Name = Laboratorio
 MapPosition = 0,26,15
 #-------------------------------
 [038]   # Centro Poke
+Name = Centro Poke
 MapPosition = 0,13,13
 #-------------------------------
 [039]   # Torre quemada
@@ -216,12 +226,15 @@ SnapEdges = true
 BattleBack = quemada
 #-------------------------------
 [040]   # casas2
+Name = casas2
 MapPosition = 0,21,13
 #-------------------------------
 [041]   # Centro Poke
+Name = Centro Poke
 MapPosition = 0,17,13
 #-------------------------------
 [042]   # casas
+Name = casas
 MapPosition = 0,17,10
 #-------------------------------
 [043]   # Escuela
@@ -244,6 +257,7 @@ SnapEdges = true
 BattleBack = Field
 #-------------------------------
 [046]   # entrada pozo
+Name = entrada pozo
 Bicycle = true
 MapPosition = 0,15,18
 #-------------------------------
@@ -265,6 +279,7 @@ MapPosition = 0,15,18
 BattleBack = cave2
 #-------------------------------
 [050]   # Centro Poke
+Name = Centro Poke
 MapPosition = 0,15,18
 #-------------------------------
 [051]   # Pozo Slowpoke 1
@@ -274,6 +289,7 @@ MapPosition = 0,15,18
 BattleBack = Templo
 #-------------------------------
 [052]   # Gym Volador
+Name = Gym Volador
 MapPosition = 0,17,10
 #-------------------------------
 [053]   # Gym Volador
@@ -290,6 +306,7 @@ DarkMap = true
 BattleBack = cave2
 #-------------------------------
 [055]   # Cueva oscura 2
+Name = Cueva oscura 2
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -309,10 +326,12 @@ MapPosition = 0,17,16
 BattleBack = cave2
 #-------------------------------
 [058]   # Cueva union 3
+Name = Cueva union 3
 Bicycle = true
 MapPosition = 0,17,16
 #-------------------------------
 [059]   # Ruina alfa Principal
+Name = Ruina alfa Principal
 MapPosition = 0,16,11
 #-------------------------------
 [060]   # Ruinas
@@ -321,9 +340,11 @@ MapPosition = 0,16,11
 BattleBack = templo
 #-------------------------------
 [061]   # Instituto Arqueologico
+Name = Instituto Arqueologico
 MapPosition = 0,16,11
 #-------------------------------
 [062]   # Pozo Slowpoke 2
+Name = Pozo Slowpoke 2
 Bicycle = true
 MapPosition = 0,15,18
 #-------------------------------
@@ -348,6 +369,7 @@ MapPosition = 0,17,10
 BattleBack = torreb
 #-------------------------------
 [067]   # Pokémon Day Care
+Name = Pokémon Day Care
 MapPosition = 0,13,15
 #-------------------------------
 [068]   # Gym Blanca
@@ -356,18 +378,23 @@ MapPosition = 0,13,13
 BattleBack = blanca
 #-------------------------------
 [069]   # Centro comercial
+Name = Centro comercial
 MapPosition = 0,13,13
 #-------------------------------
 [070]   # Centro comercial - Piso 1
+Name = Centro comercial - Piso 1
 MapPosition = 0,13,13
 #-------------------------------
 [071]   # Ascensor
+Name = Ascensor
 MapPosition = 0,13,13
 #-------------------------------
 [072]   # Centro comercial - Piso 2
+Name = Centro comercial - Piso 2
 MapPosition = 0,13,13
 #-------------------------------
 [073]   # Centro comercial - Piso 3
+Name = Centro comercial - Piso 3
 MapPosition = 0,13,13
 #-------------------------------
 [074]   # Tunel trigal
@@ -375,9 +402,11 @@ Name = Tunel trigal
 MapPosition = 0,13,13
 #-------------------------------
 [075]   # Tunel trigal
+Name = Tunel trigal
 MapPosition = 0,13,13
 #-------------------------------
 [076]   # Torre Radio 
+Name = Torre Radio
 MapPosition = 0,13,13
 #-------------------------------
 [077]   # Torre quemada / 2
@@ -388,15 +417,19 @@ SnapEdges = true
 BattleBack = templo
 #-------------------------------
 [078]   # Casino
+Name = Casino
 MapPosition = 0,13,13
 #-------------------------------
 [079]   # Floreria
+Name = Floreria
 MapPosition = 0,13,13
 #-------------------------------
 [080]   # Casas
+Name = Casas
 MapPosition = 0,13,13
 #-------------------------------
 [081]   # Tienda de Bicis
+Name = Tienda de Bicis
 MapPosition = 0,13,13
 #-------------------------------
 [082]   # Parque Nacional
@@ -407,15 +440,19 @@ Bicycle = true
 MapPosition = 0,12,9
 #-------------------------------
 [083]   # Interseccion
+Name = Interseccion
 MapPosition = 0,23,14
 #-------------------------------
 [084]   # Interseccion
+Name = Interseccion
 MapPosition = 0,18,10
 #-------------------------------
 [085]   # Interseccion
+Name = Interseccion
 MapPosition = 0,16,10
 #-------------------------------
 [086]   # Interseccion
+Name = Interseccion
 MapPosition = 0,17,11
 #-------------------------------
 [087]   # Interseccion
@@ -431,9 +468,11 @@ Name = Interseccion2
 MapPosition = 0,13,12
 #-------------------------------
 [090]   # Interseccion
+Name = Interseccion
 MapPosition = 0,13,14
 #-------------------------------
 [091]   # Interseccion
+Name = Interseccion
 MapPosition = 0,15,18
 #-------------------------------
 [092]   # Interseccion
@@ -441,6 +480,7 @@ Name = Interseccion
 MapPosition = 0,14,10
 #-------------------------------
 [093]   # Ruta 30
+Name = Ruta 30
 MapPosition = 0,21,12
 #-------------------------------
 [094]   # Raid 1
@@ -454,6 +494,7 @@ MapPosition = 0,12,9
 BattleBack = forest
 #-------------------------------
 [097]   # Centro Poke
+Name = Centro Poke
 MapPosition = 0,17,10
 #-------------------------------
 [098]   # Raid 14
@@ -544,15 +585,19 @@ MapPosition = 0,15,18
 BattleBack = forest
 #-------------------------------
 [115]   # Granero1
+Name = Granero1
 MapPosition = 0,9,6
 #-------------------------------
 [116]   # CASA1
+Name = CASA1
 MapPosition = 0,9,6
 #-------------------------------
 [117]   # Paso a Ruinas Alfa
+Name = Paso a Ruinas Alfa
 MapPosition = 0,16,13
 #-------------------------------
 [118]   # Paso a Ruinas Alfa
+Name = Paso a Ruinas Alfa
 MapPosition = 0,16,13
 #-------------------------------
 [119]   # Ruta 27
@@ -564,9 +609,11 @@ MapPosition = 0,29,15
 BattleBack = field
 #-------------------------------
 [120]   # Casas
+Name = Casas
 MapPosition = 0,28,15
 #-------------------------------
 [121]   # Ciudad Orquídea
+Name = Ciudad Orquídea
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -580,15 +627,18 @@ Bicycle = true
 MapPosition = 0,3,13
 #-------------------------------
 [123]   # Raid 16
+Name = Raid 16
 MapPosition = 0,3,13
 #-------------------------------
 [124]   # Pueblo Coralindro
+Name = Pueblo Coralindro
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,3,11
 #-------------------------------
 [125]   # Ruta 41
+Name = Ruta 41
 Outdoor = true
 ShowArea = true
 MapPosition = 0,1,11
@@ -601,13 +651,19 @@ Bicycle = true
 MapPosition = 0,1,15
 #-------------------------------
 [127]   # Villa Luminagua
+Name = Villa Luminagua
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,3,16
 #-------------------------------
 [129]   # Villa Aurelis
+Name = Villa Aurelis
 Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,1,13
+#-------------------------------
+[132]   # intro1
+Name = intro2
+SnapEdges = true
