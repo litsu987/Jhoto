@@ -14,7 +14,7 @@ module ChallengeModes
   #-----------------------------------------------------------------------------
   def select_active_rules
     all_rules = RULES.keys
-    excluded_indices = [7, 8, 9]
+    excluded_indices = [5, 6, 7, 8]
     # Excluir las reglas en los índices especificados
     excluded_rules = excluded_indices.map { |index| all_rules[index] }.compact
     selected_rules = all_rules - excluded_rules
