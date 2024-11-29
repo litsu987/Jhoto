@@ -647,7 +647,7 @@ Pokemon = HOUNDSTONE,45
     AbilityIndex = 2
     Item = CHOICESCARF
     IV = 20,20,20,20,20,20
-    -------------------------------
+-------------------------------
 [SACERDOTISA,María]
 LoseText = No me gustas
 Pokemon = MISMAGIUS,41
@@ -734,3 +734,55 @@ LoseText = ¡Maldita sea!
 Pokemon = SCIZOR,47
 Pokemon = CRUSTLE,47
 Pokemon = VIKAVOLT,47
+#-------------------------------
+[LUCHADOR,Lao]
+LoseText = ¡No puede ser!
+Pokemon = HITMONTOP,49
+Pokemon = HARIYAMA,49
+Pokemon = GRAPPLOCT,49
+Pokemon = FALINKS,49
+#-------------------------------
+[LEADER_ANIBAL,Anibal]
+LoseText = No... ¡He perdido!
+Items = HYPERPOTION,HYPERPOTION,MEGARING
+Pokemon = DECIDUEYE,52
+    Moves = TRIPLEARROWS,UTURN,LEAFBLADE,BRAVEBIRD
+    Form=1
+    Item = CHOICESCARF
+    IV = 20,20,20,20,20,20
+    EV = 100,100,0,100,100,100
+    Nature = Adamant
+Pokemon = ANNIHILAPE,53
+    Moves = DRAINPUNCH,RAGEFIST,BULKUP,GUNKSHOT
+    AbilityIndex = 2
+    Item = LUMBERRY
+    IV = 20,20,20,20,20,20
+    EV = 100,100,0,100,100,100
+    Nature = Adamant
+Pokemon = SNEASLER,52
+    Moves = ACROBATICS,CLOSECOMBAT,DIRECLAW,FAKEOUT
+    AbilityIndex = 1
+    Item = AIRBALLOON
+    IV = 20,20,20,20,20,20
+    EV = 100,100,0,100,100,100
+    Nature = Adamant
+Pokemon = HERACROSS,52
+    Moves = PINMISSILE,ROCKBLAST,BULLETSEED,TRAILBLAZE
+    Item = HERACRONITE
+    IV = 20,20,20,20,20,20
+    EV = 100,100,0,100,100,100
+Pokemon = HAWLUCHA,52
+    Moves = ACROBATICS,BULKUP,IRONHEAD,FLYINGPRESS
+    AbilityIndex = 1
+    Item = SITRUSBERRY
+    IV = 20,20,20,20,20,20
+    EV = 100,100,0,100,100,100
+    Nature = Adamant
+Pokemon = SIRFETCHD,52
+    Moves = FIRSTIMPRESSION,METEORASSAULT,LEAFBLADE,KNOCKOFF
+    AbilityIndex = 2
+    Item = ASSAULTVEST
+    IV = 20,20,20,20,20,20
+    EV = 100,100,0,100,100,100
+    Nature = Adamant
+-------------------------------
