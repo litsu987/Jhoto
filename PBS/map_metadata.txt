@@ -664,6 +664,10 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,1,13
 #-------------------------------
-[132]   # intro1
+[132]   # intro2
 Name = intro2
 SnapEdges = true
+#-------------------------------
+[140]   # Gym
+Name = Gym
+BattleBack = anibal
