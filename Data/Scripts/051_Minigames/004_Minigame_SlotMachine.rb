@@ -274,12 +274,15 @@ class SlotMachineScene
 
   def pbStartScene(difficulty)
     @sprites = {}
-    @viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
+    @viewport = Viewport.new(60, 25, Graphics.width, Graphics.height)
     @viewport.z = 99999
-    addBackgroundPlane(@sprites, "bg", "Slot Machine/bg", @viewport)
-    @sprites["reel1"] = SlotMachineReel.new(64, 112, 1, difficulty)
-    @sprites["reel2"] = SlotMachineReel.new(144, 112, 2, difficulty)
-    @sprites["reel3"] = SlotMachineReel.new(224, 112, 3, difficulty)
+
+    @sprites["bg"] = Sprite.new(@viewport)
+    @sprites["bg"].bitmap = RPG::Cache.load_bitmap("Graphics/UI/Slot Machine/", _INTL("Bg"))
+    
+    @sprites["reel1"] = SlotMachineReel.new(124, 137, 1, difficulty)
+    @sprites["reel2"] = SlotMachineReel.new(204, 137, 2, difficulty)
+    @sprites["reel3"] = SlotMachineReel.new(284, 137, 3, difficulty)
     (1..3).each do |i|
       @sprites["button#{i}"] = IconSprite.new(68 + (80 * (i - 1)), 260, @viewport)
       @sprites["button#{i}"].setBitmap("Graphics/UI/Slot Machine/button")
@@ -303,8 +306,8 @@ class SlotMachineScene
     @sprites["window1"].setBitmap(_INTL("Graphics/UI/Slot Machine/insert"))
     @sprites["window1"].src_rect.set(0, 0, 152, 208)
     @sprites["window2"] = IconSprite.new(358, 96, @viewport)
-    @sprites["credit"] = SlotMachineScore.new(360, 66, $player.coins)
-    @sprites["payout"] = SlotMachineScore.new(438, 66, 0)
+    @sprites["credit"] = SlotMachineScore.new(420, 91, $player.coins)
+    @sprites["payout"] = SlotMachineScore.new(498, 91, 0)
     @wager = 0
     update
     pbFadeInAndShow(@sprites)

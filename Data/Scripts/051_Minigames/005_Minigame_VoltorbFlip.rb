@@ -150,7 +150,7 @@ class VoltorbFlip
   end
 
   def pbCreateSprites
-    @viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
+    @viewport = Viewport.new(55, 25, Graphics.width, Graphics.height)
     @viewport.z = 99999
     @sprites["bg"] = Sprite.new(@viewport)
     @sprites["bg"].bitmap = RPG::Cache.load_bitmap(@directory, _INTL("Voltorb Flip bg"))
@@ -405,7 +405,7 @@ class VoltorbFlip
     elsif Input.trigger?(Input::BACK)
       @sprites["curtain"].opacity = 100
       if @points == 0
-        if pbConfirmMessage("You haven't found any Coins! Are you sure you want to quit?")
+        if pbConfirmMessage("¡No has encontrado ninguna moneda! ¿Estás seguro de que quieres salir?")
           @sprites["curtain"].opacity = 0
           pbShowAndDispose
           @quit = true
@@ -603,4 +603,3 @@ def pbVoltorbFlip
     screen.pbStartScreen
   end
 end
-
