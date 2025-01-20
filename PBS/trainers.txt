@@ -704,7 +704,7 @@ LoseText = ¡Aaargh! ¡Hoy no es mi día!
 Pokemon = RATICATE,46
         Form = 1
 Pokemon = CROBAT,46
-Pokemon = ARBOK,56
+Pokemon = ARBOK,46
 #-------------------------------
 [CHICA2,Isabel]
 LoseText = No me importa perder.
@@ -780,4 +780,30 @@ Pokemon = SIRFETCHD,52
     Item = ASSAULTVEST
     IV = 20,20,20,20,20,20
     EV = 100,100,0,100,100,100
--------------------------------
+#-------------------------------
+[ROKETO,Soldado,3]
+LoseText = ¡Aaargh! ¡Hoy no es mi día!
+Pokemon = ZOROARK,53
+Pokemon = TOXICROAK,53
+Pokemon = DRIFBLIM,53
+#-------------------------------
+[ROKETA,Soldado,3]
+LoseText = ¡Te odio!
+Pokemon = KINGAMBIT,53
+Pokemon = SKUNTANK,53
+Pokemon = GUMSHOOS,53
+Pokemon = TROPIUS,53
+#-------------------------------
+[ROKETO,Soldado,4]
+LoseText = ¿Pero qué...?
+Pokemon = FERROTHORN,53
+Pokemon = MIMIKYU,53
+Pokemon = MUK,53
+    Form=1
+#-------------------------------
+[ROKETA,Soldado,4]
+LoseText = ¡Te odio!
+Pokemon = CROBAT,53
+Pokemon = GOURGEIST,53
+Pokemon = MANECTRIC,53
+Pokemon = PURUGLY,53

@@ -196,21 +196,21 @@ Name = torre bellsprout
 MapPosition = 0,21,11
 BattleBack = interior
 #-------------------------------
-[033]   # Casa artesano de pokeballs
+[033]   # casas
 Name = torre bellsprout 2
 MapPosition = 0,15,18
 BattleBack = interior
 #-------------------------------
-[034]   # Casas
+[034]   # Heladeria
 Name = torre bellsprout 3
 MapPosition = 0,15,18
 BattleBack = interior
 #-------------------------------
-[035]   # Casas
+[035]   # Casino
 Name = Casas
 MapPosition = 0,26,15
 #-------------------------------
-[036]   # Laboratorio
+[036]   # Centro Comercial
 Name = Laboratorio
 MapPosition = 0,26,15
 #-------------------------------
@@ -339,7 +339,7 @@ Name = Ruinas
 MapPosition = 0,16,11
 BattleBack = templo
 #-------------------------------
-[061]   # Instituto Arqueologico
+[061]   # casas
 Name = Instituto Arqueologico
 MapPosition = 0,16,11
 #-------------------------------
@@ -377,35 +377,35 @@ Name = Gym Blanca
 MapPosition = 0,13,13
 BattleBack = blanca
 #-------------------------------
-[069]   # Centro comercial
+[069]   # Tunel Trigal
 Name = Centro comercial
 MapPosition = 0,13,13
 #-------------------------------
-[070]   # Centro comercial - Piso 1
+[070]   # Tineda de Bicis
 Name = Centro comercial - Piso 1
 MapPosition = 0,13,13
 #-------------------------------
-[071]   # Ascensor
+[071]   # Torre Radio
 Name = Ascensor
 MapPosition = 0,13,13
 #-------------------------------
-[072]   # Centro comercial - Piso 2
+[072]   # casas
 Name = Centro comercial - Piso 2
 MapPosition = 0,13,13
 #-------------------------------
-[073]   # Centro comercial - Piso 3
+[073]   # Centro Poke
 Name = Centro comercial - Piso 3
 MapPosition = 0,13,13
 #-------------------------------
-[074]   # Tunel trigal
+[074]   # casas
 Name = Tunel trigal
 MapPosition = 0,13,13
 #-------------------------------
-[075]   # Tunel trigal
+[075]
 Name = Tunel trigal
 MapPosition = 0,13,13
 #-------------------------------
-[076]   # Torre Radio 
+[076]
 Name = Torre Radio
 MapPosition = 0,13,13
 #-------------------------------
@@ -416,7 +416,7 @@ MapPosition = 0,15,6
 SnapEdges = true
 BattleBack = templo
 #-------------------------------
-[078]   # Casino
+[078]
 Name = Casino
 MapPosition = 0,13,13
 #-------------------------------
@@ -424,11 +424,11 @@ MapPosition = 0,13,13
 Name = Floreria
 MapPosition = 0,13,13
 #-------------------------------
-[080]   # Casas
+[080]
 Name = Casas
 MapPosition = 0,13,13
 #-------------------------------
-[081]   # Tienda de Bicis
+[081]
 Name = Tienda de Bicis
 MapPosition = 0,13,13
 #-------------------------------
@@ -502,7 +502,7 @@ Name = Raid
 MapPosition = 0,12,6
 BattleBack = forest
 #-------------------------------
-[099]   # Centro Poke
+[099]   # casas
 Name = Centro Poke
 MapPosition = 0,15,6
 #-------------------------------
@@ -624,6 +624,7 @@ Name = Ruta 40
 Outdoor = true
 ShowArea = true
 Bicycle = true
+Weather = HeavyRain,100
 MapPosition = 0,3,13
 #-------------------------------
 [123]   # Raid 16
@@ -641,6 +642,7 @@ MapPosition = 0,3,11
 Name = Ruta 41
 Outdoor = true
 ShowArea = true
+Weather = Sandstorm,100
 MapPosition = 0,1,11
 #-------------------------------
 [126]   # Ruta 47
@@ -648,6 +650,7 @@ Name = Ruta 47
 Outdoor = true
 ShowArea = true
 Bicycle = true
+Weather = Fog,100
 MapPosition = 0,1,15
 #-------------------------------
 [127]   # Villa Luminagua
