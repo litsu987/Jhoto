@@ -405,6 +405,7 @@ MapPosition = 0,13,13
 Name = Tunel trigal
 Weather = HeavyRain,100
 MapPosition = 0,13,13
+BattleBack = Forest
 #-------------------------------
 [076]   # Interseccion
 Name = Torre Radio
@@ -417,7 +418,7 @@ MapPosition = 0,15,6
 SnapEdges = true
 BattleBack = templo
 #-------------------------------
-[078]
+[078]   # Interseccion
 Name = Casino
 MapPosition = 0,13,13
 #-------------------------------
@@ -425,11 +426,11 @@ MapPosition = 0,13,13
 Name = Floreria
 MapPosition = 0,13,13
 #-------------------------------
-[080]
+[080]   # Interseccion
 Name = Casas
 MapPosition = 0,13,13
 #-------------------------------
-[081]
+[081]   # Pueblo Coralindro
 Name = Tienda de Bicis
 MapPosition = 0,13,13
 #-------------------------------
@@ -627,12 +628,13 @@ ShowArea = true
 Bicycle = true
 Weather = HeavyRain,100
 MapPosition = 0,3,13
+BattleBack = Forest
 #-------------------------------
 [123]   # Raid 16
 Name = Raid 16
 MapPosition = 0,3,13
 #-------------------------------
-[124]   # Pueblo Coralindro
+[124]   # Villa Aurelis
 Name = Pueblo Coralindro
 Outdoor = true
 ShowArea = true
@@ -645,6 +647,7 @@ Outdoor = true
 ShowArea = true
 Weather = Sandstorm,100
 MapPosition = 0,1,11
+BattleBack = Desierto
 #-------------------------------
 [126]   # Ruta 47
 Name = Ruta 47
@@ -661,7 +664,7 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,3,16
 #-------------------------------
-[129]   # Villa Aurelis
+[129]
 Name = Villa Aurelis
 Outdoor = true
 ShowArea = true

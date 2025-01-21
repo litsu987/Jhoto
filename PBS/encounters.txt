@@ -538,6 +538,23 @@ Water,2
 OldRod
     100,SHARPEDO,46,48
 #-------------------------------
+[075] # Ruta 40
+Land,21
+    10,CLEFAIRY,46,48
+    10,TIMBURR,46,48
+    10,PURRLOIN,46,48
+    10,MIMEJR,46,48
+    10,TROPIUS,46,48
+    10,PLUSLE,46,48
+    10,MINUN,46,48
+    10,SLAKOTH,46,48
+    10,SPINDA,42,45
+Water,2
+    50,MANTINE,46,48
+    50,TATSUGIRI,46,48
+OldRod
+    100,SHARPEDO,46,48
+#-------------------------------
 [124] # Pueblo Coralindo
 Land,21
     10,VULPIX,49,51
