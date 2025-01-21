@@ -253,7 +253,7 @@ LoseText = Solo ha sido mala suerte...
 Pokemon = MAGNEMITE,23
 Pokemon = NIDORINO,23
 #-------------------------------
-[ATENEA,Athenea]
+[ATENEA,Atenea]
 LoseText = Uf.. Es increíble de lo que son capaces estos renacuajos. 
 Pokemon = VOLTORB,24
         Form = 1
@@ -807,3 +807,38 @@ Pokemon = CROBAT,53
 Pokemon = GOURGEIST,53
 Pokemon = MANECTRIC,53
 Pokemon = PURUGLY,53
+#-------------------------------
+[ATENEA,Atenea,2]
+LoseText = Uf.. Es increíble de lo que son capaces estos renacuajos. 
+Pokemon = ELECTRODE,56
+        Form = 1
+Pokemon = WEEZING,56
+        Form = 1
+Pokemon = CROBAT,56
+Pokemon = ABSOL,56
+Pokemon = GRIMMSNARL,56
+Pokemon = JELLICENT,56
+#-------------------------------
+[ROKETA,Soldado,5]
+LoseText = ¡Me rindo!
+Pokemon = RATICATE,54
+        Form = 1
+Pokemon = ARBOK,54
+Pokemon = DRAPION,54
+#-------------------------------
+[ROKETO,Soldado,5]
+LoseText = Vaya...
+Pokemon = SEVIPER,54
+Pokemon = PERRSERKER,54
+#-------------------------------
+[ROKETA,Soldado,6]
+LoseText = ¡Uf! ¡Me has machacado!
+Pokemon = ARIADOS,54
+Pokemon = SHARPEDO,54
+Pokemon = KLEFKI,54
+#-------------------------------
+[ROKETO,Soldado,6]
+LoseText = ¡Uf! ¡Me has machacado!
+Pokemon = PANGORO,54
+Pokemon = KLINKLANG,54
+Pokemon = FERROTHORN,54

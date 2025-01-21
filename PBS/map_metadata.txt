@@ -401,11 +401,12 @@ MapPosition = 0,13,13
 Name = Tunel trigal
 MapPosition = 0,13,13
 #-------------------------------
-[075]
+[075]   # Ruta 40
 Name = Tunel trigal
+Weather = HeavyRain,100
 MapPosition = 0,13,13
 #-------------------------------
-[076]
+[076]   # Interseccion
 Name = Torre Radio
 MapPosition = 0,13,13
 #-------------------------------
