@@ -336,3 +336,11 @@ BaseMoney = 100
 IntroBGM = Chico.ogg
 VictoryBGM = TrainerVictory.ogg
 BattleBGM = BattlEjecutivo.ogg
+#-------------------------------
+[ATLAS]
+Name = Ejecutivo Rocket
+Gender = male
+BaseMoney = 100
+IntroBGM = Chico.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = BattlEjecutivo.ogg

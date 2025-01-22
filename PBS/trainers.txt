@@ -1009,36 +1009,36 @@ Pokemon = GASTRODON,59
     Item = LEFTOVERS
     AbilityIndex = 1
     IV = 20,20,20,20,20,20
-    EV = 100,100,0,100,100,100
+    EV = 100,0,100,100,100,100
 Pokemon = MAGMORTAR,59
     Moves = FLAMETHROWER,THUNDERBOLT,FOCUSBLAST,SUBSTITUTE
     AbilityIndex = 2
     Item = EXPERTBELT
     IV = 20,20,20,20,20,20
-    EV = 100,100,0,100,100,100
+    EV = 100,0,100,100,100,100
 Pokemon = TINKATON,59
     Moves = GIGATONHAMMER,PLAYROUGH,KNOCKOFF,ICEHAMMER
     AbilityIndex = 0
     Item = ASSAULTVEST
     IV = 20,20,20,20,20,20
-    EV = 100,100,0,100,100,100
+    EV = 100,100,100,0,100,100
 Pokemon = URSALUNA,59
     Moves = BLOODMOON,EARTHPOWER,HYPERVOICE,PROTECT
     Item = LEFTOVERS
     Form = 1
     IV = 20,20,20,20,20,20
-    EV = 100,100,0,100,100,100
+    EV = 100,0,100,100,100,100
 Pokemon = MRRIME,59
     Moves = ICEBEAM,PSYCHIC,NASTYPLOT,THUNDERWAVE
     AbilityIndex = 1
     Item = SITRUSBERRY
     IV = 20,20,20,20,20,20
-    EV = 100,100,0,100,100,100
+    EV = 100,0,100,100,100,100
 Pokemon = GYARADOS,59
     Moves = DRAGONDANCE,WATERFALL,CRUNCH,SUBSTITUTE
     Item = GYARADOSITE
     IV = 20,20,20,20,20,20
-    EV = 100,100,0,100,100,100
+    EV = 100,100,100,0,100,100
 #-------------------------------
 [ROKETO,Soldado,9]
 LoseText = ¡Esto no es justo!
@@ -1050,3 +1050,70 @@ Pokemon = CORVIKNIGHT,56
 LoseText = ¡No puede ser!
 Pokemon = HYPNO,56
 Pokemon = DONPHAN,56
+#-------------------------------
+[ROKETO,Soldado,10]
+LoseText = ¡¿Qué demonios?!
+Pokemon = CAMERUPT,59
+Pokemon = SEVIPER,59
+#-------------------------------
+[ROKETA,Soldado,11]
+LoseText = ¡Esto es ridículo!
+Pokemon = GOLURK,59
+Pokemon = SCRAFTY,59
+Pokemon = WEEZING,59
+#-------------------------------
+[ROKETO,Soldado,11]
+LoseText = ¡¿Qué demonios?!
+Pokemon = GOLURK,60
+Pokemon = GOLURK,60
+#-------------------------------
+[ROKETA,Soldado,12]
+LoseText = ¡Este calor me desconcentra!
+Pokemon = GOLURK,61
+Pokemon = SCRAFTY,61
+Pokemon = WEEZING,61
+#-------------------------------
+[ROKETO,Soldado,12]
+LoseText = Este lugar debía darnos ventaja...
+Pokemon = GOLURK,59
+Pokemon = GOLURK,59
+Pokemon = GOLURK,59
+#-------------------------------
+[ATLAS,Atlas]
+LoseText = Yo... no pude evitarlo...
+Items = HYPERPOTION,HYPERPOTION,MEGARING
+Pokemon = GLISCOR,63
+    Moves = TOXIC,STEALTHROCK,EARTHQUAKE,ROOST
+    Item = TOXICORB
+    AbilityIndex = 2
+    IV = 31,31,31,31,31,31
+    EV = 100,100,100,0,100,100
+Pokemon = TANGROWTH,63
+    Moves = GIGADRAIN,LEECHSEED,SLUDGEBOMB,FOCUSBLAST
+    AbilityIndex = 0
+    Item = BLACKSLUDGE
+    IV = 31,31,31,31,31,31
+    EV = 100,0,100,100,100,100
+Pokemon = TYRANITAR,63
+    Moves = EARTHQUAKE,CRUNCH,FIREPUNCH,STONEEDGE
+    AbilityIndex = 2
+    Item = SITRUSBERRY
+    IV = 31,31,31,31,31,31
+    EV = 100,100,100,0,100,100
+Pokemon = CONKELDURR,59
+    Moves = DRAINPUNCH,ICEPUNCH,MACHPUNCH,KNOCKOFF
+    Item = ASSAULTVEST
+    Form = 2
+    IV = 31,31,31,31,31,31
+    EV = 100,100,100,0,100,100
+Pokemon = ELECTIVIRE,63
+    Moves = WILDCHARGE,EARTHQUAKE,ICEPUNCH,POWERUPPUNCH
+    AbilityIndex = 0
+    Item = LIFEORB
+    IV = 31,31,31,31,31,31
+    EV = 100,100,100,0,100,100
+Pokemon = HOUNDOOM,63
+    Moves = NASTYPLOT,FIREBLAST,DARKPULSE,SLUDGEBOMB
+    Item = HOUNDOOMINITE
+    IV = 31,31,31,31,31,31
+    EV = 100,0,100,100,100,100
