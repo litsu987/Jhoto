@@ -665,8 +665,9 @@ Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,3,16
+SnapEdges = true
 #-------------------------------
-[129]   # Raid 16
+[129]   # Raid 17
 Name = Villa Aurelis
 Outdoor = true
 ShowArea = true

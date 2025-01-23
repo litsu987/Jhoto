@@ -1064,20 +1064,20 @@ Pokemon = WEEZING,59
 #-------------------------------
 [ROKETO,Soldado,11]
 LoseText = ¡¿Qué demonios?!
-Pokemon = GOLURK,60
-Pokemon = GOLURK,60
+Pokemon = ELECTRODE,60
+Pokemon = EXPLOUD,60
 #-------------------------------
 [ROKETA,Soldado,12]
 LoseText = ¡Este calor me desconcentra!
-Pokemon = GOLURK,61
-Pokemon = SCRAFTY,61
+Pokemon = MUK,61
+Pokemon = LEAVANNY,61
 Pokemon = WEEZING,61
 #-------------------------------
 [ROKETO,Soldado,12]
 LoseText = Este lugar debía darnos ventaja...
-Pokemon = GOLURK,59
-Pokemon = GOLURK,59
-Pokemon = GOLURK,59
+Pokemon = MABOSSTIFF,59
+Pokemon = DURANT,59
+Pokemon = SHIFTRY,59
 #-------------------------------
 [ATLAS,Atlas]
 LoseText = Yo... no pude evitarlo...
