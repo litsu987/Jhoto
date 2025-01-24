@@ -13,12 +13,12 @@
 module FancyBadges
   NAMES = [
       "Medalla Céfiro",
-      "Test Badge 2",
-      "Test Badge 3",
-      "Test Badge 4",
-      "Test Badge 5",
-      "Test Badge 6",
-      "Test Badge 7",
-      "Test Badge 8",
+      "Medalla Colmena",
+      "Medalla Planicie",
+      "Medalla Niebla",
+      "Medalla Tormenta",
+      "Medalla Mineral",
+      "Medalla Glaciar",
+      "Medalla Dragón",
   ]    
 end

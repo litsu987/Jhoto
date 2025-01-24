@@ -518,7 +518,7 @@ MapPosition = 0,15,6
 DarkMap = true
 BattleBack = morty
 #-------------------------------
-[102]   # CASA1
+[102]   # CASAS
 Name = CASA1
 MapPosition = 0,15,6
 #-------------------------------
@@ -589,6 +589,7 @@ BattleBack = forest
 [115]   # Granero1
 Name = Granero1
 MapPosition = 0,9,6
+BattleBack = interior
 #-------------------------------
 [116]   # CASA1
 Name = CASA1
