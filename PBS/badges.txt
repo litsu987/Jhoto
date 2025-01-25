@@ -3,71 +3,71 @@
 [MEDALLACEFIRO]
 Name = Zephyr Badge
 Type = FLYING
-LeaderName = Leader Falkner
+LeaderName = Líder Pegaso
 LeaderSprite = BADGE0
-Location = Violet City
-AcePokemon = NOCTOWL
+Location = Ciudad Malva
+AcePokemon = PIDGEOTTO
 Order = 0
 #-------------------------------
 [MEDALLLACOLMENA]
 Name = Hive Badge
 Type = BUG
-LeaderName = Leader Bugsy
+LeaderName = Líder Antón
 LeaderSprite = BADGE1
-Location = Azalea Town
-AcePokemon = BUTTERFREE
+Location = Pueblo Azalea
+AcePokemon = SCYTHER
 Order = 1
 #-------------------------------
 [MEDALLAPLANICIE]
-Name = Plain Badge
+Name = Medalla Planicie
 Type = NORMAL
-LeaderName = Leader Whitney
+LeaderName = Líder Blanca
 LeaderSprite = BADGE2
-Location = Goldenrod City
-AcePokemon = LOPUNNY
+Location = Ciudad Trigal
+AcePokemon = MILTANK
 Order = 2
 #-------------------------------
 [MEDALLANIEBLA]
-Name = Fog Badge
+Name = Medalla Niebla
 Type = GHOST
-LeaderName = Leader Morty
+LeaderName = Líder Morti
 LeaderSprite = BADGE3
-Location = Ecruteak City
+Location = Ciudad Iris
 AcePokemon = GENGAR
 Order = 3
 #-------------------------------
 [MEDALLATORMENTA]
-Name = Storm Badge
-Type = GHOST
-LeaderName = Leader Anival
+Name = Medalla Tormenta
+Type = FIGHTING
+LeaderName = Líder Anival
 LeaderSprite = BADGE4
-Location = Vermilion City
-AcePokemon = LUXRAY
+Location = Ciudad Orquídea
+AcePokemon = HERACROSS
 Order = 4
 #-------------------------------
 [MEDALLAMINERAL]
-Name = Mineral Badge
-Type = GHOST
-LeaderName = Leader Yasmina
+Name = Medalla Mineral
+Type = STEEL
+LeaderName = Líder Yasmina
 LeaderSprite = BADGE5
-Location = Cerulean City
-AcePokemon = GYARADOS
+Location = Ciudad Olivo
+AcePokemon = METAGROSS
 Order = 5
 #-------------------------------
 [MEDALLAGLACIAR]
-Name = Boulder Badge
-Type = ROCK
-LeaderName = Leader Brock
+Name = Medalla Glaciar
+Type = ICE
+LeaderName = Líder Fredo
 LeaderSprite = BADGE6
-Location = Pewter City
-AcePokemon = SANDACONDA
+Location = Pueblo Caoba
+AcePokemon = MAMOSWINE
 Order = 6
 #-------------------------------
 [MEDALLADRAGON]
-Name = Earth Badge
-Type = DARK
-LeaderName = Leader Blue
+Name = Medalla Dragón
+Type = DRAGON
+LeaderName = Líder Débora
 LeaderSprite = BADGE7
-Location = Pallet Town
+Location = Ciudad Endrino
 AcePokemon = HOUNDOOM
 Order = 7
