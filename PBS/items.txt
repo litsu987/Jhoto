@@ -3119,7 +3119,7 @@ BattleUse = OnPokemon
 Flags = Fling_30
 Description = Chispeante bebida gaseosa que restaura 60 PS de un Pokémon.
 #-------------------------------
-[   ]
+[LEMONADE]
 Name = Limonada
 NamePlural = Limonadas
 Pocket = 2

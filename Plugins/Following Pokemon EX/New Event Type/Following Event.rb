@@ -222,7 +222,7 @@ class FollowerData
       event = args[0]
       $game_map.refresh if $game_map.need_refresh
 	  event.lock
-      FollowingPkmn.talk
+      #FollowingPkmn.talk
       event.unlock
     elsif FollowingPkmn.can_talk?
       return __followingpkmn__interact(*args)

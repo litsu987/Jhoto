@@ -587,16 +587,26 @@ HiddenMoveHandlers::UseMove.add(:STRENGTH, proc { |move, pokemon|
 #===============================================================================
 def pbSurf
   return false if !$game_player.can_ride_vehicle_with_follower?
+  
   move = :SURF
+  item = :POKEMONTURA # Define el ítem que se necesita
   movefinder = $player.get_pokemon_with_move(move)
-  if !pbCheckHiddenMoveBadge(Settings::BADGE_FOR_SURF, false) || (!$DEBUG && !movefinder)
+  has_item = $bag.has?(:POKEMONTURA) # Verifica si el jugador tiene el ítem en la bolsa
+  
+  if !pbCheckHiddenMoveBadge(Settings::BADGE_FOR_SURF, false) || (!$DEBUG && !has_item && !movefinder)
     return false
   end
+
   if pbConfirmMessage(_INTL("El agua se ve un poco profunda... ¿Te gustaría hacer Surf?"))
-    speciesname = (movefinder) ? movefinder.name : $player.name
-    pbMessage(_INTL("¡{1} usó {2}!", speciesname, GameData::Move.get(move).name))
+    if has_item
+      pbMessage(_INTL("¡Usaste la Pokémontura para hacer Surf!"))
+    else
+      speciesname = movefinder.name
+      pbMessage(_INTL("¡{1} usó {2}!", speciesname, GameData::Move.get(move).name))
+      pbHiddenMoveAnimation(movefinder)
+    end
+
     pbCancelVehicles
-    pbHiddenMoveAnimation(movefinder)
     surfbgm = GameData::Metadata.get.surf_BGM
     pbCueBGM(surfbgm, 0.5) if surfbgm
     pbStartSurfing
@@ -658,7 +668,7 @@ EventHandlers.add(:on_step_taken, :surf_jump,
 HiddenMoveHandlers::UseMove.add(:SURF, proc { |move, pokemon|
   $game_temp.in_menu = false
   pbCancelVehicles
-  if !pbHiddenMoveAnimation(pokemon)
+  if !$bag.has?(:POKEMONTURA) && !pbHiddenMoveAnimation(pokemon)
     pbMessage(_INTL("¡{1} usó {2}!", pokemon.name, GameData::Move.get(move).name))
   end
   surfbgm = GameData::Metadata.get.surf_BGM

@@ -89,7 +89,13 @@ if MOSTRAR_PANEL_REP_EXP
       level = defeatedBattler.level
       # Main Exp calculation
       exp = 0
-      a   = level * defeatedBattler.pokemon.base_exp
+      a   = level * defeatedBattler.pokemon.base_exp 
+      
+      if $game_switches[66]  # El switch 66 está activado
+        a *= 1.5  # Multiplicar la experiencia base por 2
+      end
+
+
       if expShare.length > 0 && (isPartic || hasExpShare)
         if numPartic == 0   # No participants, all Exp goes to Exp Share holders
           exp = a / (Settings::SPLIT_EXP_BETWEEN_GAINERS ? expShare.length : 1)

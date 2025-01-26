@@ -124,6 +124,7 @@ Name = Ruta 38
 Outdoor = true
 ShowArea = true
 MapPosition = 0,12,6
+BattleBack = Field
 #-------------------------------
 [018]   # Ruta 39
 Name = Ruta 39
@@ -154,7 +155,6 @@ Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,17,6
-SnapEdges = true
 #-------------------------------
 [026]   # Pueblo Caoba
 Name = Pueblo Caoba
@@ -441,6 +441,7 @@ Outdoor = true
 ShowArea = true
 Bicycle = true
 MapPosition = 0,12,9
+BattleBack = Field
 #-------------------------------
 [083]   # Interseccion
 Name = Interseccion
@@ -656,7 +657,7 @@ Name = Ruta 47
 Outdoor = true
 ShowArea = true
 Bicycle = true
-Weather = Fog,100
+Weather = Sun,100
 MapPosition = 0,1,15
 SnapEdges = true
 BattleBack = Volcan

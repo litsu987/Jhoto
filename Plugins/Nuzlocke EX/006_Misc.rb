@@ -23,8 +23,8 @@ def pbNickname(pkmn)
   return if $PokemonSystem.givenicknames != 0
   species_name = pkmn.speciesName
   if ChallengeModes.on?(:FORCE_NICKNAME) ||
-     pbConfirmMessage(_INTL("Would you like to give a nickname to {1}?", species_name))
-    pkmn.name = pbEnterPokemonName(_INTL("{1}'s nickname?", species_name),
+     pbConfirmMessage(_INTL("¿Te gustaría darle un apodo a {1}?", species_name))
+    pkmn.name = pbEnterPokemonName(_INTL("¿Su apodo es {1}?", species_name),
                                    0, Pokemon::MAX_NAME_SIZE, "", pkmn)
   end
 end
@@ -35,7 +35,7 @@ class Battle
     return __challenge__pbStorePokemon(*args) if !ChallengeModes.on?(:FORCE_NICKNAME)
     pkmn = args[0]
     if !pkmn.shadowPokemon?
-      nickname = @scene.pbNameEntry(_INTL("{1}'s nickname?", pkmn.speciesName), pkmn)
+      nickname = @scene.pbNameEntry(_INTL("¿Su apodo es {1}?", pkmn.speciesName), pkmn)
       pkmn.name = nickname
     end
     $PokemonSystem.givenicknames = 1
@@ -51,7 +51,7 @@ def pbPurify(*args)
   $PokemonSystem.givenicknames = 1
   ret = __challenge__pbPurify(*args)
   pkmn = args[0]
-  newname = pbEnterPokemonName(_INTL("{1}'s nickname?", pkmn.speciesName),
+  newname = pbEnterPokemonName(_INTL("¿Su apodo es {1}?", pkmn.speciesName),
                                  0, Pokemon::MAX_NAME_SIZE, "", pkmn)
   pkmn.name = newname
   $PokemonSystem.givenicknames = 0
@@ -65,7 +65,7 @@ class PokemonEggHatch_Scene
     $PokemonSystem.givenicknames = 1
     ret = __challenge__pbMain(*args)
     $PokemonSystem.givenicknames = 0
-    nickname = pbEnterPokemonName(_INTL("{1}'s nickname?", @pokemon.name),
+    nickname = pbEnterPokemonName(_INTL("¿Su apodo es {1}?", @pokemon.name),
                                     0, Pokemon::MAX_NAME_SIZE, "", @pokemon, true)
     @pokemon.name = nickname
     @nicknamed = true
@@ -85,7 +85,7 @@ MenuHandlers.add(:options_menu, :battle_style, {
   "type"        => EnumOption,
   "condition"   => proc { next !ChallengeModes.on?(:FORCE_SET_BATTLES) },
   "parameters"  => [_INTL("Switch"), _INTL("Set")],
-  "description" => _INTL("Choose whether you can switch Pokémon when an opponent's Pokémon faints."),
+  "description" => _INTL("Elige si puedes cambiar de Pokémon cuando el Pokémon del oponente se debilita."),
   "get_proc"    => proc { next $PokemonSystem.battlestyle },
   "set_proc"    => proc { |value, _scene| $PokemonSystem.battlestyle = value }
 })

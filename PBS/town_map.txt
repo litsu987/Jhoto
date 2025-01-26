@@ -107,7 +107,7 @@ Point = 5,18,Isla Glaciara
 Point = 8,13,Isla Tempestris
 Point = 22,6,Ruta 44
 Point = 16,8,Valle Oculto
-Point = 5,13,Ciudad Orquídea
+Point = 5,13,Ciudad Orquídea,,121,51,46
 #-------------------------------
 [1]
 Name = Tiall
