@@ -352,3 +352,12 @@ BaseMoney = 100
 IntroBGM = GymBattle2.ogg
 VictoryBGM = VictoryLeader.ogg
 BattleBGM = TeainerBattleOst.ogg
+#-------------------------------
+[LUCHADORA]
+Name = Luchadora
+Gender = Female
+BaseMoney = 60
+IntroBGM = Chica.ogg
+VictoryBGM = TrainerVictory.ogg
+BattleBGM = TeainerBattleOst.ogg
+#-------------------------------

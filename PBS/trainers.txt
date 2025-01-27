@@ -1302,3 +1302,59 @@ Pokemon = GHOLDENGO,57
     Item = CHOICESCARF
     IV = 31,31,31,31,31,31
     EV = 100,0,100,100,100,100
+#-------------------------------
+[MOCHILERO,David]
+LoseText = ¡Qué derrota!
+Pokemon = MAGNEZONE,58
+Pokemon = RHYPERIOR,58
+#-------------------------------
+[MOCHILERA,Lucía]
+LoseText = ¡Oh, no! ¿Por qué no puedo ganar?
+Pokemon = GOLEM,58
+    Form = 1
+Pokemon = VILEPLUME,58
+#-------------------------------
+[LUCHADOR,Werowero]
+LoseText = ¡Menudo Rango!
+Pokemon = SCRAFTY,58
+Pokemon = MIENSHAO,58
+Pokemon = LUCARIO,58
+#-------------------------------
+[MONTANERO,Guti]
+LoseText = ¡Guau!
+Pokemon = PROBOPASS,58
+Pokemon = CRADILY,58
+#-------------------------------
+[LUCHADOR,Werowero]
+LoseText = ¡Menudo Rango!
+Pokemon = SCRAFTY,58
+Pokemon = MIENSHAO,58
+Pokemon = LUCARIO,58
+#-------------------------------
+[LUCHADORA,Laia]
+LoseText = ¡Mi novio siempre se queja del rango!
+Pokemon = CHESNAUGHT,59
+Pokemon = BEWEAR,59
+#-------------------------------
+[MOCHILERO,Marshal]
+LoseText = ¡Increible!
+Pokemon = LILLIGANT,59
+Pokemon = GOLDUCK,58
+Pokemon = KLINKLANG,58
+#-------------------------------
+[MOCHILERA,Lili]
+LoseText = ¡Wow, qué bien jugado!
+Pokemon = ARBOLIVA,59
+Pokemon = MAWILE,59
+#-------------------------------
+[LUCHADOR,Arnau]
+LoseText = ¡Uff!
+Pokemon = MACHAMP,59
+Pokemon = FALINKS,59
+#-------------------------------
+[RANGERM,Manu]
+LoseText = Vaya, no esperaba perder... ¡Eres increíble!
+Pokemon = DRAMPA,59
+Pokemon = TOEDSCRUEL,59
+Pokemon = REUNICLUS,59
+#-------------------------------

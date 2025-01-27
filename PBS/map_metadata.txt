@@ -688,3 +688,20 @@ BattleBack = anibal
 [151]   # GYM
 Name = GYM
 BattleBack = Yasmina
+#-------------------------------
+[152]   # Monte Mortero P2
+DarkMap = true
+BattleBack = cave2
+#-------------------------------
+[153]   # Monte Mortero P1
+DarkMap = true
+BattleBack = cave2
+#-------------------------------
+[154]   # Monte Mortero P3
+DarkMap = true
+BattleBack = cave2
+#-------------------------------
+[156]   # Monte Mortero P1
+Name = Monte Mortero P1
+DarkMap = true
+BattleBack = cave2
