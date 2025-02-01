@@ -690,18 +690,30 @@ Name = GYM
 BattleBack = Yasmina
 #-------------------------------
 [152]   # Monte Mortero P2
+Name = Monte Mortero P2
 DarkMap = true
 BattleBack = cave2
 #-------------------------------
 [153]   # Monte Mortero P1
+Name = Monte Mortero P1
 DarkMap = true
 BattleBack = cave2
 #-------------------------------
 [154]   # Monte Mortero P3
+Name = Monte Mortero P3
 DarkMap = true
 BattleBack = cave2
+#-------------------------------
+[155]   # Lago de la Furia
+Name = Lago de la Furia
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [156]   # Monte Mortero P1
 Name = Monte Mortero P1
 DarkMap = true
 BattleBack = cave2
+#-------------------------------
+[157]   # Ruta 43
+Outdoor = true
+ShowArea = true

@@ -32,3 +32,5 @@
 19,North,0,18,South,15
 # Pueblo Caoba (26) - Ruta 42 (25)
 26,West,0,25,East,0
+# Ruta 43 (157) - Lago de la Furia (155)
+157,North,0,155,South,19
