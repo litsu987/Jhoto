@@ -168,6 +168,7 @@ Name = Ruta 44
 Outdoor = true
 ShowArea = true
 Bicycle = true
+Weather = Snow,100
 MapPosition = 0,21,6
 #-------------------------------
 [028]   # Ciudad Endrino
@@ -708,6 +709,7 @@ BattleBack = cave2
 Name = Lago de la Furia
 Outdoor = true
 ShowArea = true
+Weather = Rain,100
 #-------------------------------
 [156]   # Monte Mortero P1
 Name = Monte Mortero P1
@@ -715,5 +717,7 @@ DarkMap = true
 BattleBack = cave2
 #-------------------------------
 [157]   # Ruta 43
+Name = Ruta 43
 Outdoor = true
 ShowArea = true
+BattleBack = field

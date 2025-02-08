@@ -30,7 +30,9 @@
 17,West,7,18,East,0
 # Ciudad Olivo (19) - Ruta 39 (18)
 19,North,0,18,South,15
-# Pueblo Caoba (26) - Ruta 42 (25)
-26,West,0,25,East,0
 # Ruta 43 (157) - Lago de la Furia (155)
 157,North,0,155,South,19
+# Ruta 42 (25) - Pueblo Caoba (26)
+25,East,0,26,West,0
+# Ruta 44 (27) - Pueblo Caoba (26)
+27,West,21,26,East,0

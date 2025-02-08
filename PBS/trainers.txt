@@ -223,6 +223,11 @@ LoseText = ¡vaya que fuerte!
 Pokemon = TIMBURR,21
 Pokemon = MAKUHITA,21
 #-------------------------------
+[MONTANERO,Víctor]
+LoseText = ¡Oooh! ¡Demasiado fuerte!
+Pokemon = NACLI,22
+Pokemon = RHYHORN,22
+#-------------------------------
 [CAMPERA,Sara]
 LoseText = ¡Menuda derrota! No me esperaba perder así.
 Pokemon = COMBUSKEN,21
@@ -1357,4 +1362,25 @@ LoseText = Vaya, no esperaba perder... ¡Eres increíble!
 Pokemon = DRAMPA,59
 Pokemon = TOEDSCRUEL,59
 Pokemon = REUNICLUS,59
+#-------------------------------
+[CAMPERO,Martin]
+LoseText = ¿He fallado en mi entrenamiento?
+Pokemon = SLAKING,60
+Pokemon = BELLOSSOM,60
+Pokemon = LUXRAY,60
+#-------------------------------
+[MONTANERO,Agus]
+LoseText = ¡Oooh! ¡Demasiado fuerte!
+Pokemon = RHYPERIOR,60
+Pokemon = KLAWF,60
+#-------------------------------
+[CAMPERA,Aura]
+LoseText = ¡Me rindo!
+Pokemon = TOUCANNON,61
+Pokemon = SIMIPOUR,61
+#-------------------------------
+[JOVEN,Fidel]
+LoseText = Ya no me quedan más Pokémon...
+Pokemon = EELEKTROSS,61
+Pokemon = LUDICOLO,61
 #-------------------------------
